@@ -1,0 +1,5 @@
+site_name: HyperMotion帮助文档
+nav:
+    - Home: index.md
+    - About: about.md
+theme: readthedocs
