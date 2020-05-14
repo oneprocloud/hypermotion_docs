@@ -7,7 +7,8 @@ branches: master # Set the branch to build from
 install:
     - pip install mkdocs # Install the required dependencies
 
-script: true # Skip script (Don't use this if one already exists)
+script:
+    - echo "docs.oneprocloud.com" > public/CNAME
 
 before_deploy:
     - mkdocs build --verbose --clean --strict # Build a local version of the docs
