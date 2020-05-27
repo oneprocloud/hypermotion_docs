@@ -7,9 +7,11 @@ branches: master # Set the branch to build from
 install:
     - pip install mkdocs # Install the required dependencies
 
+script:
+    - echo "docs.oneprocloud.com" > site/CNAME
+
 before_deploy:
     - mkdocs build --verbose --clean --strict # Build a local version of the docs
-    - echo "docs.oneprocloud.com" > site/CNAME
 
 deploy: # Deploy documentation to Github in the gh_pages branch
     provider: pages
