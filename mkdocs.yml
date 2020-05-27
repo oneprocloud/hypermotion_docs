@@ -1,5 +1,6 @@
 site_name: HyperMotion帮助文档
 nav:
     - HyperMotion SaaS: HyperMotion_SaaS_Ali_20191217.md
+    - Home: index.md
     - About: about.md
 theme: readthedocs
