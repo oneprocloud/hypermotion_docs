@@ -7,6 +7,8 @@ branches: master # Set the branch to build from
 install:
     - pip install mkdocs # Install the required dependencies
 
+script: true
+
 before_deploy:
     - mkdocs build --verbose --clean # Build a local version of the docs
     
