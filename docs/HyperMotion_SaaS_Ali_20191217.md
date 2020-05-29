@@ -4,23 +4,23 @@
 ## <font face="方正正黑简体" size=6 >**概述**  </font>  
 ___
 ### <font face="方正正黑简体" size=5 >**&nbsp产品概述**  </font> 
-<font face="中易宋体" size=3>&ensp;&ensp;HyperMotion SaaS是一款在线云迁移软件，
+<font face="中易宋体" size=3>HyperMotion SaaS是一款在线云迁移软件，
 </font>
-</br><font face="中易宋体" size=3>&ensp;&ensp;在保证业务系统连续性的基础上，
+</br><font face="中易宋体" size=3>在保证业务系统连续性的基础上，
 </font>
-</br><font face="中易宋体" size=3>&ensp;&ensp;可将物理服务器或虚拟机迁移至云平台，或云平台之间互相迁移，
+</br><font face="中易宋体" size=3>可将物理服务器或虚拟机迁移至云平台，或云平台之间互相迁移，
 </font>
-</br><font face="中易宋体" size=3>&ensp;&ensp;目前支持源端 VMware到目标端 AWS、阿里云、华为云、腾讯云的迁移,
+</br><font face="中易宋体" size=3>目前支持源端 VMware到目标端 AWS、阿里云、华为云、腾讯云的迁移,
 </font>
-</br><font face="中易宋体" size=3>&ensp;&ensp;该文档主要阐述使用HyperMotion SaaS产品进行云迁移的具体操作流程。
+</br><font face="中易宋体" size=3>该文档主要阐述使用HyperMotion SaaS产品进行云迁移的具体操作流程。
 </font>
-</br><font face="中易宋体" size=3>&ensp;&ensp;更多权限申请及迁移咨询：enquiry@oneprocloud.com。
+</br><font face="中易宋体" size=3>更多权限申请及迁移咨询：enquiry@oneprocloud.com。
 </font>
  ---
 ### <font face="方正正黑简体" size=5 >**&nbsp功能介绍**  </font> 
-<font face="中易宋体" size=3>&ensp;&ensp;迁移软件系统由两大模块组成: HyperMotion控制台和HyperGate组件。
-</br>&ensp;&ensp;• **HyperMotion控制台**为迁移主控台角色，负责迁移程序操作及流程控制，为SaaS端部署平台，通过URL地址可直接访问；
-</br>&ensp;&ensp;• **HyperGate组件**提供迁移数据同步及迁移流转自动适配目标平台功能，需布署在目标云主机(阿里云实例)。                        
+<font face="中易宋体" size=3>迁移软件系统由两大模块组成: HyperMotion控制台和HyperGate组件。
+</br>• **HyperMotion控制台**为迁移主控台角色，负责迁移程序操作及流程控制，为SaaS端部署平台，通过URL地址可直接访问；
+</br>• **HyperGate组件**提供迁移数据同步及迁移流转自动适配目标平台功能，需布署在目标云主机(阿里云实例)。                        
 </font>
  ***
 ### <font face="方正正黑简体" size=5 >**&nbsp步骤索引**  </font>
