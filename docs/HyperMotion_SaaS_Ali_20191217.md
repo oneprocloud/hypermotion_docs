@@ -2,10 +2,8 @@
 # <font face="方正正黑简体" size=6 >**  **  </font>  
 
 ## <font face="方正正黑简体" size=6 >**概述**  </font>  
-
-
-
-### <font face="方正正黑简体" size=5 >**产品概述**  </font> 
+___
+### <font face="方正正黑简体" size=5 >**&nbsp产品概述**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;HyperMotion SaaS是一款在线云迁移软件，
 </font>
 </br><font face="中易宋体" size=3>&ensp;&ensp;在保证业务系统连续性的基础上，
@@ -16,30 +14,22 @@
 </font>
 </br><font face="中易宋体" size=3>&ensp;&ensp;该文档主要阐述使用HyperMotion SaaS产品进行云迁移的具体操作流程。
 </font>
-</br><font face="中易宋体" size=3>&ensp;&ensp;更多权限申请及迁移咨询：enquiry@ oneprocloud.com。
+</br><font face="中易宋体" size=3>&ensp;&ensp;更多权限申请及迁移咨询：enquiry@oneprocloud.com。
 </font>
-
-
-
-### <font face="方正正黑简体" size=5 >**功能介绍**  </font> 
+ ---
+### <font face="方正正黑简体" size=5 >**&nbsp功能介绍**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;迁移软件系统由两大模块组成: HyperMotion控制台和HyperGate组件。
-</br>&ensp;&ensp;+ **HyperMotion控制台**为迁移主控台角色，负责迁移程序操作及流程控制，为SaaS端部署平台，通过URL地址可直接访问；
-</br>&ensp;&ensp;- **HyperGate组件**提供迁移数据同步及迁移流转自动适配目标平台功能，需布署在目标云主机(阿里云实例)。                        
+</br>&ensp;&ensp;• **HyperMotion控制台**为迁移主控台角色，负责迁移程序操作及流程控制，为SaaS端部署平台，通过URL地址可直接访问；
+</br>&ensp;&ensp;• **HyperGate组件**提供迁移数据同步及迁移流转自动适配目标平台功能，需布署在目标云主机(阿里云实例)。                        
 </font>
-
-
-
-
-### <font face="方正正黑简体" size=5 >**步骤索引**  </font>
+ ***
+### <font face="方正正黑简体" size=5 >**&nbsp步骤索引**  </font>
 ![索引列表](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/1.png)
 
-
-
-
+</br></br></br>
 ## <font face="方正正黑简体" size=6 >**注册&登陆&授权**  </font> 
 
-
-### <font face="方正正黑简体" size=5 >**账号注册**  </font> 
+### <font face="方正正黑简体" size=5 >**&nbsp账号注册**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;我们的客服人员会向您发送注册的邮件邀请，点击‘注册账号’按钮，</font>
 ![账号注册](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/2.png)
 <font face="中易宋体" size=3></br>&ensp;&ensp;进入系统注册界面，</font>
@@ -49,19 +39,19 @@
 </br>&ensp;&ensp;&ensp;&ensp;&ensp;*3. 如果有问题，请及时联系您的企业管理员。*
 </font>
 
-### <font face="方正正黑简体" size=5 >**登陆访问**  </font> 
+### <font face="方正正黑简体" size=5 >**&nbsp登陆访问**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;注册完成后，系统会自动跳转至登陆界面，
 </br>&ensp;&ensp;如未跳转，请直接访问：https://office.oneprocloud.com:8888/
 </br>&ensp;&ensp;推荐使用谷歌浏览器。
 </font>
 ![login](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/4.png)
 
-### <font face="方正正黑简体" size=5 >**概览视图**  </font> 
+### <font face="方正正黑简体" size=5 >**&nbsp概览视图**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;登录后，系统进入概览页面，</font>
 ![概览界面](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/5.png)
 <font face="中易宋体" size=3></br>&ensp;&ensp;建议步骤：【1.license授权区】获取授权→【2.源端连接设置区】连接源端VWware平台→【3.目标端连接设置区】连接目标端云平台→【4.迁移向导区】开始迁移。</font>
 
-### <font face="方正正黑简体" size=5 >**获取授权**  </font> 
+### <font face="方正正黑简体" size=5 >**&nbsp获取授权**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;【运营管理】→【商品管理】，
 </br>&ensp;&ensp;勾选您所要购买的License授权商品，点击‘立即购买’，
 </font>
@@ -72,14 +62,16 @@
 <font face="中易宋体" size=3>&ensp;&ensp;购买成功后系统提示‘购买成功，同时可在【设置】→【授权】中查看已授权信息。
 </font>
 
+</br></br></br>
 ## <font face="方正正黑简体" size=6 >**操作指南**  </font> 
 
-### <font face="方正正黑简体" size=5 >**配置向导**  </font> 
+### <font face="方正正黑简体" size=5 >**&nbsp配置向导**  </font> 
 
-#### <font face="方正正黑简体" size=5 >**源端连接设置**  </font> 
+#### <font face="方正正黑简体" size=5 >**&nbsp&nbsp源端连接设置**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;返回概览界面，点击迁移向导中的‘选择主机’步骤，进入源端连接设置界面，
 </font>
 ![获取授权源端连接12](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/8.png)
+</br>
 <font face="中易宋体" size=3>&ensp;**1. 下载和安装同步节点**
 </br>&ensp;&ensp;a. 点击下载链接，系统会自动将OVA文件下载至本地
 </font>
@@ -93,6 +85,7 @@
 ![源端连接3](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/10.png)
 <font face="中易宋体" size=3>&ensp;&ensp;安装完成后点击【下一步】按钮，
 </font>
+</br>
 <font face="中易宋体" size=3></br>&ensp;**2. 创建VWware连接**
 </font>
 ![源端连接4](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/11.png)
@@ -113,13 +106,14 @@ vCenter账户密码  | vCenter或ESXi的密码
 </font>
 
 
-#### <font face="方正正黑简体" size=5 >**目标端连接设置**  </font> 
+#### <font face="方正正黑简体" size=5 >**&nbsp&nbsp目标端连接设置**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;返回概览界面，点击目标云平台连接中的‘阿里云’图标，
 </font>
 ![目标端1](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/12.png)
 <font face="中易宋体" size=3>&ensp;&ensp;进入目标端连接界面,根据安装步骤操作：
 </font>
 ![目标端2](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/13.png)
+</br>
 <font face="中易宋体" size=3>&ensp;**1.   安装部署HyperGate**
 </font>
 <font face="中易宋体" size=3></br>&ensp;&ensp;a. 创建一台实例，命名为**HyperGate**
@@ -137,6 +131,7 @@ vCenter账户密码  | vCenter或ESXi的密码
 ![目标端4](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/15.png)
 <font face="中易宋体" size=3>&ensp;&ensp;安装阶段步骤完成后点击【下一步】按钮，
 </font>
+</br>
 <font face="中易宋体" size=3></br>&ensp;**2.   填写云平台认证信息**
 </font>
 ![目标端5](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/16.png)
@@ -151,6 +146,7 @@ Access Key ID | 阿里云的个人账户密钥ID  (详情参见附录二 阿里�
 AccessKeySecret  | 阿里云的个人账户密钥(详情参见 附录二 阿里云平台认证信息获取)
 API接入地址 | 默认 ecs.aliyuncs.com
 
+</br>
 <font face="中易宋体" size=3>&ensp;**3.   填写云平台认证信息**
 </font>
 ![目标端6](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/17.png)
@@ -168,10 +164,11 @@ API接入地址 | 默认 ecs.aliyuncs.com
 </font>
 ![目标端7](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/18.png)
 
-### <font face="方正正黑简体" size=5 >**迁移向导**  </font> 
+### <font face="方正正黑简体" size=5 >**&nbsp迁移向导**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;返回概览界面，点击迁移向导中的‘选择主机’步骤，进入迁移向导界面，
 </font>
 ![迁移1](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/19.png)
+</br>
 <font face="中易宋体" size=3>&ensp;**1.   选择待迁移主机**
 </font>
 <font face="中易宋体" size=3></br>&ensp;&ensp;a. 进入迁移向导界面后，选择【添加主机】，
@@ -187,6 +184,7 @@ API接入地址 | 默认 ecs.aliyuncs.com
 </font>
 ![迁移2](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/23.png)
 
+</br>
 <font face="中易宋体" size=3>&ensp;**2.   数据拷贝**
 </font>
 <font face="中易宋体" size=3></br>&ensp;&ensp;a. 选择已经设定的一个存储设备连接，点击【确定】
@@ -198,6 +196,8 @@ API接入地址 | 默认 ecs.aliyuncs.com
 <font face="中易宋体" size=3></br>&ensp;&ensp;c. 等待数据同步完成，完成继续点击下一步
 </font>
 ![迁移2](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/26.png)
+
+</br>
 <font face="中易宋体" size=3>&ensp;**3.  开始迁移并完成迁移**
 </font>
 <font face="中易宋体" size=3></br>&ensp;&ensp;a. 选择待迁移主机，点击启动主机
@@ -212,7 +212,7 @@ API接入地址 | 默认 ecs.aliyuncs.com
 <font face="中易宋体" size=2>&ensp;&ensp;*注：待迁移主机将在目标平台上创建。请到HyperGate所在租户查看资源。*
 </font>
 
-### <font face="方正正黑简体" size=5 >**资源清理**  </font> 
+### <font face="方正正黑简体" size=5 >**&nbsp资源清理**  </font> 
 <font face="中易宋体" size=3>&ensp;&ensp;a. 选择已迁移完成的主机，点击【资源清理】
 </font>
 ![资源1](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/30.png)
