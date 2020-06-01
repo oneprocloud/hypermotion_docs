@@ -4,7 +4,7 @@
 ## <font face="方正正黑简体" size=6 >**概述**  </font>  
 ___
 ### <font face="方正正黑简体" size=5 >**产品概述**  </font> 
----
+
 <font face="中易宋体" size=3>HyperMotion SaaS是一款在线云迁移软件，
 </font>
 </br><font face="中易宋体" size=3>在保证业务系统连续性的基础上，
@@ -19,23 +19,22 @@ ___
 </font>
  ---
 ### <font face="方正正黑简体" size=5 >**功能介绍**  </font> 
- ---
+
 <font face="中易宋体" size=3>迁移软件系统由两大模块组成: HyperMotion控制台和HyperGate组件。
 </br>• **HyperMotion控制台**为迁移主控台角色，负责迁移程序操作及流程控制，为SaaS端部署平台，通过URL地址可直接访问；
 </br>• **HyperGate组件**提供迁移数据同步及迁移流转自动适配目标平台功能，需布署在目标云主机(阿里云实例)。                        
 </font>
  ***
 ### <font face="方正正黑简体" size=5 >**步骤索引**  </font>
- ---
+
 ![索引列表](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/1.png)
 ___
 
-</br>
 ## <font face="方正正黑简体" size=6 >**注册&登陆&授权**  </font> 
  ---
 ### <font face="方正正黑简体" size=5 >**账号注册**  </font> 
 <font face="中易宋体" size=3>我们的客服人员会向您发送注册的邮件邀请，点击‘注册账号’按钮，</font>
-&ensp;&ensp;![账号注册](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/2.png#width="50%" )
+&ensp;&ensp;![账号注册](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/2.png# ="50%" )
 <font face="中易宋体" size=3></br>进入系统注册界面，</font>
 &ensp;&ensp;![账号注册2](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/3.png)
 <font face="中易宋体" size=2></br>&ensp;&ensp;*注：1. 发送连接邮箱地址：hypermotion@oneprocloud.com；*                               
@@ -66,7 +65,6 @@ ___
 <font face="中易宋体" size=3>购买成功后系统提示‘购买成功，同时可在【设置】→【授权】中查看已授权信息。
 </font>
  ---
-</br>
 ## <font face="方正正黑简体" size=6 >**操作指南**  </font> 
  ---
 ### <font face="方正正黑简体" size=5 >**源端连接设置**  </font> 
