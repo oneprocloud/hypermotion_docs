@@ -34,9 +34,9 @@ ___
  ---
 ### <font face="方正正黑简体" size=5 >**账号注册**  </font> 
 <font face="中易宋体" size=3>我们的客服人员会向您发送注册的邮件邀请，点击‘注册账号’按钮，</font>
-&ensp;&ensp;![账号注册](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/2.png)
+&ensp;&ensp;![账号注册](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/2.png){:height="80%" width="80%"}
 <font face="中易宋体" size=3></br>进入系统注册界面，</font>
-&ensp;&ensp;![账号注册2](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/3.png){:height="90%" width="90%"}
+&ensp;&ensp;![账号注册2](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/3.png){:height="80%" width="80%"}
 <font face="中易宋体" size=2></br>&ensp;&ensp;*注：1. 发送连接邮箱地址：hypermotion@oneprocloud.com；*                               
 &ensp;&ensp;&ensp;&ensp;&ensp;*2. 密码需设置为6-20个字符且必须包含字母和数字，支持特殊字符；*
 </br>&ensp;&ensp;&ensp;&ensp;&ensp;*3. 如果有问题，请及时联系您的企业管理员。*
