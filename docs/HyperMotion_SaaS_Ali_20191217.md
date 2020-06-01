@@ -4,6 +4,7 @@
 ## <font face="方正正黑简体" size=6 >**概述**  </font>  
 ___
 ### <font face="方正正黑简体" size=5 >**产品概述**  </font> 
+---
 <font face="中易宋体" size=3>HyperMotion SaaS是一款在线云迁移软件，
 </font>
 </br><font face="中易宋体" size=3>在保证业务系统连续性的基础上，
@@ -18,12 +19,14 @@ ___
 </font>
  ---
 ### <font face="方正正黑简体" size=5 >**功能介绍**  </font> 
+ ---
 <font face="中易宋体" size=3>迁移软件系统由两大模块组成: HyperMotion控制台和HyperGate组件。
 </br>• **HyperMotion控制台**为迁移主控台角色，负责迁移程序操作及流程控制，为SaaS端部署平台，通过URL地址可直接访问；
 </br>• **HyperGate组件**提供迁移数据同步及迁移流转自动适配目标平台功能，需布署在目标云主机(阿里云实例)。                        
 </font>
  ***
 ### <font face="方正正黑简体" size=5 >**步骤索引**  </font>
+ ---
 ![索引列表](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/1.png)
 ___
 
@@ -111,6 +114,7 @@ vCenter账户密码  | vCenter或ESXi的密码
 
  ---
 ### <font face="方正正黑简体" size=5 >**目标端连接设置**  </font> 
+ ---
 <font face="中易宋体" size=3>&ensp;&ensp;返回概览界面，点击目标云平台连接中的‘阿里云’图标，
 </font>
 ![目标端1](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/12.png)
@@ -169,6 +173,7 @@ API接入地址 | 默认 ecs.aliyuncs.com
 ![目标端7](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/18.png)
  ---
 ### <font face="方正正黑简体" size=5 >**迁移向导**  </font> 
+ ---
 <font face="中易宋体" size=3>&ensp;&ensp;返回概览界面，点击迁移向导中的‘选择主机’步骤，进入迁移向导界面，
 </font>
 ![迁移1](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/19.png)
@@ -215,8 +220,9 @@ API接入地址 | 默认 ecs.aliyuncs.com
 ![迁移2](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/29.png)
 <font face="中易宋体" size=2>&ensp;&ensp;*注：待迁移主机将在目标平台上创建。请到HyperGate所在租户查看资源。*
 </font>
-
+ ---
 ### <font face="方正正黑简体" size=5 >**资源清理**  </font> 
+ ---
 <font face="中易宋体" size=3>&ensp;&ensp;a. 选择已迁移完成的主机，点击【资源清理】
 </font>
 ![资源1](https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/30.png)
