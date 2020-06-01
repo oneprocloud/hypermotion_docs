@@ -8,9 +8,11 @@ ___
 </font>
 </br><font face="中易宋体" size=3>可将物理服务器或虚拟机迁移至云平台，或云平台之间互相迁移，
 </font>
-</br><font face="中易宋体" size=3>目前支持源端 VMware到目标端 AWS、阿里云、华为云、腾讯云的迁移,
+</br><font face="中易宋体" size=3>分为SaaS版和单机版两个版本：
 </font>
-</br><font face="中易宋体" size=3>该文档主要阐述使用HyperMotion SaaS产品进行云迁移的具体操作流程。
+</br><font face="中易宋体" size=3>&ensp;• <**SaaS版**>：一般适用于目标平台为共有云的迁移；
+</font>
+</br><font face="中易宋体" size=3>&ensp;• <**单机版**>：一般适用于目标平台为私有云的迁移。
 </font>
 </br><font face="中易宋体" size=3>更多权限申请及迁移咨询：enquiry@oneprocloud.com。
 </font>
@@ -21,7 +23,7 @@ ___
 <font face="中易宋体" size=4>&ensp;[**HyperMotion SaaS版**](#HyperMotion SaaS版)
 </font>
 </br>
-<font face="中易宋体" size=3>&ensp;&ensp;&ensp;1. &ensp;[用户手册](#账号注册)
+<font face="中易宋体" size=3>&ensp;&ensp;&ensp;1. &ensp;[用户手册](#HyperMotion SaaS版)
 </font>
 </br>
 <font face="中易宋体" size=3>&ensp;&ensp;&ensp;2. &ensp;[技术白皮书](#登陆访问)
