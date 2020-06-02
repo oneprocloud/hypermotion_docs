@@ -28,7 +28,7 @@ ___
 <font face="中易宋体" size=3>&ensp;&ensp;&ensp;2. &ensp;[技术白皮书](#登陆访问)
 </font>
 </br>
-<font face="中易宋体" size=3>&ensp;&ensp;&ensp;3. &ensp;[操作视频](#登陆访问)
+<font face="中易宋体" size=3>&ensp;&ensp;&ensp;3. &ensp;[操作视频](https://space.dingtalk.com/s/gwHOAf-kdALOJ2mjjgPaACAyZmNmNDQ4ZmNjY2U0ZGM0ODg4MDYxZTk4ZTk5MjcwNg 密码: 1NQC)
 </font>
 </br></br>
 <font face="中易宋体" size=4> &ensp;[**HyperMotion单机版**](about.md)
