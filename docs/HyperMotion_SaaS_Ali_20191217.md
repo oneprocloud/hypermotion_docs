@@ -73,7 +73,7 @@ ___
 ### <font face="方正正黑简体" size=5 >**登陆访问**  </font> 
 <font face="中易宋体" size=3>注册完成后，系统会自动跳转至登陆界面，
 </br>如未跳转，请直接访问：https://office.oneprocloud.com:8888/
-</br>推荐使用谷歌浏览器。
+</br>支持以下浏览器：Chrome(谷歌)，Firefox（火狐），Safari。
 </font>
 </br></br>
 <img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/4.png" width="650">

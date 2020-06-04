@@ -9,9 +9,9 @@ ___
 </font>
 </br><font face="中易宋体" size=3>HyperMotion迁移工具分为SaaS版和单机版两个版本：
 </font>
-</br><font face="中易宋体" size=3>&ensp;• <**SaaS版**>：一般适用于目标平台为共有云的迁移；
+</br><font face="中易宋体" size=3>&ensp;• <**SaaS版**>：无需安装部署， 公网域名访问登录使用；
 </font>
-</br><font face="中易宋体" size=3>&ensp;• <**单机版**>：一般适用于目标平台为私有云的迁移。
+</br><font face="中易宋体" size=3>&ensp;• <**单机版**>：安装部署在指定环境内使用。
 </font>
 </br><font face="中易宋体" size=3>更多权限申请及迁移咨询：enquiry@oneprocloud.com。
 </font>
@@ -41,5 +41,8 @@ ___
 </font>
 </br>
 <font face="中易宋体" size=3>&ensp;&ensp;&ensp;3. &ensp;[操作视频](#登陆访问)
+</font>
+</br>
+<font face="中易宋体" size=3>&ensp;&ensp;&ensp;4. &ensp;[安装文件下载](#登陆访问)
 </font>
 </br>
