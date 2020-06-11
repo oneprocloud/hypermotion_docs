@@ -139,7 +139,7 @@ vCenter账户密码  | vCenter或ESXi的密码
 </font>
 </br>
 </br>
-&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/3.png" width="500">
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/3.png" width="600">
 </br>
 </br>
 <font face="中易宋体" size=3>**4.  设置网络（仅VMware平台虚机需要配置此步骤）**
