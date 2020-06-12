@@ -70,9 +70,9 @@ vCenter账户密码  | vCenter或ESXi的密码
 
 <font face="中易宋体" size=3>**3.  登陆虚机或实例控制台，首次登陆修改密码**
 </font>
-</br><font face="中易宋体" size=3>&ensp;登录名：operator
+</br><font face="中易宋体" size=3>&ensp;登录名：<u>operator</u>
 </font>
-</br><font face="中易宋体" size=3>&ensp;登录密码：P@ssw0rd
+</br><font face="中易宋体" size=3>&ensp;登录密码：<u>P@ssw0rd</u>
 </font>
 </br>
 </br>
@@ -242,6 +242,8 @@ ___
 
 <font face="中易宋体" size=3>请根据实际需要在以下四种连接方法中任选一种进行连接：
 </font>
+- **方法一：无代理方式-连接VMware平台**
+</br>
 
  <font face="中易宋体" size=3>**4. 目标端连接设置**
 </font>
