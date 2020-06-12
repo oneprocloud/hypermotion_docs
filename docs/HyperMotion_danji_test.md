@@ -157,15 +157,30 @@ ___
 <font face="中易宋体" size=3>支持以下浏览器：Chrome(谷歌)，Firefox（火狐），Safari，
 </font>
 </br>
-<font face="中易宋体" size=3>访问地址：http://<HyperMotion IP>:18088
+<font face="中易宋体" size=3>访问地址：http://< HyperMotion IP>:18088
 </font>
 </br></br>
-<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/4.png" width="650">
-</br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/27.png" width="650>
+</br></br>
  ---
  <p id="概览视图"></p>
 ___
-####<font face="方正正黑简体" size=4 color=blue>**配置向导**</font> 
+####<font face="方正正黑简体" size=4 color=blue>**配置向导**</font>
+<font face="中易宋体" size=3>**1. 服务健康检查**
+</font>
+</br></br>
+ <font face="中易宋体" size=3>**2. 激活License**
+</font>
+</br></br>
+ <font face="中易宋体" size=3>**3. 源端连接设置**
+</font>
+</br></br>
+ <font face="中易宋体" size=3>**4. 目标端连接设置**
+</font>
+</br></br>
+ <font face="中易宋体" size=3>**5. 配置向导完成**
+</font>
+</br></br>
 ___
 ####<font face="方正正黑简体" size=4 color=blue>**迁移向导**</font>
 ___
