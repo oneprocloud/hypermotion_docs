@@ -26,31 +26,34 @@ ___
 ___
 
 ### <font face="方正正黑简体" size=5 >** 安装包下载**  </font> 
-<font face="中易宋体" size=3>请获取以下安装包并上传至指定平台：
+<font face="中易宋体" size=3>请获取以下安装包并上传至指定平台进行安装：
 </font>
-</br>
-<font face="中易宋体" size=3>**1.HyperMotion控制台**
-</font>
-</br>
 
-- VMware平台安装
-【*注释：如果迁移源端为VMware平台，则必须部署在源端*】</br>
+<font face="中易宋体" size=3>**1.HyperMotion控制台**（以下安装主机二选一）
+</font>
+
+- 选项一：安装在在VMware主机</br>
+<font face="中易宋体" size=2 color=red>【*！如果迁移源端为VMware平台，则必须选择此项*】
+</font>
+</br>
 <a href="http://office.oneprocloud.com:18888/iso/hypermotion/haitong/HyperMotion-191227-20200224-full.iso" download="HyperMotion-V3-full.iso">HyperMotion ISO包下载</a><br>
 
-- 云端安装<br>
-<a href="http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw" download="HyperMotion-V3-full.raw">HyperMotion RAW镜像下载</a>
+- 选项二：安装在云平台主机
+<br>
+<a href="http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw" download="HyperMotion-V3-full.raw">HyperMotion RAW镜像包下载</a>
 
 <font face="中易宋体" size=3>**2.Hypergate云端数据代理**
 </font>
-
-此组件需要部署在迁移的目标云平台</br>
-
-- 下载链接</br>
-<a href="http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw" download="HyperMotion-V3-full.raw">HyperMotion RAW镜像下载</a>
+</br>
+<font face="中易宋体" size=2 color=red>&ensp;&ensp;&ensp;【*！此组件必须部署在目标云平台*】
+</font>
+</br>
+<a href="http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw" download="HyperMotion-V3-full.raw">&ensp;&ensp;&ensp;HyperMotion RAW镜像包下载（同上选项二，如已下载无需重复下载）
+</a>
  ***
 ### <font face="方正正黑简体" size=5 >** 安装指南** </font> 
 ___
-####<font face="方正正黑简体" size=4 color=blue>**步骤一：HyperMotion控制台**  </font> 
+####<font face="方正正黑简体" size=4 color=blue >**步骤一：HyperMotion控制台**  </font> 
   ---
 <font face="中易宋体" size=3>**1.   将获取的镜像包上传至源端VMware平台或云平台**
 </font>
