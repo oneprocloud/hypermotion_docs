@@ -19,7 +19,8 @@
 ___
 
 ### <font face="方正正黑简体" size=5 >** 迁移流程图（动画）**  </font> 
-![迁移流程动画](https://github.com/oneprocloud/hypermotion_docs/blob/master/images/image_hm_danji/donghua.mp4)
+
+<video src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/donghua.mp4" width="600px" height="400px" controls="controls"></video>
 ___
 
 ### <font face="方正正黑简体" size=5 >** 安装包下载**  </font> 
@@ -103,7 +104,7 @@ vCenter账户密码  | vCenter或ESXi的密码
 </br>
 </br>
  ---
-####<font face="方正正黑简体" size=4 color=blue>**步骤二：HyperGate组件**  </font> 
+####<font face="方正正黑简体" size=4 color=blue>**步骤二：HyperGate云端数据代理**  </font> 
 <font face="中易宋体" size=3>**1. 创建实例，命名为 HyperGate **
 </font>
 </br>
@@ -245,6 +246,9 @@ ___
  ---
 <font face="中易宋体" size=3>**3. 源端连接设置**
 </font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;请根据实际需要在以下四种连接方法中任选一种进行连接：
+</font>
 </br>
 
 <font face="中易宋体" size=3 color=blue>&ensp;•  **方法一：无代理方式-连接VMware平台**
@@ -365,17 +369,43 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 <font face="中易宋体" size=3> 
 </font>
 </br></br>
-<font face="中易宋体" size=3>&ensp;在待迁移物理机上安装Agent
+<font face="中易宋体" size=3>&ensp;在待迁移物理机上安装Agent，
 </font>
 </br>
-<font face="中易宋体" size=3>&ensp;物理机端安装操作步骤可参考 附录一Windows Agent安装说明;
+<font face="中易宋体" size=2>&ensp;*注：物理机端安装操作步骤可参考 附录一Windows Agent安装说明;*
 </font>
-</br>
+</br></br>
 <font face="中易宋体" size=3>&ensp;所有对Agent的操作均在HyperMotion端触发，Windows Agent服务正常启动后，可在HyperMotion中看到注册的主机。
 </font>
 </br>
+</br>
 
 <font face="中易宋体" size=3 color=blue>&ensp;•  **方法四：代理方式-连接Linux主机**
+</font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;选择所要迁移Linux主机图标，自动跳转下一步，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/41.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;点击选择所要获取的Agent安装包，进行下载，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/42.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;在待迁移Linux主机上安装Agent，
+</font>
+</br>
+<font face="中易宋体" size=2>&ensp;*注：Liunx主机端安装操作步骤可参考 附录二 Linux  Agent安装说明；*
+</font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;所有对Agent的操作均在HyperMotion端触发，linux  Agent服务正常启动后，可在HyperMotion中看到注册的主机。
 </font>
 </br>
  ---
@@ -394,14 +424,141 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 </font>
 </br></br>
 &ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/44.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
+</font>
 </br></br>
 <font face="中易宋体" size=3> 
 </font>
+<font face="中易宋体" size=3>&ensp;需要填写的信息说明
+</font>
 
+字段  | 含义
+------------- | ----------------------
+云平台服务注册地址  | 云平台已安装HyperGate的虚机IP地址，需与HyperMotion与阿里云互通
+云平台服务端口  | 默认的服务端口为18090
+Access Key ID | 阿里云的个人账户密钥ID  (详情参见附录二 阿里云平台认证信息获取)
+AccessKeySecret  | 阿里云的个人账户密钥(详情参见 附录二 阿里云平台认证信息获取)
+API接入地址 | 默认 ecs.aliyuncs.com
+
+</br>
+
+<font face="中易宋体" size=3>&ensp;需要填写的信息说明2
+</font>
+
+字段  | 含义
+------------- | ----------------------
+地域ID  |选择安装HyperGate虚机所在地域（例：华北、华东、香港）
+可用区ID  | 选择安装HyperGate虚机所在区域 （如华北1可用区B  华北1 可用区C）
+镜像ID | 创建的阿里云的镜像ID（详情参见附录二 阿里云平台认证信息获取）
+
+</br>
  ---
  <font face="中易宋体" size=3>**5. 配置向导完成**
+</font>
+</br>
+
+<font face="中易宋体" size=3>&ensp;目标平台配置信息填写完成后，点击【下一步】，确认配置信息无误后配置向导完成，系统提示修改密码后重新登录。
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/45.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
 </font>
 </br></br>
 ___
 ####<font face="方正正黑简体" size=4 color=blue>**迁移向导**</font>
-___
+
+<font face="中易宋体" size=3>&ensp;返回概览界面，点击迁移向导中的‘选择主机’步骤，进入迁移向导界面，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/46.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+</br></br>
+<font face="中易宋体" size=3>**&ensp;1.   选择待迁移主机**
+</font>
+</br>
+<font face="中易宋体" size=3>&ensp;a. 进入迁移向导界面后，选择【添加主机】，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/48.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+</br></br>
+<font face="中易宋体" size=3>b. 选择【源端类型】，选择‘VMware’，
+</font>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+</br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/49.png" width="650>
+</br></br>
+<font face="中易宋体" size=3>c. 列表中自动列出vCenter平台连接下的全部虚拟机，勾选需迁移的虚机后，点击【确认】，
+</font>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+</br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/50png" width="650>
+</br></br>
+<font face="中易宋体" size=3>d. 系统跳转回‘选择主机’界面，选择添加的待迁移虚机，点击下一步
+</font>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+</br>
+<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/23.png" width="650">
+</br></br>
+<font face="中易宋体" size=3>**2.   数据拷贝**
+</font>
+<font face="中易宋体" size=3></br>a. 选择已经设定的一个存储设备连接，点击【确定】
+</font>
+</br></br>
+<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/24.png" width="650">
+</br></br>
+<font face="中易宋体" size=3>b. 同步数据，在跳出“同步数据”对话框中点击【确定】，
+</font>
+</br></br>
+<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/25.png" width="650">
+</br>
+<font face="中易宋体" size=3></br>c. 等待数据同步完成，完成继续点击下一步
+</font>
+</br></br>
+<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/26.png" width="650">
+</br></br>
+<font face="中易宋体" size=3>**3.  开始迁移并完成迁移**
+</font>
+<font face="中易宋体" size=3></br>a. 选择待迁移主机，点击启动主机
+</font>
+</br></br>
+<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/27.png" width="650">
+</br></br>
+<font face="中易宋体" size=3>b. 系统自动跳出提示框，选择确认无误后点击【确定】
+</font>
+</br></br>
+<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/28.png" width="650">
+</br></br>
+<font face="中易宋体" size=3>c. 系统提示‘开始启动主机’，等待启动主机，系统提示‘启动系统完成’
+</font>
+</br></br>
+<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/29.png" width="650">
+</br>
+<font face="中易宋体" size=2>&ensp;&ensp;*注：待迁移主机将在目标平台上创建。请到HyperGate所在租户查看资源。*
+</font>
+ ---
+
+<font face="中易宋体" size=3>a. 选择已迁移完成的主机，点击【资源清理】
+</font>
+</br></br>
+<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/30.png" width="650">
+</br></br>
+<font face="中易宋体" size=3>b.  系统自动弹出‘资源清理’，勾选‘强制清理’，点击【确定】
+</font>
+</br></br>
+<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_saas/31.png" width="650">
+</br></br>
+<font face="中易宋体" size=3>c.  清理成功后，可在【已清理】界面查看已迁主机的具体地址。
+</font>
