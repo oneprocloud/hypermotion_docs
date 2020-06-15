@@ -243,21 +243,138 @@ ___
 </br>
 
  ---
- <font face="中易宋体" size=3>**3. 源端连接设置**
-</font>
-
-<font face="中易宋体" size=3>请根据实际需要在以下四种连接方法中任选一种进行连接：
+<font face="中易宋体" size=3>**3. 源端连接设置**
 </font>
 </br>
+
 <font face="中易宋体" size=3 color=blue>&ensp;•  **方法一：无代理方式-连接VMware平台**
 </font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;选择VMware图标，自动跳转下一步，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/33.png" width="650>
 </br>
+<font face="中易宋体" size=3> 
+</font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;填写vCenter相关信息后选择【下一步】，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/34.png" width="650>
+<font face="中易宋体" size=3> 
+</font>
+
+<font face="中易宋体" size=3>&ensp;需要填写的信息说明
+</font>
+
+字段  | 含义
+------------- | -------------
+vCenter IP 地址&nbsp; &nbsp; &nbsp; &nbsp;    | vCenter或ESXi地址，例：192.168.10.4
+vCenter IP 地址端口  | 默认为443
+vCenter账户  | vCenter或ESXi的用户名
+vCenter账户密码  | vCenter或ESXi的密码
+
+</br></br>
+<font face="中易宋体" size=3>&ensp;系统提示’创建源端连接成功’，点击下一步，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/35.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+</br></br>
+
+
 <font face="中易宋体" size=3 color=blue>&ensp;•  **方法二：无代理方式-连接OpenStack平台**
 </font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;选择OpenStack图标，自动跳转下一步，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/36.png" width="650>
 </br>
+<font face="中易宋体" size=3> 
+</font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;填写OpenStack源平台信息后选择【下一步】，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/37.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+
+<font face="中易宋体" size=3>&ensp;需要填写的信息说明
+</font>
+
+字段  | 含义
+-----------------| -------------
+云平台地址&nbsp; &nbsp; &nbsp; &nbsp;    | 例：http://192.168.11.201:5000/v3/
+云平台域  | region（例：RegionOne、RG1、RG2）
+租户组  | 项目组域名（默认为default）
+云平台租户      | 租户、或项目名称、一般为登陆云平台的用户名(例：admin、xiaoming)
+用户组  | 用户组域名 (默认为default)
+云平台用户  | 登陆云平台的用户名
+用户密码  | 登陆云平台的密码
+
+
+</br></br>
+<font face="中易宋体" size=3>&ensp;填写Ceph信息后选择【下一步】，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/38.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+
+<font face="中易宋体" size=3>&ensp;需要填写的信息说明2
+</font>
+
+字段 | 含义
+-----------------| -------------
+Ceph控制节点地址&nbsp; &nbsp; &nbsp; &nbsp;   | ceph控制节点的地址  （例如：10.0.0.201） 需确认双方可以网络互通
+Ceph集群 | 目前仅支持ceph
+Ceph存储池  | ceph节点的存储池名称，默认为volumes
+Ceph用户名     |ceph的用户名（例如：cinder、admin）
+Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.admin.keyring查看
+
+</br>
+<font face="中易宋体" size=3>&ensp;系统提示’创建源端连接成功’，点击下一步。
+</font>
+</br></br>
+
+
+
 <font face="中易宋体" size=3 color=blue>&ensp;•  **方法三：代理方式-连接windows主机**
 </font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;选择物理机机X86图标，自动跳转下一步，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/39.png" width="650>
 </br>
+<font face="中易宋体" size=3> 
+</font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;点击选择所要获取的Agent安装包，进行下载，
+</font>
+</br></br>
+&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/40.png" width="650>
+</br>
+<font face="中易宋体" size=3> 
+</font>
+</br></br>
+<font face="中易宋体" size=3>&ensp;在待迁移物理机上安装Agent
+</font>
+</br>
+<font face="中易宋体" size=3>&ensp;物理机端安装操作步骤可参考 附录一Windows Agent安装说明;
+</font>
+</br>
+<font face="中易宋体" size=3>&ensp;所有对Agent的操作均在HyperMotion端触发，Windows Agent服务正常启动后，可在HyperMotion中看到注册的主机。
+</font>
+</br>
+
 <font face="中易宋体" size=3 color=blue>&ensp;•  **方法四：代理方式-连接Linux主机**
 </font>
 </br>
