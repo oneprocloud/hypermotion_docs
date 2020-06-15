@@ -20,7 +20,9 @@ ___
 
 ### <font face="方正正黑简体" size=5 >** 迁移流程图（动画）**  </font> 
 
-<video src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/donghua.mp4" width="600px" height="400px" controls="controls"></video>
+<video src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/donghua.mp4" width="600px" height="400px" controls="controls" loop="loop"></video>
+
+
 ___
 
 ### <font face="方正正黑简体" size=5 >** 安装包下载**  </font> 
