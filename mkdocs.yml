@@ -2,6 +2,6 @@ site_name: HyperMotion帮助文档
 nav:
     - index.md
     - HyperMotion SaaS版: HyperMotion_SaaS_20191217.md
-    - HyperMotion单机版: HyperMotion_danji_20191227.md
-    - HyperMotion测试: HyperMotion_danji_test.md
+    
+    - HyperMotion 单机版: HyperMotion_danji_test.md
 theme: readthedocs
