@@ -19,7 +19,7 @@
 ___
 
 ### <font face="方正正黑简体" size=5 >** 迁移流程图（动画）**  </font> 
-![在makrdown上生成gif动画](http://photocdn.sohu.com/20151125/mp44183873_1448421587734_7.gif)
+![迁移流程动画](https://github.com/oneprocloud/hypermotion_docs/blob/master/images/image_hm_danji/donghua.mp4)
 ___
 
 ### <font face="方正正黑简体" size=5 >** 安装包下载**  </font> 
