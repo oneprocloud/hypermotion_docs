@@ -1,7 +1,33 @@
 site_name: HyperMotion帮助文档
+
 nav:
     - index.md
     - HyperMotion SaaS版: HyperMotion_SaaS_20191217.md
-    
-    - HyperMotion 单机版: HyperMotion_danji_test.md
+    - HyperMotion 单机版:  
+        - 概述 : HyperMotion_danji/1.HyperMotion_SaaS_gaishu.md
+        - 阿里云（公有云）: 
+             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_donghua.md
+             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_anzhuangbao.md
+             安装指南: 
+                  步骤一：HyperMotion控制台: HyperMotion_danji/2.HyperMotion_SaaS_anzhuanghm.md
+                  步骤二：HyperGate云端数据代理: HyperMotion_danji/5.HyperMotion_SaaS_ali_anzhuanghg.md
+             网络策略开通: HyperMotion_danji/6.HyperMotion_SaaS_ali_huanjing.md
+             操作指南: 
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
+                  迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md
+        - AWS: 
+             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_donghua.md
+             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_anzhuangbao.md
+             安装指南: 
+                  步骤一：HyperMotion控制台: HyperMotion_danji/2.HyperMotion_SaaS_anzhuanghm.md
+                  步骤二：HyperGate云端数据代理: HyperMotion_danji/5.HyperMotion_SaaS_ali_anzhuanghg.md
+             网络策略开通: HyperMotion_danji/6.HyperMotion_SaaS_ali_huanjing.md
+             操作指南: 
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
+                  迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md
+        - Azure: 
+             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_donghua.md
+             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_anzhuangbao.md
 theme: readthedocs
