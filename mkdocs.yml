@@ -2,12 +2,29 @@ site_name: HyperMotion帮助文档
 
 nav:
     - index.md
-    - HyperMotion SaaS版: HyperMotion_SaaS_20191217.md
+    - HyperMotion SaaS版:
+        - 概述 : HyperMotion_SaaS//2.HyperMotion_SaaS_gaishu.md
+        - 注册&登录&授权: 
+             账号注册: HyperMotion_SaaS/3.HyperMotion_SaaS_zhuce.md
+             登陆访问: HyperMotion_SaaS/4.HyperMotion_SaaS_login.md
+             概览视图: HyperMotion_SaaS/5.HyperMotion_SaaS_gailan.md
+             获取授权: HyperMotion_SaaS/6.HyperMotion_SaaS_license.md
+        - 操作指南: 
+             源端连接设置: HyperMotion_SaaS/7.HyperMotion_SaaS_yuan.md
+             目标端连接设置: 
+                  连接阿里云（公有云）: HyperMotion_SaaS/8.HyperMotion_SaaS_ali.md
+                  连接AWS: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
+                  连接Azure: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
+                  连接腾讯云: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
+                  连接青云: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
+                  连接金山云: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
+                  连接UCloud: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
+             迁移向导: HyperMotion_SaaS/9.HyperMotion_SaaS_qianyi.md          
     - HyperMotion 单机版:  
         - 概述 : HyperMotion_danji/1.HyperMotion_SaaS_gaishu.md
         - 阿里云（公有云）: 
-             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_donghua.md
-             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_anzhuangbao.md
+             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_video.md
+             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_download.md
              安装指南: 
                   步骤一：HyperMotion控制台: HyperMotion_danji/2.HyperMotion_SaaS_anzhuanghm.md
                   步骤二：HyperGate云端数据代理: HyperMotion_danji/5.HyperMotion_SaaS_ali_anzhuanghg.md
@@ -17,8 +34,31 @@ nav:
                   配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
                   迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md
         - AWS: 
-             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_donghua.md
-             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_anzhuangbao.md
+             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_video.md
+             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_download.md
+             安装指南: 
+                  步骤一：HyperMotion控制台: HyperMotion_danji/2.HyperMotion_SaaS_anzhuanghm.md
+                  步骤二：HyperGate云端数据代理: HyperMotion_danji/10.HyperMotion_SaaS_aws_anzhuanghg.md
+             网络策略开通: HyperMotion_danji/11.HyperMotion_SaaS_aws_huanjing.md
+             操作指南: 
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  配置向导: HyperMotion_danji/12.HyperMotion_SaaS_aws_peizhi.md
+                  迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md
+        - Azure: 
+             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_video.md
+             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_download.md
+             安装指南: 
+                  步骤一：HyperMotion控制台: HyperMotion_danji/2.HyperMotion_SaaS_anzhuanghm.md
+                  步骤二：HyperGate云端数据代理: HyperMotion_danji/13.HyperMotion_SaaS_Azure_anzhuanghg.md
+             网络策略开通: HyperMotion_danji/14.HyperMotion_SaaS_Azure_huanjing.md
+             操作指南: 
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  配置向导: HyperMotion_danji/12.HyperMotion_SaaS_aws_peizhi.md
+                  迁移向导: HyperMotion_danji/15.HyperMotion_SaaS_Azure_peizhi.md
+                  
+        - 华为云（公有云）: 
+             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_video.md
+             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_download.md
              安装指南: 
                   步骤一：HyperMotion控制台: HyperMotion_danji/2.HyperMotion_SaaS_anzhuanghm.md
                   步骤二：HyperGate云端数据代理: HyperMotion_danji/5.HyperMotion_SaaS_ali_anzhuanghg.md
@@ -27,7 +67,18 @@ nav:
                   登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
                   配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
                   迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md
-        - Azure: 
-             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_donghua.md
-             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_anzhuangbao.md
+            
+        - 金山云: 
+             迁移动画: HyperMotion_danji/3.HyperMotion_SaaS_video.md
+             安装包下载: HyperMotion_danji/4.HyperMotion_SaaS_download.md
+             安装指南: 
+                  步骤一：HyperMotion控制台: HyperMotion_danji/2.HyperMotion_SaaS_anzhuanghm.md
+                  步骤二：HyperGate云端数据代理: HyperMotion_danji/5.HyperMotion_SaaS_ali_anzhuanghg.md
+             网络策略开通: HyperMotion_danji/6.HyperMotion_SaaS_ali_huanjing.md
+             操作指南: 
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
+                  迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md 
+                  
+    
 theme: readthedocs

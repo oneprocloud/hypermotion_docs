@@ -34,7 +34,7 @@ ___
 <font face="中易宋体" size=4> &ensp;[**HyperMotion单机版**](HyperMotion_danji_test.md)
 </font>
 </br>
-<font face="中易宋体" size=3>&ensp;&ensp;&ensp;1. &ensp;[用户手册](HyperMotion_SaaS/1.HyperMotion_SaaS_gaishu.md)
+<font face="中易宋体" size=3>&ensp;&ensp;&ensp;1. &ensp;[用户手册](HyperMotion_danji/1.HyperMotion_SaaS_gaishu.md)
 </font>
 </br>
 <font face="中易宋体" size=3>&ensp;&ensp;&ensp;2. &ensp;[技术白皮书](#登陆访问)
