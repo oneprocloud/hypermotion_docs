@@ -22,6 +22,6 @@ deploy: # Deploy documentation to Github in the gh_pages branch
         branch: master
 
 after_deploy:
-    - git fetch origin gh_pages
+    - git fetch origin gh-pages
     - git push https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/oneprocloud/hypermotion_docs master -f
-    - git push https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/oneprocloud/hypermotion_docs gh_pages -f
+    - git push https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/oneprocloud/hypermotion_docs gh-pages -f
