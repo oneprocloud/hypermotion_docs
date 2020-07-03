@@ -1,5 +1,8 @@
 site_name: HyperMotion帮助文档
 
+theme:
+    name: 'material'
+
 nav:
     - index.md
     - HyperMotion SaaS版:
@@ -79,6 +82,3 @@ nav:
                   登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
                   配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
                   迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md 
-                  
-    
- theme: readthedocs
