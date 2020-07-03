@@ -11,7 +11,8 @@ script: true
 
 before_deploy:
     - mkdocs build --verbose --clean # Build a local version of the docs
-    
+    - echo "docs.oneprocloud.com" > site/CNAME
+
 deploy: # Deploy documentation to Github in the gh_pages branch
     provider: pages
     skip_cleanup: true
@@ -19,3 +20,8 @@ deploy: # Deploy documentation to Github in the gh_pages branch
     local_dir: site
     on:
         branch: master
+
+after_deploy:
+    - git fetch origin gh-pages:gh-pages
+    - git push https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/oneprocloud/hypermotion_docs master -f
+    - git push https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/oneprocloud/hypermotion_docs gh-pages:gh-pages -f
