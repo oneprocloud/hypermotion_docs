@@ -3,6 +3,14 @@ site_name: HyperMotion帮助文档
 theme:
     name: 'material'
 
+markdown_extensions:
+    - toc:
+        permalink: true
+    - pymdownx.arithmatex
+
+extra_javascript:
+    - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
 nav:
     - index.md
     - HyperMotion SaaS版:
