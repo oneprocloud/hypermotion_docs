@@ -12,7 +12,8 @@ install:
     - pip install markdown-katex==201912.11b0
     - wget http://gosspublic.alicdn.com/ossutil/1.6.16/ossutil64
     - chmod 755 ossutil64
-    - echo "[Credentials]\nlanguage=EN\nendpoint=http://oss-cn-beijing.aliyuncs.com\naccessKeyID=${ACCESS_KEY_ID}\naccessKeySecret=${ACCESS_KEY_SECRET}" > ~/.ossutilconfig
+    - echo "[Credentials]\nlanguage=EN\nendpoint=http://oss-cn-beijing.aliyuncs.com\naccessKeyID=${{ secrets.ACCESS_KEY_ID }}\naccessKeySecret=${{ secrets.ACCESS_KEY_SECRET }}" > ~/.ossutilconfig
+    - cat ~/.ossutilconfig
 
 script: true
 
