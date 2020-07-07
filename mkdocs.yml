@@ -1,10 +1,5 @@
 site_name: HyperMotion帮助文档
 
-<<<<<<< HEAD
-theme: 
-    name: 'material'
-
-=======
 theme:
     name: 'material'
 
@@ -13,7 +8,6 @@ markdown_extensions:
         permalink: true
     - pymdownx.arithmatex
 
->>>>>>> d59220d6d65a36153407a6da2d26054d8981a81c
 extra_javascript:
     - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
 
@@ -95,8 +89,5 @@ nav:
              - 操作指南: 
                   登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
                   配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
-<<<<<<< HEAD
                   迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md 
-=======
-                  迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md 
->>>>>>> d59220d6d65a36153407a6da2d26054d8981a81c
+    - HyperMotion API文档: hypermotion-api-docs/api_docs.md
