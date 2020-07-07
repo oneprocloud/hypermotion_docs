@@ -41,7 +41,7 @@ nav:
                   步骤二：HyperGate云端数据代理: HyperMotion_danji/5.HyperMotion_SaaS_ali_anzhuanghg.md
              - 网络策略开通: HyperMotion_danji/6.HyperMotion_SaaS_ali_huanjing.md
              - 操作指南: 
-                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_denglu.md
                   配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
                   迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md
         - AWS: 
@@ -52,7 +52,7 @@ nav:
                   步骤二：HyperGate云端数据代理: HyperMotion_danji/10.HyperMotion_SaaS_aws_anzhuanghg.md
              - 网络策略开通: HyperMotion_danji/11.HyperMotion_SaaS_aws_huanjing.md
              - 操作指南: 
-                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_denglu.md
                   配置向导: HyperMotion_danji/12.HyperMotion_SaaS_aws_peizhi.md
                   迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md
         - Azure: 
@@ -63,7 +63,7 @@ nav:
                   步骤二：HyperGate云端数据代理: HyperMotion_danji/13.HyperMotion_SaaS_Azure_anzhuanghg.md
              - 网络策略开通: HyperMotion_danji/14.HyperMotion_SaaS_Azure_huanjing.md
              - 操作指南: 
-                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_denglu.md
                   配置向导: HyperMotion_danji/12.HyperMotion_SaaS_aws_peizhi.md
                   迁移向导: HyperMotion_danji/15.HyperMotion_SaaS_Azure_peizhi.md
                   
@@ -75,7 +75,7 @@ nav:
                   步骤二：HyperGate云端数据代理: HyperMotion_danji/5.HyperMotion_SaaS_ali_anzhuanghg.md
              - 网络策略开通: HyperMotion_danji/6.HyperMotion_SaaS_ali_huanjing.md
              - 操作指南: 
-                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_denglu.md
                   配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
                   迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md
             
@@ -87,7 +87,7 @@ nav:
                   步骤二：HyperGate云端数据代理: HyperMotion_danji/5.HyperMotion_SaaS_ali_anzhuanghg.md
              - 网络策略开通: HyperMotion_danji/6.HyperMotion_SaaS_ali_huanjing.md
              - 操作指南: 
-                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_ denglu.md
+                  登陆访问: HyperMotion_danji/7.HyperMotion_SaaS_denglu.md
                   配置向导: HyperMotion_danji/8.HyperMotion_SaaS_peizhi.md
                   迁移向导: HyperMotion_danji/9.HyperMotion_SaaS_ali_qianyi.md 
-    - HyperMotion API文档: hypermotion-api-docs/api_docs.md
+    - HyperMotion API文档: hypermotion-api/api.md

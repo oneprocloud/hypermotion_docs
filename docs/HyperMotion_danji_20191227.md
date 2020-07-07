@@ -23,7 +23,7 @@ ___
 </font>
  ***
 ### <font face="方正正黑简体" size=6 >**支持列表**  </font>  
-&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/26.png" width="1000">
+&ensp;<img src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/26.png" width="1000">
 ___
 
 ### <font face="方正正黑简体" size=5 >**步骤索引**  </font>
@@ -74,14 +74,14 @@ ___
 </br><font face="中易宋体" size=3>&ensp;获取的镜像包名称为：HyperMotion-latest-<date>-full.iso；
 </font>
 </br>
-&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/1.png" width="500">
+&ensp;<img src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/1.png" width="500">
 </br>
 </br><font face="中易宋体" size=3 color="#000066">•  **如安装环境为云平台实例：**
 </font>
 </br><font face="中易宋体" size=3>&ensp;获取的镜像包名称为：HM_IMG_<date>.qcow2
 </font>
 </br>
-&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/2.png" width="350">
+&ensp;<img src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/2.png" width="350">
 </br>
  ---
 
@@ -139,7 +139,7 @@ vCenter账户密码  | vCenter或ESXi的密码
 </font>
 </br>
 </br>
-&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/3.png" width="600">
+&ensp;<img src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/3.png" width="600">
 </br>
 </br>
 <font face="中易宋体" size=3>**4.  设置网络（仅VMware平台虚机需要配置此步骤）**
@@ -148,21 +148,21 @@ vCenter账户密码  | vCenter或ESXi的密码
 </font>
 </br>
 </br>
-&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/4.png" width="300">
+&ensp;<img src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/4.png" width="300">
 </br>
 
 <font face="中易宋体" size=3>**5.  自动进入安装部署界面**
 </font>
 </br>
 </br>
-&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/5.png" width="280">
+&ensp;<img src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/5.png" width="280">
 </br>
 </br>
 <font face="中易宋体" size=3>**6.  系统自动部署完成**
 </font>
 </br>
 </br>
-&ensp;<img src="https://github.com/oneprocloud/hypermotion_docs/raw/master/images/image_hm_danji/7.png" width="500">
+&ensp;<img src="https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/7.png" width="500">
 </br>
 </br>
  ---

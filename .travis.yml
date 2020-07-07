@@ -11,6 +11,11 @@ install:
     - pip install mkdocs-minify-plugin==0.2.1
     - pip install markdown-katex==201912.11b0
 
+after_install:
+    - wget http://gosspublic.alicdn.com/ossutil/1.6.16/ossutil64
+    - chmod 755 ossutil64
+    - cp .ossutilconfig ~/
+
 script: true
 
 before_deploy:
@@ -29,3 +34,4 @@ after_deploy:
     - git fetch origin gh-pages:gh-pages
     - git push https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/oneprocloud/hypermotion_docs master -f
     - git push https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/oneprocloud/hypermotion_docs gh-pages:gh-pages -f
+    - ./ossutil64 cp site/ oss://oneprocloud/ --recursive --update
