@@ -25,11 +25,11 @@ nav:
              - 目标端连接设置: 
                   连接阿里云（公有云）: HyperMotion_SaaS/8.HyperMotion_SaaS_ali.md
                   连接AWS: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
-                  连接Azure: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
-                  连接腾讯云: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
-                  连接青云: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
-                  连接金山云: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
-                  连接UCloud: HyperMotion_SaaS/10.HyperMotion_SaaS_aws.md
+                  连接Azure: HyperMotion_SaaS/10.HyperMotion_SaaS_Azure.md
+                  连接腾讯云: HyperMotion_SaaS/10.HyperMotion_SaaS_Tencent.md
+                  连接青云: HyperMotion_SaaS/10.HyperMotion_SaaS_qingyun.md
+                  连接金山云: HyperMotion_SaaS/10.HyperMotion_SaaS_jinshan.md
+                  连接UCloud: HyperMotion_SaaS/10.HyperMotion_SaaS_UCloud.md
              - 迁移向导: HyperMotion_SaaS/9.HyperMotion_SaaS_qianyi.md          
     - HyperMotion 单机版:  
         - 概述 : HyperMotion_danji/1.HyperMotion_SaaS_gaishu.md
