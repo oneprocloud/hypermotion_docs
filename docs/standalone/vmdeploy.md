@@ -24,19 +24,31 @@ vCenter账户密码  | vCenter或ESXi的密码
 
 根据实际情况填写框内信息，'Enter'键入下一步，
 
+<<<<<<< HEAD
 ![4.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/install/4.png ':size=50%')
+=======
+![4.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/4.png ':size=50%')
+>>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 ## 选择安装部署角色
 
 !> 此步骤选择 **「HyperMotion+Proxy」**即可，其他选项用于分布式部署使用，没有特殊需求，均使用第一项即可
 
+<<<<<<< HEAD
 ![5.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/install/5.png ':size=50%')
+=======
+![5.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/5.png ':size=50%')
+>>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 ## 系统自动部署完成
 
 ?> 系统部署完成，按照页面提示通过Chrome或火狐浏览器打开进行配置使用
 
+<<<<<<< HEAD
 ![6.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/install/7.png ':size=50%')
+=======
+![6.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/7.png ':size=50%')
+>>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 ## 迁移主控平台管理
 
@@ -45,4 +57,8 @@ HyperMotion主控平台部署完成之后，可以通过以下认证信息登陆
 **登录名：operator**</br>
 **登录密码：P@ssw0rd**</br>
 
+<<<<<<< HEAD
 ![img](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/install/3.png ':size=50%')
+=======
+![img](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/3.png ':size=50%')
+>>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
