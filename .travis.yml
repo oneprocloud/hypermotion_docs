@@ -10,31 +10,18 @@ env:
       - secure: lBk3IX9YZ1Ta8nQMK3YGbbdYG13R1ADFjItqbw+8geCACIt8uAZZsZ1fVZ/wABmfRQnXEjM4W8FIsHWJ2xQ9ir/c7tKU4PQYqflBmAt2EAtUB4IRlMlYwXaGr5jJPXka6fQTHZmrZqPpkElJkPU9O32vd8bxO/OHtJMYN05JAXuPVurNXdOzjyFG2e3T2/Zt15q91lzhCXJZ+JBVeFAhC8TrCLmFyxA+gr+n/gU7/k+5oHf5DXHKMNoZLDgo+Y52K+BonM2FY8hH+VUmw+8tqJin2rsaNj2qdwQeCEjbWZKxCZNiR+xqOSNxlYHuWOYXHIN5Hsd5DI7LWnI6do/67jmL9HA7OdZSqdIgLZ0u0q+g6kUKIn03YUr+sRgqDvWIHuh7v1R1BHltbne3lITzl8ggctHzV7qgp5tDMPuA+gnBtPywem4djL3jednfkQiTlI+BCAKti9vrV8KwVheKUQSP30dIUuSFlr32ZCJ93IUj3f6MK6rqsBuNe8hGVUgHOnCOW1jtYSQZJ+NwWLxsVmqL1IgbMVzQbJeVf9b0IbhgGcZ1FoLqGCLXZuVLiecJpmjYmlv3bLgfH6RzEOLEQGBDFXsWVH5YDgWofaqlwOYAVa1Jw3CVXe4sU8aqsr745SbpH0D1nK6lVg4nLmTMCYg4i7aZxO1ncrNI07/6Q94=
 
 install:
-    - pip install mkdocs==1.0.4
-    - pip install mkdocs-material==4.6.0
-    - pip install Markdown==3.1.1
-    - pip install mkdocs-minify-plugin==0.2.1
-    - pip install markdown-katex==201912.11b0
     - wget http://gosspublic.alicdn.com/ossutil/1.6.16/ossutil64
     - chmod 755 ossutil64
     - ./ossutil64 config -i $ACCESS_KEY_ID -k $ACCESS_SECRET_KEY -e http://oss-cn-beijing.aliyuncs.com
 
 script: true
 
-before_deploy:
-    - mkdocs build --verbose --clean
-    - echo "docs.oneprocloud.com" > site/CNAME
-
 deploy:
     provider: pages
     skip_cleanup: true
     github_token: "$GITHUB_TOKEN"
-    local_dir: site
     on:
       branch: master
 
 after_deploy:
-    - git fetch origin gh-pages:gh-pages
-    - git push https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/oneprocloud/hypermotion_docs master -f
-    - git push https://${GITEE_USERNAME}:${GITEE_PASSWORD}@gitee.com/oneprocloud/hypermotion_docs gh-pages:gh-pages -f
-    - ./ossutil64 cp site/ oss://oneprocloud/ --recursive --update
+    - ./ossutil64 cp ./ oss://oneprocloud/ --recursive --update
