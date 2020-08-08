@@ -11,7 +11,7 @@ env:
 
 install:
     - "wget http://gosspublic.alicdn.com/ossutil/1.6.16/ossutil64"
-    - "chmod 755 ossutil64
+    - "chmod 755 ossutil64"
     - "./ossutil64 config -i $ACCESS_KEY_ID -k $ACCESS_SECRET_KEY -e http://oss-cn-beijing.aliyuncs.com"
 
 script: true
