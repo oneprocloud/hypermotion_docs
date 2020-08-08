@@ -8,12 +8,8 @@ HyperMotion主控平台安装部署提供以下两种介质，可以根据需求
 - 【[ISO镜像](standalone/aliyun/premise.md?id=ISO下载)】
 
 **可以部署支持QCOW2镜像云环境进行使用**
-<<<<<<< HEAD
-- 【[云端QCOW2镜像](standalone/aliyun/premise.md?id=QCOW2镜像下载)】
-=======
-- 【[云端QCOW2镜像](standalone/aliyun/premise.md?id=QCOW2镜像下载) 】
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
+- 【[云端QCOW2镜像](standalone/aliyun/premise.md?id=QCOW2镜像下载)】
 HyperGate云端数据代理我们将提供QCOW2镜像方式进行安装部署<br/>
 
 !> HyperGate如果通过 **「云端QCOW2镜像」**部署使用，那么与HyperMotion使用同一个云端镜像，无需重复进行下载

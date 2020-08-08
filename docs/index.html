@@ -37,19 +37,20 @@
       placeholder: '搜索',
       noData: '没有记录！'
 	  },
-	  formatUpdated: '{MM}/{DD} {HH}:{mm}',
-      formatUpdated: function(time) {
-        return time;
+	  formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
+    function(time) {
+        return new Date(time);
 	  },
-      plugins: [
-          function (hook, vm) {
-            hook.beforeEach(function (html) {
-              return html
-                + '\n\n----\n\n'
-                + '<a href="https://www.oneprocloud.com" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Copyright © 2012-2020 OnePro 版权所有</a>'
-            })
-          },
-        ]
+    plugins: [
+        function (hook, vm) {
+           hook.beforeEach(function (html) {
+            return html
+               + '\n\n----\n\n'
+               + '<a href="https://www.oneprocloud.com" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Copyright © 2012-2020 OnePro 版权所有</a>'
+               + '<a style="float:right">更新时间：{docsify-updated}</a>'
+          })
+        },
+      ]
     }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>

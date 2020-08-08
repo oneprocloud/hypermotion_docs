@@ -14,8 +14,11 @@
 
 !> 1. HyperMotion IP即创建HyperMotion虚机时的IP</br>
 2. http://<HyperMotion IP>:18088中的":"为英文格式
+
 ## 配置向导
+
 [confwiz.md](../confwiz.md ':include')
+
 ### 阿里云连接设置
 
 1. 配置向导进入‘目标端平台配置’界面，选择阿里云图标

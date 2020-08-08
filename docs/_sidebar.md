@@ -15,7 +15,7 @@
 
 * 技术白皮书
 
-  * [HyperMotion](white-page.md)
+  * [HyperMotion 迁移白皮书](whitepage/whitepage.md)
 
 * 开发指南
 

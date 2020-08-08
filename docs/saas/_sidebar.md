@@ -1,5 +1,6 @@
-* HyperMotion SaaS版
+* HyperMotion SaaS版本
   * [产品概述](saas/saas.md)
+
 * 配置使用
   * [账号注册](saas/register.md)
   * [登陆访问](saas/login.md)

@@ -30,7 +30,7 @@ HyperMotion迁移工具分为SaaS版和单机版两个版本：<br/>
  - [HyperMotion 单机版本](standalone/standalone.md)
 
 - 技术白皮书
- - [HyperMotion](whitepage.md)
+ - [HyperMotion 迁移白皮书](whitepage/whitepage.md)
 
 - 开发指南
  - [OpenAPI 开发手册](api/api.md)

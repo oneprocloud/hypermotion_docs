@@ -6,13 +6,13 @@ branches: master
 
 env:
     global:
-      - secure: kaj3vh6A0mWI25Zq2sV9MhxTORuar03tJyYFg3CmsYD06LqpFauwRpHR+HCBeGQUBRbDM3n5GxUs0yp29MV0LrK0joxyJzESeH85qzNDvuCj2UQBVcihtnKT5sXMnP8Tg9jL0q94pkfZumSKcYbaQZ6orp7/ZMsr7eDdYf47mx6Ox6QDOm4clHcqaOvTtMAYlYNdFx992UQ9n//t7E1HZZ+UCIk95tJYX2r9U3HeUsAQ8qqUE6c+pdWj5g4K08IQtLBBxtNhcqt1mwqlpERYP76JikvYLIad0Co9e2ixdQhv+J9GjkSAVfZhZtSvDHp/g+nTTT0LJnm9ajnCIhL9SYtKY5qRjIWR3/VjD8uvHGwf/Noj80MkhRINcabUfEFcf+oGSX63VqL5vrk2BGCr2VLBphv3VxISoTVdPTsRmlKvxzc6oUOHzahx/KFXPkWH21FxM9GMxsvE6iK1BY48u/GjFqNjqRE1V9DW0HKtms8mVHAzz753qxnP6LglP1i7ULyuKMliBWQ30i/v+lEQB4s2ikp+NsrefQ3qqKwGlkaq79uvJqF88HsCtuGzhB7AMbpoibmYNgIC007SrKDpbGEaEhlTCuhOICqz4hlectDzqBGPcix+5bTga7SqW4iOdfiegcJihiWtVrfylwbFNB3CgtNQsf3NeIUQLi8Dj2E=
-      - secure: lBk3IX9YZ1Ta8nQMK3YGbbdYG13R1ADFjItqbw+8geCACIt8uAZZsZ1fVZ/wABmfRQnXEjM4W8FIsHWJ2xQ9ir/c7tKU4PQYqflBmAt2EAtUB4IRlMlYwXaGr5jJPXka6fQTHZmrZqPpkElJkPU9O32vd8bxO/OHtJMYN05JAXuPVurNXdOzjyFG2e3T2/Zt15q91lzhCXJZ+JBVeFAhC8TrCLmFyxA+gr+n/gU7/k+5oHf5DXHKMNoZLDgo+Y52K+BonM2FY8hH+VUmw+8tqJin2rsaNj2qdwQeCEjbWZKxCZNiR+xqOSNxlYHuWOYXHIN5Hsd5DI7LWnI6do/67jmL9HA7OdZSqdIgLZ0u0q+g6kUKIn03YUr+sRgqDvWIHuh7v1R1BHltbne3lITzl8ggctHzV7qgp5tDMPuA+gnBtPywem4djL3jednfkQiTlI+BCAKti9vrV8KwVheKUQSP30dIUuSFlr32ZCJ93IUj3f6MK6rqsBuNe8hGVUgHOnCOW1jtYSQZJ+NwWLxsVmqL1IgbMVzQbJeVf9b0IbhgGcZ1FoLqGCLXZuVLiecJpmjYmlv3bLgfH6RzEOLEQGBDFXsWVH5YDgWofaqlwOYAVa1Jw3CVXe4sU8aqsr745SbpH0D1nK6lVg4nLmTMCYg4i7aZxO1ncrNI07/6Q94=
+      - secure: "GOySc1uVuByGoVtnDaZe+krMqGu7EoL8ZmEf+DyllolV3fqG4RGntQ3jZ399a7huEWrbtQiDiIDULNprCfe7PdCpsdzAVDaSEEDUuZc2YFxhL4K87gQYCiwdckPaVGKTkBC47Jhu7PETq9E1GOH41C6OQsWAV+HMZcbDsWDCSe4Gt5vjPxlabODZP9yzK8Pseid7JAzfi09zkJCa9iES2XpoANoS+6dnYKisQEimPTO9wcBWd8J0n+il8yMTluMjk9abR6ry26mfU1Qbteny0iYyAqz6hA2vOEngFubxfdMuCkgvR9HTmVIQqswmOXR0KhSRmMSk0Ugvzes+VbdbG58ofWMtzu8D7QAZIp3v+JCzhmnuiWyRzEGjh04HvyFBnyV1uGPxrhb/yOE2hOKHU+w3eEO8OKe+5NYYUVSLWseG8WSHGe7fG0qLUXDgKEahGkrwnhrjSWVQpzJ30qZ3Sw+vwPaO8WQNvb4ldCvuJMtjTe/cb3vRw15xdN0P44LYjndoAtmob1TllWRDQQIdjkxpVAX1Kty/yj5vFYw6A269FHiOBxn2E2Qy1rR7Vd2Pq1DZuAIhzR1G04VMp3Ha+LIOjoT+uIe0nQ0Sdmoaocl6XGswjIVc4Zjis3ehSupQN9MyCxf/nS8KRNKXrn1Svblb1/T6tOod2m6GPqPGDFw="
+      - secure: "kqqy0t9txpc5CirOrXEycs7Oy1NPmXM9Lh9tIJoEzoVMFOLUKa+JsByfQvvtTkWBvdlQNhg+D3kwONOsue8PLCjuSiKzPT2oemapeUVSALBdZNOhA19GzC8C4x2oLHUg3ODemYK5zjxNlMkp+Ew3xZjgSrEfiPSrLcaxE7Z3hd3iw5oAAiFm1ApeWOXaUt57Yu/iXQMv4FNeRGD2gyhdwWieCaWvWoImXJHCwdyQFtIhC199Ybmc4FNIUxhkVyHLWBnscnawLjLUQjEgsyu/y9L0mStOd2LUgXYNbrvuGFD5l0QRneB2rh6Q0VZs0DJMcf2xa07S+s1RKQ/oX6d+eOcekxIh01wTSpzAZQGe6muUOibg+Fkn/vsZmwxHxkilBAYlXqrElUMm24tVRTuTsB6DuN0Yd+c6uJ53UCXHJjpolfB1NU1oiicS36cMn4qQ0oZ+Lyh3Xp2d2OHf0Fas+rjZ/IKqa9/TtlX/VdPVfQs72LFpm6rl05GSAHijQG0Vi/gk7o9CGRGjUjcsGnu6OaPAXxPphgpai1/NU5jnjG7pjpiAXtssiJOhkT1Af8aeDUHmXBJTVqbA4srI7AX0yYZUFEtH9vpwMI4Hcg76/xLBI/po+vKFpHV2Qg1v7SLkGY7eWp/em7yafdgf5ijQY/R6H0ntCS7Nw8V9fQW6T4E="
 
 install:
-    - wget http://gosspublic.alicdn.com/ossutil/1.6.16/ossutil64
-    - chmod 755 ossutil64
-    - ./ossutil64 config -i $ACCESS_KEY_ID -k $ACCESS_SECRET_KEY -e http://oss-cn-beijing.aliyuncs.com
+    - "wget http://gosspublic.alicdn.com/ossutil/1.6.16/ossutil64"
+    - "chmod 755 ossutil64
+    - "./ossutil64 config -i $ACCESS_KEY_ID -k $ACCESS_SECRET_KEY -e http://oss-cn-beijing.aliyuncs.com"
 
 script: true
 
@@ -24,4 +24,4 @@ deploy:
       branch: master
 
 after_deploy:
-    - ./ossutil64 cp ./ oss://oneprocloud/ --recursive --update
+    - "./ossutil64 cp docs/ oss://oneprocloud/ --recursive --update"

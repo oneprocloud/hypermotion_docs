@@ -1,10 +1,10 @@
-## 迁移向导
+# 迁移向导
 
 返回概览界面，点击迁移向导中的‘选择主机’步骤，进入迁移向导界面
 
 ![19.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/19.png ':size=80%')
 
-### 选择待迁移主机
+## 选择待迁移主机
 
 1. 进入迁移向导界面后，选择【添加主机】
 
@@ -22,7 +22,7 @@
 
 ![23.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/23.png ':size=80%')
 
-### 数据拷贝
+## 数据拷贝
 1. 选择已经设定的一个存储设备连接，点击【确定】
 
 ![24.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/24.png ':size=80%')
@@ -35,7 +35,7 @@
 
 ![26.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/26.png ':size=80%')
 
-### 开始迁移并完成迁移
+## 开始迁移并完成迁移
 
 1. 选择待迁移主机，点击启动主机
 
@@ -52,7 +52,7 @@
 
 !> 注：1.待迁移主机将在目标平台上创建。请到HyperGate所在租户查看资源
 
-### 清理迁移资源
+## 清理迁移资源
 
 **请根据以下步骤提示清理：**
 

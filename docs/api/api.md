@@ -1,17 +1,15 @@
 # 云原生迁移平台API对接最佳实践
 ## 1、整体说明
 ### 1.1 云原生迁移平台的需求说明
-<<<<<<< HEAD:docs/api/api.md
 迁移和容灾作为云管平台重要的一个模块，在多云环境下已经变得越来越重要。传统的云管平台中，更多的是通过云平台API接口对单一云平台进行纵向调度，即使进行多云的混合调度编排，但是仍然无法解决数据层面的互联互通问题。云迁移和容灾平台有效的打通了多云之间数据层面的互通问题，让用户自助式的完成在不同云平台之间的负载切换。<br />![Picture1.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/api/cloud_management.png ':size=50%')<br />[https://www.gartner.com/document/3873016](https://www.gartner.com/document/3873016) 
 
 ### 1.2 云原生迁移平台迁移需求
 根据云迁移策略的定义，常见的七种策略有：重新托管（Rehosting）、更换平台（Replatforming）、重新购买（Repurchasing）、重构（Refactoring/Re-architecting）、退役（Retire）、保留（Retian）。<br />![image.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/api/migration_policy.png ':size=50%')<br />在混合云环境下，对于用户成本最低、效率最高的方式就是重新托管（Rehosting）方式，即原封不动照搬过来，用户从操作系统到应用系统都不会发生任何改变，可以在线迁移，迁移之后可以立即使用。
-=======
-迁移和容灾作为云管平台重要的一个模块，在多云环境下已经变得越来越重要。传统的云管平台中，更多的是通过云平台API接口对单一云平台进行纵向调度，即使进行多云的混合调度编排，但是仍然无法解决数据层面的互联互通问题。云迁移和容灾平台有效的打通了多云之间数据层面的互通问题，让用户自助式的完成在不同云平台之间的负载切换。<br />![Picture1.png](_images/cloud_management.png ':size=50%')<br />[https://www.gartner.com/document/3873016](https://www.gartner.com/document/3873016) 
+迁移和容灾作为云管平台重要的一个模块，在多云环境下已经变得越来越重要。传统的云管平台中，更多的是通过云平台API接口对单一云平台进行纵向调度，即使进行多云的混合调度编排，但是仍然无法解决数据层面的互联互通问题。云迁移和容灾平台有效的打通了多云之间数据层面的互通问题，让用户自助式的完成在不同云平台之间的负载切换。<br />![Picture1.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/api/cloud_management.png ':size=50%')<br />[https://www.gartner.com/document/3873016](https://www.gartner.com/document/3873016) 
 
 ### 1.2 云原生迁移平台迁移需求
-根据云迁移策略的定义，常见的七种策略有：重新托管（Rehosting）、更换平台（Replatforming）、重新购买（Repurchasing）、重构（Refactoring/Re-architecting）、退役（Retire）、保留（Retian）。<br />![image.png](_images/migration_policy.png ':size=50%')<br />在混合云环境下，对于用户成本最低、效率最高的方式就是重新托管（Rehosting）方式，即原封不动照搬过来，用户从操作系统到应用系统都不会发生任何改变，可以在线迁移，迁移之后可以立即使用。
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6:docs/api/api.md
+根据云迁移策略的定义，常见的七种策略有：重新托管（Rehosting）、更换平台（Replatforming）、重新购买（Repurchasing）、重构（Refactoring/Re-architecting）、退役（Retire）、保留（Retian）。<br />![image.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/api/migration_policy.png ':size=50%')<br />在混合云环境下，对于用户成本最低、效率最高的方式就是重新托管（Rehosting）方式，即原封不动照搬过来，用户从操作系统到应用系统都不会发生任何改变，可以在线迁移，迁移之后可以立即使用。
+
 ### 1.3 云原生迁移平台需求定义
 
 - 1、实现“搬家（Re-Host）“效果。
@@ -20,20 +18,22 @@
 - 4、“被集成“能力。云迁移服务本身的功能全部以RESTful API方式提供给云管理平台或第三方应用，使得用户无须单独操作迁移平台，通过云管平台与办公流程联动，在资源配额满足需求的前提下，仅需几步简单配置便可在线完成迁移。
 - 5、面向多租户设计。用户订阅迁移服务，自助完成迁移动作，无须管理员介入。
 - 6、智能驱动适配，实现一键式迁移效果。迁移服务会智能的判断目标云平台的虚拟化类型，选择合适的磁盘、网卡等驱动进行驱动注入，保证迁移后的系统在目标云平台能够正常使用。<br />
+
 ## 2、云原生迁移平台使用场景
+
 ### 2.1 整体架构及对接方式
+
 #### 2.1.1 整体架构
+
 云管平台通过云原生迁移平台提供的RESTful API接口进行对接，调度迁移平台完成迁移操作。<br />
-<<<<<<< HEAD:docs/api/api.md
+
 ![Picture2.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/api/restful_api.png ':size=50%')
+
 #### 2.1.2 对接流程
 ![duijie.svg](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/api/duijie.svg ':size=50%')
-=======
-![Picture2.png](_images/restful_api.png ':size=50%')
-#### 2.1.2 对接流程
-![duijie.svg](_images/duijie.svg ':size=50%')
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6:docs/api/api.md
+
 ### 2.2 源端场景说明
+
 #### 2.2.1 代理方式使用（Agent）
 适用场景：用于物理机、公有云平台、私有化平台虚拟机的同步，Agent需要安装在用户操作系统内部，需要用户人为进行安装操作。目前Linux Agent使用脚本方式安装，用户需要登陆到待迁移主机内使用Root权限执行安装脚本即可；Windows Agent需要用户首先下载后执行安装并正确配置迁移平台地址后，才能正常使用。<br />对接建议：在云管平台对接使用时，需要显示的提示用户代理程序下载及安装方式。
 <a name="M9Ncp"></a>
@@ -70,13 +70,9 @@
 - 场景四：卷快照方式或卷备份方式
 
 对接建议：如果底层使用Ceph存储，使用卷快照方式会导致底层的卷存储依赖关系，所以在启动时可以选择卷快照方式或者卷备份方式解链，保证后续资源清理可以顺利进行。<br />如果使用的为商业存储，建议直接使用卷快照方式进行迁移验证或者正式启动，具体操作方式可以由云管平台建议。
-<<<<<<< HEAD:docs/api/api.md
+
 #### 2.3.2 公有云
-=======
-<a name="GNfwE"></a>
-#### 2.3.2 公有云
-<a name="HOXpq"></a>
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6:docs/api/api.md
+
 ##### 场景一：租户独享数据同步代理
 适用场景：每个租户（公有云租户）建立独立的同步代理服务器，目前版本中该虚拟机的建立和开通还尚未支持自动化。<br />对接建议：在云管平台对接时，需要为目标租户建立云主机并安装相应的同步代理软件，并且正确配置租户的鉴权信息后，才能开始迁移。
 ##### 场景二：迁移验证

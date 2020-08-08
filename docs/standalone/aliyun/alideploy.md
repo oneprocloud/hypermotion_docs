@@ -8,7 +8,6 @@
 
 1. 登录阿里云‘管理控制台’，点击【云服务器ECS】
 
-<<<<<<< HEAD
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/8.png ':size=80%')
 
 2. 点击【实例】→选择创建实例的地域→点击【创建实例】
@@ -18,17 +17,6 @@
 3. 基础配置
 
 ![10.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/10.png ':size=80%')
-=======
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/8.png ':size=100%')
-
-2. 点击【实例】→选择创建实例的地域→点击【创建实例】
-
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/9.png ':size=100%')
-
-3. 基础配置
-
-![10.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/10.png ':size=100%')
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 ?> 创建实例基础配置参考以下内容
 
@@ -50,11 +38,7 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 
 5. 网络和安全组配置
 
-<<<<<<< HEAD
 ![11.png]https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/11.png ':size=80%')
-=======
-![11.png]https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/11.png ':size=100%')
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 ?> 配置内容填写参考：
 
@@ -67,11 +51,7 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 
 6. 选择完成后点击【下一步，系统配置】
 
-<<<<<<< HEAD
 ![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/12.png" ':size=80%')
-=======
-![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/12.png" ':size=100%')
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 ?> 配置内容填写参考：
 
@@ -85,29 +65,17 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 
 检查创建信息，勾选《云服务器ECS服务条款》，点击【创建实例】,
 
-<<<<<<< HEAD
 ![13.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/13.png" ':size=80%')
-=======
-![13.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/13.png" ':size=100%')
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 8. 创建成功
 
 提示'创建成功'，选择【管理控制台】,
 
-<<<<<<< HEAD
 ![14.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/14.png" ':size=80%')
 
 9. 查看IP信息并记录
 
 ![15.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/15.png" ':size=80%')
-=======
-![14.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/14.png" ':size=100%')
-
-9. 查看IP信息并记录
-
-![15.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/15.png" ':size=100%')
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 ---
 
@@ -115,7 +83,6 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 
 1. 在实例列表中，点击创建实例的【远程连接】按钮
 
-<<<<<<< HEAD
 ![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/16.png" ':size=80%')
 
 2. 点击【修改远程连接密码】，进入修改密码后确认
@@ -125,17 +92,6 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 3. 进入修改密码后确认
 
 ![18.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/18.png" ':size=80%')
-=======
-![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/16.png" ':size=100%')
-
-2. 点击【修改远程连接密码】，进入修改密码后确认
-
-![17.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/17.png" ':size=100%')
-
-3. 进入修改密码后确认
-
-![18.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/18.png" ':size=100%')
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 4. 密码修改完成后在密码输入框中输入上步所设定的密码。
 
@@ -143,19 +99,11 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 
 1. 登录后自动进入安装界面，光标选择到'HyperGate'，'Enter'键入
 
-<<<<<<< HEAD
 ![19.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/19.png" ':size=80%')
 
 2. 系统自动部署完成
 
 ![20.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/20.png" ':size=80%')
-=======
-![19.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/19.png" ':size=100%')
-
-2. 系统自动部署完成
-
-![20.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/20.png" ':size=100%')
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6
 
 ---
 
@@ -167,7 +115,6 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 
 3. 在实例列表中，点击创建实例的【更多】-【磁盘和镜像】-【创建自定义镜像】
 
-<<<<<<< HEAD
 ![21.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/21.png" ':size=80%')
 
 4. 填写自定义镜像名称、自定义镜像描述，默认资源组，并选择【创建】
@@ -177,14 +124,3 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 5. 管理控制台页面，选择【云服务器ECS】-【镜像】，记录该镜像ID
 
 ![23.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png" ':size=80%')
-=======
-![21.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/21.png" ':size=100%')
-
-4. 填写自定义镜像名称、自定义镜像描述，默认资源组，并选择【创建】
-
-![22.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/22.png" ':size=100%')
-
-5. 管理控制台页面，选择【云服务器ECS】-【镜像】，记录该镜像ID
-
-![23.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/images/image_hm_danji/23.png" ':size=100%')
->>>>>>> 86efd134695e87034dc46e279212b755ca826fb6

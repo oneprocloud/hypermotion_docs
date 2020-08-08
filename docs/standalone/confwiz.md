@@ -129,7 +129,8 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 
 3. 在待迁移Linux主机上安装Agent
 
-!> *注：Liunx主机端安装操作步骤可参考 附录二 Linux  Agent安装说明；*
+!> 注：Liunx主机端安装操作步骤可参考 附录二 Linux  Agent安装说明
 
 ?> 所有对Agent的操作均在HyperMotion端触发，linux  Agent服务正常启动后，可在HyperMotion中看到注册的主机。
+
 ---
