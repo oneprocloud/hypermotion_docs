@@ -5,7 +5,6 @@
   * [部署架构](deparch.md)
   * [客户痛点](custpainpoint.md)
   * [应用场景](scene.md)
-  * [交付模式](deliver.md)
   * [迁移DEMO视频](demo.md)
 
 * 操作指南
@@ -23,5 +22,5 @@
 
 * 常见问题
 
-  * [安装部署](deploy-question.md)
-  * [同步数据](sync-question.md)
+ * [安装部署](deploy-question.md)
+ * [同步数据](sync-question.md)

@@ -38,7 +38,7 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 
 5. 网络和安全组配置
 
-![11.png]https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/11.png ':size=80%')
+![11.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/11.png ':size=80%')
 
 ?> 配置内容填写参考：
 
