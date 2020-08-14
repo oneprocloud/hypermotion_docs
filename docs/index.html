@@ -5,6 +5,7 @@
   <title>OnePro Docs</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta charset="UTF-8">
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/vue.css">
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/dark.css" title="dark" disabled>
   <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/docsify/themes/buble.css" title="buble" disabled>
@@ -16,13 +17,13 @@
   </style>
 </head>
 <body>
-  <div id="app"></div>
+  <div id="app">加载中...</div>
   <script>
     window.$docsify = {
     //...
     notFoundPage: '_404.md',
     name: "OnePro 云迁移",
-	//logo: '/_images/oneprocloud.png',
+	  //logo: '/_images/oneprocloud.png',
     auto2top: true,
     basePath: '/',
     executeScript: true,
@@ -39,28 +40,37 @@
 	  },
 	  formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
     function(time) {
-        return new Date(time);
+      return new Date(time);
 	  },
     plugins: [
-        function (hook, vm) {
-           hook.beforeEach(function (html) {
-            return html
-               + '\n\n----\n\n'
-               + '<a href="https://www.oneprocloud.com" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Copyright © 2012-2020 OnePro 版权所有</a>'
-               + '<a style="float:right">更新时间：{docsify-updated}</a>'
-          })
-        },
-      ]
-    }
+      function (hook, vm) {
+        hook.beforeEach(function (html) {
+          return html
+            + '\n\n----\n\n'
+            + '<a href="https://www.oneprocloud.com" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Copyright © 2012-2020 OnePro 版权所有</a>'
+            + '<a style="float:right">更新时间：{docsify-updated}</a>'
+        })
+      },
+    ]
+  }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
   <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-nginx.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-php.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
+  </script>
+  <script>
+    ((window.gitter = {}).chat = {}).options = {
+      room: 'hypermotion_docs/hypermotion-docs-room'
+    };
+  </script>
+  <script src="https://sidecar.gitter.im/dist/sidecar.v1.js" async defer></script>
 </body>
 </html>
