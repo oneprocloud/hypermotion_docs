@@ -1,4 +1,4 @@
-
+## AWS
  ---
 1. 返回概览界面，点击目标云平台连接中的【AWS】图标，
 
@@ -6,15 +6,15 @@
 
 2. 进入目标端连接界面,根据安装步骤操作
 
-![13.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/13.png ':size=80%')
+![13.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/2.png ':size=80%')
 
  ---
-### 安装部署<**HyperGate**>
-
+### 1.安装部署<**HyperGate**>
+的说明
 1. 创建一台实例，命名为<**HyperGate**>
 
 !> 注：1. 此步骤操作请在目标端AWS上进行操作</br>
-2.部署方式请参照VMware文档中[部署OVF模板]([链接地址](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html)) 的说明
+ &ensp; &ensp; &ensp;2.部署方式及参数要求请参照[ 附录一 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html)) 的说明
 
 2. 登陆<HyperGate>实例主机，复制并执行以下命令:
 
@@ -22,7 +22,7 @@
 curl https://download.oneprocloud.com/softwares/getdocker.sh |sudo bash
 ```
 
-![14.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/14.png ':size=80%')
+![14.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/3.png ':size=80%')
 
 3. 复制并执行以下命令，完成部署
 
@@ -30,17 +30,17 @@ curl https://download.oneprocloud.com/softwares/getdocker.sh |sudo bash
 curl https://download.oneprocloud.com/softwares/gethypergate.sh |sudo bash
 ```
 
-![15.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/15.png ':size=80%')
+![15.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/4.png ':size=80%')
 
 4. 安装阶段步骤完成后点击【下一步】按钮，
 
  ---
 
-### 填写云平台认证信息
+### 2.填写云平台认证信息
 
 1. 填写目标云平台相关认证信息，AK/SK等
 
-![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/16.png ':size=80%')
+![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/5.png ':size=80%')
 
 ?> 需要填写的信息说明
 
@@ -54,7 +54,7 @@ API接入地址 | 默认 ecs.aliyuncs.com
 
 2. 填写目标云平台相关地域信息
 
-![17.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/17.png ':size=80%')
+![17.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/6.png ':size=80%')
 
 ?> 需要填写的信息说明
 
@@ -66,5 +66,5 @@ API接入地址 | 默认 ecs.aliyuncs.com
 
 3. 填写完成后点击【完成】按钮，系统提示"创建目标端存储成功"，同时可在【设置】→【目标平台设置】中查看连接情况。
 
-![18.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/18.png ':size=80%')
+
  
