@@ -12,9 +12,9 @@
   * 目标云连接设置
   
     * [阿里云(公)](saas/tarcloud/aliyun.md)
-	* [AWS](standalone/tarcloud/AWS.md)
-	* [华为云（公）](standalone/tarcloud/TechWave.md)
-    * [腾讯云（公）](standalone/tarcloud/Tencent.md)
+	* [AWS](saas/tarcloud/AWS.md)
+	* [华为云（公）](saas/tarcloud/TechWave.md)
+    * [腾讯云（公）](saas/tarcloud/Tencent.md)
 
   * [迁移向导](saas/7.migrawiz.md)
   

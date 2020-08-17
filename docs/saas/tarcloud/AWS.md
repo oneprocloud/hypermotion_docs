@@ -2,7 +2,7 @@
  ---
 1. 返回概览界面，点击目标云平台连接中的【AWS】图标，
 
-![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/12.png ':size=80%')
+![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/1.png ':size=80%')
 
 2. 进入目标端连接界面,根据安装步骤操作
 
