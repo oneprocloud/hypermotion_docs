@@ -1,6 +1,6 @@
-## 连接阿里云 
 
-1. 返回概览界面，点击目标云平台连接中的【阿里云】图标，
+ ---
+1. 返回概览界面，点击目标云平台连接中的【AWS】图标，
 
 ![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/12.png ':size=80%')
 
@@ -9,11 +9,11 @@
 ![13.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/13.png ':size=80%')
 
  ---
-### 安装部署HyperGate
+### 安装部署<**HyperGate**>
 
 1. 创建一台实例，命名为<**HyperGate**>
 
-!> 注：1. 此步骤操作请在目标端阿里云平台上进行操作</br>
+!> 注：1. 此步骤操作请在目标端AWS上进行操作</br>
 2.部署方式请参照VMware文档中[部署OVF模板]([链接地址](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html)) 的说明
 
 2. 登陆<HyperGate>实例主机，复制并执行以下命令:
@@ -33,6 +33,8 @@ curl https://download.oneprocloud.com/softwares/gethypergate.sh |sudo bash
 ![15.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/15.png ':size=80%')
 
 4. 安装阶段步骤完成后点击【下一步】按钮，
+
+ ---
 
 ### 填写云平台认证信息
 
