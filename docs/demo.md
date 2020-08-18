@@ -1,23 +1,5 @@
 # DEMO视频演示
 
-## 阿里云
 
-### VMware 迁移到阿里云
 
-源端VMware环境通过 **"无代理「Agentless」"** 模式迁移到阿里公有云<br/>
-
-!> **无代理「Agentless」:** 透过调用VMware OpenAPI接口获取相关虚拟机数据，无需在VM内部安装代理程序
-
-### Agent 迁移到阿里云
-
-## AWS 
-
-### VMware 迁移到AWS
-
-### Agent 迁移到AWS
-
-## OpenStack
-
-### VMware 迁移到OpenStack
-
-### Agent 迁移到OpenStack
+<video src="https://download.oneprocloud.com/doc/03-%E8%BF%81%E7%A7%BB%E6%93%8D%E4%BD%9C-%E9%98%BF%E9%87%8C%E4%BA%91%EF%BC%88SaaS%E7%89%88%E6%9C%AC%EF%BC%89.mp4" width="600px" height="400px" controls="controls" loop="loop">VMware Migration to Aliyun</video>
