@@ -79,7 +79,7 @@ HyperGate云端数据代理我们将提供QCOW2镜像方式进行安装部署<br
 
  |   | 目标云端 | 权限          | 权限条目        | 备注          |
  | - | -------- | --------------- | ------------------- | --------------- |
- | 1 | 阿里云 | 云服务器（ECS） | AliyunECSFullAccess | ECS实例管理权限 |
+ | 1 | AWS | 云服务器（ECS） | AliyunECSFullAccess | ECS实例管理权限 |
  | 2 |          | 专有网络（VPC） | AliyunVPCFullAccess | VPC网络管理权限 |
 
 2. 预定实例安装所在地域下已创建专有网络VPC和交换机

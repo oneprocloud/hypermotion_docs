@@ -18,6 +18,6 @@
 
   * [迁移向导](saas/7.migrawiz.md)
   
-*附录一 创建<**HyperGate**>实例*
+* [附录1 - 创建**HyperGate**实例](saas/Appendix.md)
 
-*附录二 平台认证信息获取*
+* 附录2 - 平台认证信息获取
