@@ -23,7 +23,7 @@
     //...
     notFoundPage: '_404.md',
     name: "HyperMotion 云迁移",
-	//logo: '/_images/oneprocloud.png',
+    //logo: '/_images/oneprocloud.png',
     auto2top: true,
     basePath: '/',
     executeScript: true,
@@ -32,16 +32,13 @@
     mergeNavbar: true,
     maxLevel: 4,
     subMaxLevel: 5,
-	  search: {
+    search: {
       maxAge: 86400000, // 过期时间，单位毫秒，默认一天
       paths: 'auto',
       placeholder: '搜索',
       noData: '没有记录！'
-	  },
-	  formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
-    function(time) {
-      return new Date(time);
-	  },
+      },
+    formatUpdated: '{YYYY}-{MM}-{DD} {HH}:{mm}:{ss}',
     plugins: [
       function (hook, vm) {
         hook.beforeEach(function (html) {
@@ -49,24 +46,20 @@
             + '\n\n----\n\n'
             + '<a href="https://www.oneprocloud.com" target="_blank" style="color: inherit; font-weight: normal; text-decoration: none;">Copyright © 2012-2020 OnePro 版权所有</a>'
             + '<a style="float:right">更新时间：{docsify-updated}</a>'
-        })
-      },
-    ]
-  }
-
+          })
+        }
+      ]
+    }
   </script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/docsify.min.js"></script>
-  <script src="//unpkg.com/docsify/lib/plugins/search.js"></script>
+  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-copy-code"></script>
-  <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/gitalk.min.js"></script>
-  <script src="//cdn.jsdelivr.net/npm/gitalk/dist/gitalk.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-bash.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-markdown.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-nginx.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/prismjs/components/prism-php.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify/lib/plugins/zoom-image.min.js"></script>
   <script src="//cdn.jsdelivr.net/npm/docsify-pagination/dist/docsify-pagination.min.js"></script>
-  </script>
   <script>
     ((window.gitter = {}).chat = {}).options = {
       room: 'hypermotion_docs/hypermotion-docs-room'

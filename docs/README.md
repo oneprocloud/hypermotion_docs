@@ -23,7 +23,6 @@ HyperMotion迁移工具分为SaaS版和单机版两个版本：<br/>
  - [部署架构](deparch.md)
  - [客户痛点](custpainpoint.md)
  - [应用场景](scene.md)
- - [交付模式](deliver.md)
  - [迁移DEMO视频](demo.md)
 
 - 操作指南
