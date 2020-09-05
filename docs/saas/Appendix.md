@@ -3,15 +3,17 @@
 ---
 
 ## 阿里云（公）
-1. 登录阿里云‘管理控制台’，点击【云服务器ECS】
+**1. 登录阿里云‘管理控制台’，点击【云服务器ECS】**
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/1.png ':size=80%')
 
-2. 点击【实例】→选择创建实例的地域→点击【创建实例】
+**2. 点击【实例】→选择创建实例的地域→点击【创建实例】**
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/2.png ':size=80%')
 
-3. 基础配置：
+**3. 基础配置：**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/3.png ':size=80%')
 
 ?>  配置内容填写参考：
 
@@ -29,9 +31,10 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 填写完成后点击【下一步，网络和安全组】，
 
-4. 网络和安全组配置： 
+**4. 网络和安全组配置：** 
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/4.png ':size=80%')
+
 ?>  配置内容填写参考：
 
 字段  | 填写
@@ -43,8 +46,10 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 选择完成后点击【下一步，系统配置】
 
-5. 系统配置： 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
+
+**5. 系统配置：** 
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/5.png ':size=80%')
 
 ?>  配置内容填写参考：
 
@@ -53,32 +58,40 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 登录凭证 | 自定义密码
 实例（主机）名称  | HyperGate
 
-选择完成后点击【下一步，确认订单】
+选择完成后点击【下一步，确认订单】。
 
-6. 确定订单：
+**6. 确定订单：**
+
 检查创建信息，勾选《云服务器ECS服务条款》，点击【创建实例】
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
 
-7. 创建成功： 
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/6.png ':size=80%')
+
+**7. 创建成功：**
+
 提示‘创建成功’，选择【管理控制台】
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=30%
 
-8. 查看IP信息并记录： 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/7.png ':size=40%')
+
+
+**8. 查看IP信息并记录：**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/8.png ':size=80%')
 
 ---
 
 ## AWS
 
-1. 登录阿里云‘管理控制台’，点击【云服务器ECS】
+**1. 登录阿里云‘管理控制台’，点击【云服务器ECS】**
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/1.png ':size=80%')
 
-2. 点击【实例】→选择创建实例的地域→点击【创建实例】
+**2. 点击【实例】→选择创建实例的地域→点击【创建实例】**
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/2.png ':size=80%')
 
-3. 基础配置：
+**3. 基础配置：**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/3.png ':size=80%')
 
 ?>  配置内容填写参考：
 
@@ -96,9 +109,10 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 填写完成后点击【下一步，网络和安全组】，
 
-4. 网络和安全组配置： 
+**4. 网络和安全组配置：** 
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/4.png ':size=80%')
+
 ?>  配置内容填写参考：
 
 字段  | 填写
@@ -110,8 +124,10 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 选择完成后点击【下一步，系统配置】
 
-5. 系统配置： 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
+
+**5. 系统配置：** 
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/5.png ':size=80%')
 
 ?>  配置内容填写参考：
 
@@ -120,33 +136,41 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 登录凭证 | 自定义密码
 实例（主机）名称  | HyperGate
 
-选择完成后点击【下一步，确认订单】
+选择完成后点击【下一步，确认订单】。
 
-6. 确定订单：
+**6. 确定订单：**
+
 检查创建信息，勾选《云服务器ECS服务条款》，点击【创建实例】
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
 
-7. 创建成功： 
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/6.png ':size=80%')
+
+**7. 创建成功：**
+
 提示‘创建成功’，选择【管理控制台】
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=30%
 
-8. 查看IP信息并记录： 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/7.png ':size=80%')
+
+
+**8. 查看IP信息并记录：**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/8.png ':size=80%')
 
 ---
 
 
-## 华为云
+## 华为云（公）
 
-1. 登录阿里云‘管理控制台’，点击【云服务器ECS】
+**1. 登录阿里云‘管理控制台’，点击【云服务器ECS】**
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/1.png ':size=80%')
 
-2. 点击【实例】→选择创建实例的地域→点击【创建实例】
+**2. 点击【实例】→选择创建实例的地域→点击【创建实例】**
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/2.png ':size=80%')
 
-3. 基础配置：
+**3. 基础配置：**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/3.png ':size=80%')
 
 ?>  配置内容填写参考：
 
@@ -164,9 +188,10 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 填写完成后点击【下一步，网络和安全组】，
 
-4. 网络和安全组配置： 
+**4. 网络和安全组配置：** 
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/4.png ':size=80%')
+
 ?>  配置内容填写参考：
 
 字段  | 填写
@@ -178,8 +203,10 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 选择完成后点击【下一步，系统配置】
 
-5. 系统配置： 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
+
+**5. 系统配置：** 
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/5.png ':size=80%')
 
 ?>  配置内容填写参考：
 
@@ -188,32 +215,53 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 登录凭证 | 自定义密码
 实例（主机）名称  | HyperGate
 
-选择完成后点击【下一步，确认订单】
+选择完成后点击【下一步，确认订单】。
 
-6. 确定订单：
+**6. 确定订单：**
+
 检查创建信息，勾选《云服务器ECS服务条款》，点击【创建实例】
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
 
-7. 创建成功： 
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/6.png ':size=80%')
+
+**7. 创建成功：**
+
 提示‘创建成功’，选择【管理控制台】
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=30%
 
-8. 查看IP信息并记录： 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/7.png ':size=80%')
+
+
+**8. 查看IP信息并记录：**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/8.png ':size=80%')
 
 ---
 
-## 腾讯云
+**7. 创建成功： **
 
-1. 登录阿里云‘管理控制台’，点击【云服务器ECS】
+提示‘创建成功’，选择【管理控制台】
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/7.png ':size=80%')
 
-2. 点击【实例】→选择创建实例的地域→点击【创建实例】
+**8. 查看IP信息并记录： **
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/8.png ':size=80%')
 
-3. 基础配置：
+---
+
+
+## 腾讯云（公）
+
+**1. 登录阿里云‘管理控制台’，点击【云服务器ECS】**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/1.png ':size=80%')
+
+**2. 点击【实例】→选择创建实例的地域→点击【创建实例】**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/2.png ':size=80%')
+
+**3. 基础配置：**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/3.png ':size=80%')
 
 ?>  配置内容填写参考：
 
@@ -231,9 +279,10 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 填写完成后点击【下一步，网络和安全组】，
 
-4. 网络和安全组配置： 
+**4. 网络和安全组配置：** 
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/4.png ':size=80%')
+
 ?>  配置内容填写参考：
 
 字段  | 填写
@@ -245,8 +294,10 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 选择完成后点击【下一步，系统配置】
 
-5. 系统配置： 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
+
+**5. 系统配置：** 
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/5.png ':size=80%')
 
 ?>  配置内容填写参考：
 
@@ -255,17 +306,23 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 登录凭证 | 自定义密码
 实例（主机）名称  | HyperGate
 
-选择完成后点击【下一步，确认订单】
+选择完成后点击【下一步，确认订单】。
 
-6. 确定订单：
+**6. 确定订单：**
+
 检查创建信息，勾选《云服务器ECS服务条款》，点击【创建实例】
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
 
-7. 创建成功： 
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/6.png ':size=80%')
+
+**7. 创建成功：**
+
 提示‘创建成功’，选择【管理控制台】
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=30%
 
-8. 查看IP信息并记录： 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/9.png ':size=80%
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/7.png ':size=80%')
+
+
+**8. 查看IP信息并记录：**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/Appendix/8.png ':size=80%')
 
 ---
