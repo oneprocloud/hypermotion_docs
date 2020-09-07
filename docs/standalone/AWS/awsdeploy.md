@@ -86,15 +86,30 @@ vCPU| 建议值: 4vCPU，最低2vCPU
 ---
 ## 2. 推送安装HyperGate
 
-**1. 登录HyperMotion主机命令行终端，输入以下蓝色字段命令**
+**1. 登录HyperMotion主机命令行终端，输入以下命令**
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/11.png ':size=90%')
+```
+~]# cd /opt/installer/auto_install/
+~]# ls -l
 
+```
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/11.png ':size=70%')
+
+```
+~]# python auto_deploy.py -t hypergate -i HyperGate_IP -u root -k key_path
+
+```
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/12.png ':size=90%')
+
+
+!> 注：-i指定HyperGate IP  ；-u指定HyperGate用户，建议使用管理员用户 ；-k若使用秘钥连接，可指定私钥文件路径。 </br>   
 
 **2. 等待HyperGate安装完成，安装完成如下图**
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/13.png ':size=90%')
+
+
 
 **3. 装完成后需重启HyperGate主机保证数据落盘**
 
@@ -117,14 +132,16 @@ vCPU| 建议值: 4vCPU，最低2vCPU
 ## 4. 创建Windows  HyperDoor镜像
 
 
-**1. 创建一台Windows 2019的实例，并修改实例登录密码 **
+**1. 创建一台Windows 2019的实例，并修改实例登录密码**
 
+!> 注：请务必修改root账号登录密码为bofei123 ，以便自动连接进行驱动修复。 </br>       
+
+
+
+**2. 创建后关闭实例，同样的方法创建Winodws HyperDoor镜像**
+
+**3. 创建后同样在映像列表中查阅镜像ID**
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/16.png ':size=90%')
-
-
-**2. 创建后同样在映像列表中查阅镜像ID**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/17.png ':size=90%')
 
 ---
