@@ -1,17 +1,18 @@
-### 服务健康检查
+## 1. 服务健康检查
 
-1. 登陆后，系统自动跳转至【配置向导】服务健康检查界面，自动检测服务健康状况，确认服务健康状况均正常，点击【下一步】
+登陆后，系统自动跳转至【配置向导】服务健康检查界面，自动检测服务健康状况，确认服务健康状况均正常，点击【下一步】
 
-![28.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/28.png ':size=80%')
+![28.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/28.png ':size=90%')
 
  ---
-### 激活License
+## 2. 激活License
 
-- 阅读激活说明，确认后根据实际需要在以下两种方式中任选一种进行激活：
+阅读激活说明，确认后根据实际需要在以下两种方式中任选一种进行激活：
 
 ![29.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/29.png ':size=80%')
 
-#### 方式一：扫描二维码（推荐）
+
+**<font face="中易宋体" size=3 color=blue>&ensp; • 方式一：扫描二维码（推荐）</font>**
 
 1. 使用手机上的“微信”、“钉钉”、“支付宝”或带有扫描二维码的“浏览器”，扫描对话框中的二维码，并按要求填写相关信息
 
@@ -21,7 +22,8 @@
 
 2. 扫描二维码方式提交成功后，激活码将以附件形式发送至所填写的邮箱中，请注意查收。收到激活码后粘贴到“激活码”框中，点击【激活】。
 
-#### 方式二：发送邮件
+
+**<font face="中易宋体" size=3 color=blue>&ensp; • 方式二：发送邮件</font>**
 
 1. 点击【点击复制注册码】，将注册码以邮件形式发送至license@oneprocloud.com
 
@@ -36,11 +38,13 @@
 3. 确认信息无误后点击【下一步】
 
 ---
-### 源端连接设置
+
+## 3. 源端连接设置
 
 !> 请根据实际需求选择源端待迁移主机迁移方式，目前支持**「Agent代理」**及**「Agentless无代理」**两种模式
 
-#### 无代理方式 - 连接VMware平台
+
+**<font face="中易宋体" size=3 color=blue>&ensp; • 无代理方式 - 连接VMware平台</font>**
 
 1. 选择VMware图标，自动跳转下一步
 
@@ -63,7 +67,8 @@ vCenter账户密码  | vCenter或ESXi的密码
 
 ![35.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/35.png ':size=80%')
 
-#### 无代理方式 - 连接OpenStack平台
+
+**<font face="中易宋体" size=3 color=blue>&ensp; • 无代理方式 - 连接OpenStack平台</font>**
 
 1. 选择OpenStack图标，自动跳转下一步
 
@@ -101,7 +106,8 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 
 4. 系统提示’创建源端连接成功’，点击下一步
 
-#### 代理方式 - 连接windows主机
+
+**<font face="中易宋体" size=3 color=blue>&ensp; • 代理方式 - 连接windows主机</font>**
 
 1. 选择物理机机X86图标，自动跳转下一步
 
@@ -117,8 +123,8 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 
 ?> 所有对Agent的操作均在HyperMotion端触发，Windows Agent服务正常启动后，可在HyperMotion中看到注册的主机。
 
-#### 代理方式 - 连接Linux主机
 
+**<font face="中易宋体" size=3 color=blue>&ensp; • 代理方式 - 连接Linux主机</font>**
 1. 选择所要迁移Linux主机图标，自动跳转下一步
 
 ![41.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/41.png ':size=80%')

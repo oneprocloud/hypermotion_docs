@@ -30,11 +30,7 @@ HyperGate云端数据代理我们将提供QCOW2镜像方式进行安装部署<br
 
 [HyperMotion & HyperGate QCOW2镜像下载](http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw)
 
-### HyperDoor驱动适配镜像下载
 
-**「HyperDoor驱动适配镜像」** 此镜像主要用途为在迁移数据同步到目标云端之后，在启动系统时将会使用 **「HyperDoor驱动适配镜像」**进行驱动适配操作，此镜像为临时ramdisk操作系统，在添加目标平台时将会使用到<br/>
-
-[HyperDoor QCOW2镜像下载](http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw)
 
 ---
 
