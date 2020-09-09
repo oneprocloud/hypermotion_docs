@@ -6,10 +6,11 @@ HyperMotion云迁移在保证业务连续性的基础上，可将物理服务器
 
 HyperMotion迁移工具分为SaaS版和单机版两个版本：<br/>
 
-  <**HyperMotion SaaS版**>：无需安装部署，注册后即可通过公网域名访问登录使用<br/>
+  **HyperMotion SaaS版**：无需安装部署，注册后即可通过公网域名访问登录使用<br/>
  - [HyperMotion SaaS 环境链接](https://hypermotion.oneprocloud.com)<br/>
 
-  <**HyperMotion 单机版**>：安装部署在本地内网环境，详细内容移步到《HyperMotion单机版》相关介绍<br/>
+
+  **HyperMotion 单机版**：安装部署在本地内网环境。<br/>
  - [HyperMotion 单机版本](standalone/standalone.md)
 
 更多权限申请及迁移咨询：enquiry@oneprocloud.com。

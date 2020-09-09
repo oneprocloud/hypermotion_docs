@@ -48,14 +48,14 @@
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * 华为云（公）
-    * [迁移流程动画](standalone/aliyun/migrpro.md)
-    * [前提准备](standalone/aliyun/premise.md)
+    * [迁移流程动画](standalone/TechWave/migrpro.md)
+    * [前提准备](standalone/TechWave/premise.md)
     * 迁移安装部署
-	  * [迁移主控平台-HyperMotion](standalone/vmdeploy.md)
-	  * [云端数据代理-HyperGate](standalone/aliyun/alideploy.md)
+	  * [迁移主控平台-HyperMotion](standalone/TechWave/vmdeploy.md)
+	  * [云端数据代理-HyperGate](standalone/TechWave/alideploy.md)
     * 迁移操作使用
 	  * [登陆访问](standalone/login.md)
-	  * [配置向导](standalone/aliyun/alioper.md)
+	  * [配置向导](standalone/TechWave/alioper.md)
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * 金山云

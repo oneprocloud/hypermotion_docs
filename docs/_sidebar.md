@@ -3,7 +3,6 @@
   * [产品概述](README.md)
   * [技术特性](techadv.md)
   * [部署架构](deparch.md)
-  * [客户痛点](custpainpoint.md)
   * [应用场景](scene.md)
   * [迁移DEMO视频](demo.md)
 
