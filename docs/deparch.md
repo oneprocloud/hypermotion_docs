@@ -12,7 +12,7 @@
 
 ## 单机版
 
-单机版本需要下载迁移安装包本地化部署，具体安装部署请移步 **「[迁移环境部署](standalone/aliyun/premise.md)」**进行查看
+单机版本需要下载迁移安装包本地化部署，具体安装部署请参考 **「[迁移环境部署](standalone/aliyun/premise.md)」**进行查看
 
 ![standalone_archive](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/deparch_standalone.png ':size=50%')
 
@@ -25,4 +25,6 @@
 
 ## 集成版
 
-![saas_archive](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/03.png ':size=50%')
+目前提供阿里云集成版，请至阿里云市场直接下单购买[万博云迁移产品](https://market.aliyun.com/products/205872008/cmgj00041041.html#sku=yuncode35041000010)， 即开即用，无需安装和部署。
+
+![3](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/03.png ':size=50%')
