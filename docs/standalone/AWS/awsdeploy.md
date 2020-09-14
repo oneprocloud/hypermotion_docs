@@ -3,88 +3,12 @@
 ---
 ## 1. 创建实例，命名为 HyperGate
 
-**1. 登录AWS‘管理控制台’，【服务】→【EC2】**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/1.png ':size=90%')
-
-**2. 点击【实例】→点击【启动实例】**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/2.png ':size=90%')
-
-**3. 选择AMI：**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/3.png ':size=90%')
-
-
-?> 配置参考以下内容
-
-选项  | 选项填写
------------------| -------------
-操作系统   | centos7.3~7.5 64位（X86）
-
-
-
-**4. 选择实例类型**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/4.png ':size=90%')
-
-
-?> 配置内容填写参考：
-
-选项  | 选项填写
------------------| -------------
-系列  | 通用型
-vCPU| 建议值: 4vCPU，最低2vCPU
-内存 | 建议值: 8GiB，最低4GiB
-
-
-填写完成后点击【下一步，配置实例】，
-
-**5. 配置实例**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/5.png ':size=90%')
-
-选择网络VPC，完成后点击【下一步，添加存储】
-
-**6. 添加存储**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/6.png ':size=90%')
-
-?> 配置内容填写参考：
-
-选项  | 选项填写
------------------| -------------
-存储大小  | 通用型SSD 建议100G，最低40G
-
-
-
-**7. 添加标签**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/7.png ':size=90%')
-
-将实例命名为‘HyperGate’，完成后点击【下一步，配置安全组】
-
-
-
-**8. 配置安全组**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/8.png ':size=90%')
-
-选择放行了12222/18090/3260/22端口的安全组后点击【审核和启动】
-
-**9. 审核**
-
-检查创建信息，点击【启动】
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/9.png ':size=90%')
-
-**10. 创建成功，下载密钥对文件，查看IP信息并记录：**
-
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/10.png ':size=90%')
+!> 注：1. 此步骤操作请在目标端AWS上进行操作；</br>
+ &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[ 附录 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html) 的说明。
+ 
 
 ---
-## 2. 推送安装HyperGate
+## 2. 推送安装「HyperGate」
 
 **1. 登录HyperMotion主机命令行终端，输入以下命令**
 
@@ -114,7 +38,7 @@ vCPU| 建议值: 4vCPU，最低2vCPU
 **3. 装完成后需重启HyperGate主机保证数据落盘**
 
 ---
-## 3. 创建Linux  HyperDoor镜像
+## 3. 创建「Linux  HyperDoor」镜像
 
 **1. 关闭HyperGate实例，选择该实例→【操作】→【映像】→【创建映像】**
 
@@ -129,7 +53,7 @@ vCPU| 建议值: 4vCPU，最低2vCPU
 ---
 
 
-## 4. 创建Windows  HyperDoor镜像
+## 4. 创建「Windows  HyperDoor」镜像
 
 
 **1. 创建一台Windows 2019的实例，并修改实例登录密码**
@@ -144,4 +68,4 @@ vCPU| 建议值: 4vCPU，最低2vCPU
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/16.png ':size=90%')
 
----
+

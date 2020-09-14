@@ -15,7 +15,7 @@
 1. 创建一台实例，命名为**HyperGate**
 
 !> 注：1. 此步骤操作请在目标端阿里云上进行操作</br>
- &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[ 附录一 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html) 的说明
+ &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[ 附录 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html) 的说明
 
 2. 登陆<HyperGate>实例主机，复制并执行以下命令:
 
