@@ -44,7 +44,7 @@
 	  * [云端数据代理-HyperGate](standalone/Tencent/Tencentdeploy.md)
     * 迁移操作使用
 	  * [登陆访问](standalone/login.md)
-	  * [配置向导](standalone/aliyun/alioper.md)
+	  * [配置向导](standalone/Tencent/Tencentoper.md)
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * 华为云（公）

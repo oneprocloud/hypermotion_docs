@@ -1,90 +1,18 @@
 
 
 ---
-## 1. 创建实例，命名为 HyperGate
-
-**1. 登录腾讯云‘管理控制台’，【实例】→选择地域→【新建】**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/1.png ':size=90%')
-
-**2. 选择机型1：**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/2.png ':size=90%')
-
-?> 配置信息填写参考以下内容
-
-选项  | 选项填写
------------------| -------------
-配置方式   | 自定义配置
-计费方式 | 按量付费
-地域 | 默认选择（与安全组地域一致）
-网络      | 选择创建安全组的同一VPC网络及子网
-vCPU    | 建议值: 4vCPU，最低2vCPU
-内存      | 建议值: 8GiB，最低4GiB
-机型     | 计算型C3（4U8G）
+## 1. 创建实例，命名为「HyperGate」
 
 
-**3. 选择机型2-选择镜像：**
+!> 注：1. 此步骤操作请在目标端Azure上进行操作；</br>
+ &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[ 附录 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html) 的说明。
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/3.png ':size=90%')
-
-?> 配置信息填写参考以下内容
-
-选项  | 选项填写
------------------| -------------
-镜像   | 自定义镜像，选择镜像源（名称为HM_IMG_<date>.qcow2）
-系统盘 | 高效云盘 建议100G，最低50G
-公网带宽 | 勾选‘免费分配独立公网IP’，选择‘按使用流量’
-带宽      | 选择‘5M’
-
-!> 注：如未上传镜像源，请参考文档中的导入自定义镜像上传自定义镜像，或联络我们的实施工程师获取共享镜像。
-
-填写完成后点击【下一步，设置主机】，
-
-**4. 设置主机1-选择安全组：**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/4.png ':size=90%')
-
-
-**5. 设置主机1-主机名和密码**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/5.png ':size=90%')
-
-?> 配置内容填写参考：
-
-选项  | 选项填写
------------------| -------------
-实例名称| HyperGate
-登陆方式| 按需求选择，此处勾选‘保留镜像设置’
-
-选择完成后点击【下一步，确认配置信息】
-
-**6. 确认配置信息**
-
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/6.png ':size=90%')
-
-确认完成后点击【开通】
-
-**7. 创建成功**
-
-在实例列表中查看创建信息，记录该实例的IP地址
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/7.png ':size=90%')
 
 
 
 ---
 
-## 2. 打开实例控制台
-
-**1. 在实例列表中，点击创建实例的【远程连接】按钮， **
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/8.png ':size=90%')
-
----
-
-## 3. 自动进入安装部署界面
+## 2. 自动进入安装部署界面
 
 **1. 登录后自动进入安装界面，光标选择到'HyperGate'，'Enter'键入**
 
@@ -94,22 +22,15 @@ vCPU    | 建议值: 4vCPU，最低2vCPU
 
 ![20.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/20.png" ':size=70%')
 
+
+
 ---
 
-## 4. 上传HyperDoor镜像
+## 3. 上传「HyperDoor」镜像
 
-**1. 获取HyerDoor镜像;**
+将下载的[Livecd-HyperDoor-202006170931.qcow2](http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw) 镜像文件上传至腾讯云平台。
 
-**2. 管理控制台界面，选择【云服务器ECS】-【实例】**
+!> 如已上传，请忽略此步骤;上传方式请参考腾讯云文档中的导入自定义镜像[上传自定义镜像](https://help.aliyun.com/document_detail/25464.html?spm=5176.11065259.1996646101.searchclickresult.4b5c780dLB7kN3&aly_as=Fk09A1df)
+，或联络我们的实施工程师获取共享镜像。
 
-**3. 在实例列表中，点击创建实例的【更多】-【磁盘和镜像】-【创建自定义镜像】**
 
-![21.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/21.png" ':size=90%')
-
-**4. 填写自定义镜像名称、自定义镜像描述，默认资源组，并选择【创建】**
-
-![22.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/22.png" ':size=60%')
-
-**5. 管理控制台页面，选择【云服务器ECS】-【镜像】，记录该镜像ID**
-
-![23.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png" ':size=90%')

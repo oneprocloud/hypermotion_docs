@@ -190,6 +190,143 @@ vCPU| 建议值: 4vCPU，最低2vCPU
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/10.png ':size=90%')
 
+#### Azure
+
+**1. 登录Azure‘管理控制台’，【虚拟机】→【添加】**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/1.png ':size=90%')
+
+**2. 选择操作系统**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/2.png ':size=90%')
+
+?> 配置参考以下内容
+
+选项  | 选项填写
+-----------------| -------------
+操作系统   | centos7.3~7.5 64位（X86）
+
+
+**3. 配置实例信息：**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/3.png ':size=90%')
+
+
+
+**4. 配置用户密码和入站端口规则：**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/4.png ':size=90%')
+
+
+?> 配置内容填写参考：
+
+选项  | 选项填写
+-----------------| -------------
+用户名  | centos7.3~7.5 64位（X86）
+
+
+
+**5. 选择磁盘类型：**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/5.png ':size=90%')
+
+
+
+
+**6. 选择网络：**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/6.png ':size=90%')
+
+
+
+
+**7. 确认配置信息：**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/7.png ':size=90%')
+
+
+检查创建信息，点击【创建】
+
+
+**8. 创建成功，查看IP信息并记录：**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/8.png ':size=90%')
+
+
+#### 腾讯云
+
+
+**1. 登录腾讯云‘管理控制台’，【实例】→选择地域→【新建】**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/1.png ':size=90%')
+
+**2. 选择机型1：**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/2.png ':size=90%')
+
+?> 配置信息填写参考以下内容
+
+选项  | 选项填写
+-----------------| -------------
+配置方式   | 自定义配置
+计费方式 | 按量付费
+地域 | 默认选择（与安全组地域一致）
+网络      | 选择创建安全组的同一VPC网络及子网
+vCPU    | 建议值: 4vCPU，最低2vCPU
+内存      | 建议值: 8GiB，最低4GiB
+机型     | 计算型C3（4U8G）
+
+
+**3. 选择机型2-选择镜像：**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/3.png ':size=90%')
+
+?> 配置信息填写参考以下内容
+
+选项  | 选项填写
+-----------------| -------------
+镜像   | 自定义镜像，选择镜像源（名称为HM_IMG_<date>.qcow2）
+系统盘 | 高效云盘 建议100G，最低50G
+公网带宽 | 勾选‘免费分配独立公网IP’，选择‘按使用流量’
+带宽      | 选择‘5M’
+
+!> 注：如未上传镜像源，请参考文档中的导入自定义镜像上传自定义镜像，或联络我们的实施工程师获取共享镜像。
+
+填写完成后点击【下一步，设置主机】，
+
+**4. 设置主机1-选择安全组：**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/4.png ':size=90%')
+
+
+**5. 设置主机1-主机名和密码**
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/5.png ':size=90%')
+
+?> 配置内容填写参考：
+
+选项  | 选项填写
+-----------------| -------------
+实例名称| HyperGate
+登陆方式| 按需求选择，此处勾选‘保留镜像设置’
+
+选择完成后点击【下一步，确认配置信息】
+
+**6. 确认配置信息**
+
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/6.png ':size=90%')
+
+确认完成后点击【开通】
+
+**7. 创建成功**
+
+在实例列表中查看创建信息，记录该实例的IP地址
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/7.png ':size=90%')
+
+
+
 ---
 ## 云平台认证信息获取（目标平台操作）
 ---

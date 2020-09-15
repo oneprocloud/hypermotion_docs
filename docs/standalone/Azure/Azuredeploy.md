@@ -1,72 +1,15 @@
 
 
 ---
-## 1. 创建实例，命名为 HyperGate
+## 1. 创建实例，命名为「HyperGate」
 
-**1. 登录Azure‘管理控制台’，【虚拟机】→【添加】**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/1.png ':size=90%')
-
-**2. 选择操作系统**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/2.png ':size=90%')
-
-?> 配置参考以下内容
-
-选项  | 选项填写
------------------| -------------
-操作系统   | centos7.3~7.5 64位（X86）
-
-
-**3. 配置实例信息：**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/3.png ':size=90%')
-
-
-
-**4. 配置用户密码和入站端口规则：**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/4.png ':size=90%')
-
-
-?> 配置内容填写参考：
-
-选项  | 选项填写
------------------| -------------
-用户名  | centos7.3~7.5 64位（X86）
-
-
-
-**5. 选择磁盘类型：**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/5.png ':size=90%')
-
-
-
-
-**6. 选择网络：**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/6.png ':size=90%')
-
-
-
-
-**7. 确认配置信息：**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/7.png ':size=90%')
-
-
-检查创建信息，点击【创建】
-
-
-**8. 创建成功，查看IP信息并记录：**
-
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/azure/8.png ':size=90%')
-
+!> 注：1. 此步骤操作请在目标端Azure上进行操作；</br>
+ &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[ 附录 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html) 的说明。
+ 
 
 
 ---
-## 2. 推送安装HyperGate
+## 2. 推送安装「HyperGate」
 
 **1. 登录HyperMotion主机命令行终端，输入以下命令**
 
