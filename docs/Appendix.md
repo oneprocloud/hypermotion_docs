@@ -325,6 +325,11 @@ vCPU    | 建议值: 4vCPU，最低2vCPU
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/7.png ':size=90%')
 
+#### 华为云
+
+### 金山云
+
+### OpenStack
 
 
 ---

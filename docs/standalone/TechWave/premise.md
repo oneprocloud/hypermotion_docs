@@ -5,31 +5,21 @@
 
 ## 1. 安装包下载
 
-请点击获取以下两个镜像文件并上传至**腾讯云平台**：
+请点击获取以下镜像文件并上传至**华为云平台**：
 
 
 
-- 镜像1：[HM_IMG-191227-2020-09-02.qcow2](http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw)
+- [HM_IMG-191227-2020-09-02.qcow2](http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw)
 
-- 镜像2：[Livecd-HyperDoor-202006170931.qcow2](http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw)
+!> 上传方式请参考华为云文档中的导入自定义镜像[上传自定义镜像](https://help.aliyun.com/document_detail/25464.html?spm=5176.11065259.1996646101.searchclickresult.4b5c780dLB7kN3&aly_as=Fk09A1df)，或联络我们的实施工程师获取共享镜像。
 
-
-
-?>1. **「HyperMotion主控平台」**与 **「HyperGate云端数据代理」**均使用**镜像1**进行安装部署，具体安装部署操作参照<a href="http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw" download="HyperMotion-V3-full.raw">迁移安装部署</a>部分的操作说明；</br>
-2.  &ensp; **镜像2**为迁移主机迁移至腾讯云后的驱动自适配镜像。
-
-
-!> 1.上传方式请参考腾讯云文档中的导入自定义镜像[上传自定义镜像](https://help.aliyun.com/document_detail/25464.html?spm=5176.11065259.1996646101.searchclickresult.4b5c780dLB7kN3&aly_as=Fk09A1df)
-，或联络我们的实施工程师获取共享镜像。</br>
-2.上创镜像时，镜像导入方式请务必勾选**‘强制’**选项！
-
-
+?> **「HyperMotion主控平台」**与 **「HyperGate云端数据代理」**均使用此镜像进行安装部署，具体安装部署操作参照<a href="http://office.oneprocloud.com:18888/iso/hypermotion/%e6%9d%ad%e5%b7%9e%e6%94%bf%e5%8a%a1%e4%ba%91/HM_IMG-191227-2020-03-19.raw" download="HyperMotion-V3-full.raw">迁移安装部署</a>部分的操作说明。
 
 ---
 
 ## 2.环境及资源准备
 
-?> 请在目标端阿里云平台上确认以下信息：
+?> 请在目标端华为云平台上确认以下信息：
 
 !> 迁移操作前，请务必完成此步骤，按照以下需求开通网络策略
 

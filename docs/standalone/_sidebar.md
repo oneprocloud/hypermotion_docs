@@ -52,32 +52,32 @@
     * [前提准备](standalone/TechWave/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/TechWave/vmdeploy.md)
-	  * [云端数据代理-HyperGate](standalone/TechWave/alideploy.md)
+	  * [云端数据代理-HyperGate](standalone/TechWave/Techdeploy.md)
     * 迁移操作使用
 	  * [登陆访问](standalone/login.md)
-	  * [配置向导](standalone/TechWave/alioper.md)
+	  * [配置向导](standalone/TechWave/Techoper.md)
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * 金山云
-    * [迁移流程动画](standalone/aliyun/migrpro.md)
-    * [前提准备](standalone/aliyun/premise.md)
+    * [迁移流程动画](standalone/KingCLoud/migrpro.md)
+    * [前提准备](standalone/KingCLoud/premise.md)
     * 迁移安装部署
-	  * [迁移主控平台-HyperMotion](standalone/vmdeploy.md)
-	  * [云端数据代理-HyperGate](standalone/aliyun/alideploy.md)
+	  * [迁移主控平台-HyperMotion](standalone/KingCLoud/vmdeploy.md)
+	  * [云端数据代理-HyperGate](standalone/KingCLoud/kingdeploy.md)
     * 迁移操作使用
 	  * [登陆访问](standalone/login.md)
-	  * [配置向导](standalone/aliyun/alioper.md)
+	  * [配置向导](standalone/KingCLoud/kingoper.md)
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * OpenStack
-    * [迁移流程动画](standalone/aliyun/migrpro.md)
-    * [前提准备](standalone/aliyun/premise.md)
+    * [迁移流程动画](standalone/OpenStack/migrpro.md)
+    * [前提准备](standalone/OpenStack/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/vmdeploy.md)
-	  * [云端数据代理-HyperGate](standalone/aliyun/alideploy.md)
+	  * [云端数据代理-HyperGate](standalone/OpenStack/opdeploy.md)
     * 迁移操作使用
 	  * [登陆访问](standalone/login.md)
-	  * [配置向导](standalone/aliyun/alioper.md)
+	  * [配置向导](standalone/OpenStack/opoper.md)
 	  * [迁移向导](standalone/migrawiz.md) 
 	  
   * OpenStackImageBootV2

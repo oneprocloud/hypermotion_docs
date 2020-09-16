@@ -6,11 +6,11 @@
 
 **1. 配置向导进入‘目标端平台配置’界面，选择腾讯云图标**
 
-![43.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/12.png ':size=80%')
+![43.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/12.png ':size=90%')
 
 **2. 填写云平台认证信息后点击【下一步】**
 
-![44.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/13.png ':size=80%')
+![44.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/Tencent/13.png ':size=90%')
 
 ?> 需要填写目标云端认证信息说明如下，请按照需求进行查找并填写
 
@@ -35,4 +35,4 @@ API接入地址 | 默认 ecs.aliyuncs.com
 
 1. 目标平台配置信息填写完成后，点击【下一步】，确认配置信息无误后配置向导完成，系统提示修改密码后重新登录
 
-![45.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/45.png ':size=80%')
+![45.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/45.png ':size=90%')

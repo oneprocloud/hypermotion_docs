@@ -3,9 +3,9 @@
 ---
 
 ?>  <font face="黑体" size=4  color=red>* 安装步骤导览：</font> </br></br>
-1.安装**迁移主控台「HyperMotion」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，此处建议安装在腾讯云平台主机；</br>
-2.安装**云端数据代理「HyperGate」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，需安装在腾讯云平台主机；</br>
-3.上传 **驱动适配镜像「HyperDoor」**：该镜像用于迁移主机迁移至阿里云后的驱动自适配，已在上一步骤上传至腾讯云平台。  </br>
+1.安装**迁移主控台「HyperMotion」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，此处建议安装在金山云平台主机；</br>
+2.安装**云端数据代理「HyperGate」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，需安装在金山云平台主机；</br>
+3.上传 **驱动适配镜像「HyperDoor」**：该镜像用于迁移主机迁移至金山云后的驱动自适配，已在上一步骤上传至金山云平台。  </br>
 
 
 
