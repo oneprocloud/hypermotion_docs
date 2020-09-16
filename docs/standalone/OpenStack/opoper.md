@@ -4,42 +4,34 @@
 [confwiz.md](../confwiz.md ':include')
 
 
-## 4. 华为云连接设置
+## 4. OpenStack连接设置
 
-**1. 配置向导进入‘目标端平台配置’界面，选择华为云图标**
+**1. 配置向导进入‘目标端平台配置’界面，选择OpenStack图标**
 
-![43.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/TechWave/13.png ':size=80%')
+![43.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/8.png ':size=90%')
 
 **2. 填写云平台认证信息后点击【下一步】**
 
-![44.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/TechWave/14.png ':size=80%')
+![44.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/9.png ':size=90%')
 
 ?> 需要填写目标云端认证信息说明如下，请按照需求进行查找并填写
 
 字段  | 含义
 ------------- | ----------------------
-云平台服务注册地址  | 云平台已安装HyperGate的虚机IP地址，需与HyperMotion与华为云互通
+云平台服务注册地址  | 目标云平台已安装HyperGate的虚机IP地址
 云平台服务端口  | 默认的服务端口为18090
-云账号 | 用户所属账号名称，登陆时填写的**账号名**
-用户 | 登陆时填写的**用户名**
-密码 | 登陆时填写的**用户密码**
-地域ID | 选择安装云平台服务虚机所在地域（例：华北、华东、香港）
-可用区ID | 选择安装云平台服务虚机所在可用区
+目标平台域 | 云平台的Region，等于环境变量中的OS_REGION_NAME
+存储可用区 | 云平台存储zone，默认nova，可以使用cinder service-list查看
+用户 | 云平台登陆的用户名
+密码 | 云平台登陆密码
+目标云平台项目名称| 一般和用户名一致
+目标云平台地址| 例http://192.168.10.201:5000/v3
 
 
-?> 需要填写相关地域、可用区以及镜像ID信息说明如下，请按照需求进行查找并填写
 
-字段  | 含义
-------------- | ----------------------
-云平台项目  |默认 cn-north-1
-镜像ID | 本地上传至华为云的镜像ID（详情参见附录 华为云平台认证信息获取）
 
-**3. 确认目标平台信息后点击下一步，**
-
-![44.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/TechWave/15.png ':size=80%')
-
-**4. 配置向导完成**
+**3. 配置向导完成**
 
 密码修改完成后，重新登陆，确认配置信息无误后配置向导完成 
 
-![45.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/TechWave/16.png ':size=80%')
+![45.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/10.png ':size=90%')
