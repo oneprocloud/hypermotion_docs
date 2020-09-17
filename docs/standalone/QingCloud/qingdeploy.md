@@ -66,6 +66,8 @@ CPU/内存 | >=1核1G
 
 **3.获取HyperDoor镜像并拷贝（scp）至主机内**
 
+将获取的名称为：Livecd_HyperDoor_<date>.qcow2的镜像文件拷贝至主机内
+
 ```
 ~]#qemu-img convert -f qcow2 -O raw Livecd-HyperDoor_<date>.qcow2 hd-0712.raw
 
@@ -98,4 +100,4 @@ CPU/内存 | >=1核1G
 
 管理控制台页面，选择【镜像】，记录名称的镜像ID
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/14.png':size=90%')
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/14.png ':size=90%')

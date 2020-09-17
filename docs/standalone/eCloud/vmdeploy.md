@@ -4,8 +4,8 @@
 
 ?>  <font face="黑体" size=4  color=red>* 安装步骤导览：</font> </br></br>
 1.安装**迁移主控台「HyperMotion」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，此处建议安装在源端平台主机；</br>
-2.安装**云端数据代理「HyperGate」**：使用ISO镜像进行推送安装，无需下载镜像，需部署在青云平台主机；</br>
-3.制作 **驱动适配镜像「HyperDoor」**：因青云暂不支持自定义镜像的上传，需在目标端青云平台制做一个镜像主机再转化为镜像文件；镜像主机scp上传在源平台的镜像源（Livecd_HyperDoor_<date>.qcow2）并部署在青云平台。  </br>
+2.安装**云端数据代理「HyperGate」**：使用ISO镜像进行推送安装，无需下载镜像，需部署在天翼云平台主机；</br>
+3.制作 **驱动适配镜像「HyperDoor」**：因天翼云暂不支持自定义镜像的上传，需在目标端青云平台制做一个镜像主机再转化为镜像文件；镜像主机scp上传在源平台的镜像源（Livecd_HyperDoor_<date>.qcow2）并部署在天翼云平台。  </br>
 
 
 !> 此HyperMotion主控平台安装步骤以VMware平台安装作为展示，其他QCOW2镜像方式安装均一致，无需过多配置

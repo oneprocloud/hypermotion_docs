@@ -103,14 +103,14 @@
 	  * [迁移向导](standalone/migrawiz.md) 
 	  
   * 天翼云
-    * [迁移流程动画](standalone/aliyun/migrpro.md)
-    * [前提准备](standalone/aliyun/premise.md)
+    * [迁移流程动画](standalone/eCloud/migrpro.md)
+    * [前提准备](standalone/eCloud/premise.md)
     * 迁移安装部署
-	  * [迁移主控平台-HyperMotion](standalone/vmdeploy.md)
-	  * [云端数据代理-HyperGate](standalone/aliyun/alideploy.md)
+	  * [迁移主控平台-HyperMotion](standalone/eCloud/vmdeploy.md)
+	  * [云端数据代理-HyperGate](standalone/eCloud/edeploy.md)
     * 迁移操作使用
 	  * [登陆访问](standalone/login.md)
-	  * [配置向导](standalone/aliyun/alioper.md)
+	  * [配置向导](standalone/eCloud/eoper.md)
 	  * [迁移向导](standalone/migrawiz.md) 
 	  
   * UCloud
