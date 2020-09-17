@@ -9,14 +9,14 @@
 
 阅读激活说明，确认后根据实际需要在以下两种方式中任选一种进行激活：
 
-![29.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/29.png ':size=80%')
+![29.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/29.png ':size=90%')
 
 
 **<font face="中易宋体" size=3 color=blue>&ensp; • 方式一：扫描二维码（推荐）</font>**
 
 1. 使用手机上的“微信”、“钉钉”、“支付宝”或带有扫描二维码的“浏览器”，扫描对话框中的二维码，并按要求填写相关信息
 
-![31.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/31.png ':size=80%')
+![31.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/31.png ':size=90%')
 
 !> *注：请正确填写公司名称、姓名、职位等信息，否则将无法收到序列号信息。                           
 
@@ -27,13 +27,13 @@
 
 1. 点击【点击复制注册码】，将注册码以邮件形式发送至license@oneprocloud.com
 
-![30.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/30.png ':size=80%')
+![30.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/30.png ':size=90%')
 
 !> 注：请正确填写公司名称、姓名、职位等信息，否则将无法收到序列号信息。                           
 
 2. 邮件方式提交成功后，激活码将以附件形式发送至所填写的邮箱中，请注意查收，收到激活码后粘贴到“激活码”框中，点击【激活】
 
-![32.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/32.png ':size=80%')
+![32.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/32.png ':size=90%')
 
 3. 确认信息无误后点击【下一步】
 
@@ -48,11 +48,11 @@
 
 1. 选择VMware图标，自动跳转下一步
 
-![33.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/33.png ':size=80%')
+![33.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/33.png ':size=90%')
 
 2. 填写vCenter相关信息后选择【下一步】
 
-![34.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/34.png ':size=80%')
+![34.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/34.png ':size=90%')
 
 ?> 需要填写源端VMware链接信息说明如下所示
 
@@ -65,18 +65,18 @@ vCenter账户密码  | vCenter或ESXi的密码
 
 3. 系统提示’创建源端连接成功’，点击下一步
 
-![35.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/35.png ':size=80%')
+![35.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/35.png ':size=90%')
 
 
 **<font face="中易宋体" size=3 color=blue>&ensp; • 无代理方式 - 连接OpenStack平台</font>**
 
 1. 选择OpenStack图标，自动跳转下一步
 
-![36.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/36.png ':size=80%')
+![36.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/36.png ':size=90%')
 
 2. 填写OpenStack源平台信息后选择【下一步】
 
-![37.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/37.png ':size=80%')
+![37.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/37.png ':size=90%')
 
 ?> 需要填写源端OpenStack+Ceph链接认证信息说明如下，请按照需求进行查找并填写
 
@@ -92,7 +92,7 @@ vCenter账户密码  | vCenter或ESXi的密码
 
 3. 填写Ceph信息后选择【下一步】
 
-![38.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/38.png ':size=80%')
+![38.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/38.png ':size=90%')
 
 ?> 需要填写源端Ceph链接认证信息说明如下所示
 
@@ -111,11 +111,11 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 
 1. 选择物理机机X86图标，自动跳转下一步
 
-![39.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/39.png ':size=80%')
+![39.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/39.png ':size=90%')
 
 3. 点击选择所要获取的Agent安装包，进行下载
 
-![40.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/40.png ':size=80%')
+![40.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/40.png ':size=90%')
 
 4. 在待迁移物理机上安装Agent
 
@@ -127,11 +127,11 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 **<font face="中易宋体" size=3 color=blue>&ensp; • 代理方式 - 连接Linux主机</font>**
 1. 选择所要迁移Linux主机图标，自动跳转下一步
 
-![41.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/41.png ':size=80%')
+![41.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/41.png ':size=90%')
 
 2. 点击选择所要获取的Agent安装包，进行下载
 
-![42.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/42.png ':size=80%')
+![42.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/42.png ':size=90%')
 
 3. 在待迁移Linux主机上安装Agent
 

@@ -11,7 +11,7 @@
 ---
 ## 2. 推送安装「HyperGate」
 
-**1. 登录HyperMotion主机命令行终端，输入以下命令**
+**1. 登录「HyperGate」主机命令行终端，输入以下命令**
 
 ```
 ~]# cd /opt/installer/auto_install/

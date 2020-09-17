@@ -3,8 +3,8 @@
 ---
 
 ?>  <font face="黑体" size=4  color=red>* 安装步骤导览：</font> </br></br>
-1.安装**迁移主控台「HyperMotion」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，此处建议安装在目标端OpenStack平台主机；</br>
-2.安装**云端数据代理「HyperGate」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，需安装在目标端OpenStack平台主机；</br>
+1.安装**迁移主控台「HyperMotion」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，此处建议安装在目标端ZStack平台主机；</br>
+2.安装**云端数据代理「HyperGate」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，需安装在目标端ZStack平台主机；</br>
 
 
 
