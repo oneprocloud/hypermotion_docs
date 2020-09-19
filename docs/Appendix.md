@@ -1,5 +1,132 @@
 ---
 
+## 4  限制信息-安装或操作前须知
+
+### 4.1	网络带宽建议
+迁移过程中主要通过网络进行数据拷贝，所以推荐的网络速度如下：
+1) **全量数据同步**，建议最小带宽10Mbps
+2) **增量数据同步**，建议最小带宽1Mbps
+
+
+### 4.2	源平台限制信息
+
+**1.	Linux物理机**</br>
+	文件系统仅支持ext2, ext3，ext4，xfs，ntfs，目前暂时不支持btrfs(SUSE 12默认的安装系统)；</br>
+	挂载文件系统的分区的需要预留10%的空间，例如：root分区的大小为100G，则剩余空间需要在10G以上；</br>
+	不支持没有挂载文件系统的分区同步；</br>
+	不支持没有划分分区的磁盘同步；</br>
+	不支持多路径磁盘同步（受不同厂商多路径软件的局限）；</br>
+	不支持复杂的LVM结构（仅支持单个VG的情况）；</br>
+	不支持裸设备同步；</br>
+	安装Linux Agent时需要yum clean all，旧的yum源信息可能会造成HyperGate无法安装。</br>
+
+---
+### 4.3. 目标平台限制信息
+
+**4.3.3 阿里云**
+
+- 首次迁移上云后，默认将该实例镜像用按量付费的形式创建，验证后可删除该实例，手动将该镜像创建实例，改为包月形式;</br>
+- 阿里云目前最小支持20G的盘，如果源端有小于20G的盘，上云后默认扩大为20G的盘;</br>
+- 迁移时，源主机磁盘个数不能大于18个盘;</br>
+- 阿里云平台的目标云平台服务只能挂载16个盘，需要手动调整 (将目前20个卷设定改为16个卷受设定)；源主机磁盘个数不能大于16个盘;</br>
+- 由于目前阿里云系统盘最大为500 GB，所以待迁移的主机的系统盘不能大于500 GB，根据阿里云官方提供的方法，在大于500G的情况下，需手动的对源系统进行缩容。
+
+---
+**4.3.3 AWS**
+
+- 目前只支持CentOS6/Centos7版本的迁移；</br>
+- 支持RHEL/CentOS 6.x & 7.x版本迁移；</br>
+- 迁移RHEL/CentOS 6.x & 7.x前需要将源系统内部防火墙关闭或开放22端口，否则迁移后无法远程连接；</br>
+- 迁移Windows版本前需要将源系统内部防火墙关闭或开放远程桌面3389端口，否则迁移后无法远程连接；</br>
+- 迁移到AWS时支持创建卷格式为gp2；</br>
+- 在AWS创建HyperGate时建议使用 "社区AMI CentOS" 以下版本镜像；</br>
+- Linux HyperDoor创建流程：HyperGate安装完成后 --> 关机，使用HyperGate实例生成Linux HyperDoor镜像；</br>
+- 建议使用以下版本镜像为基础制作Windows HyperDoor镜像；</br>
+- 不支持源端 "OpenStack+Ceph (Agentless)" 迁移至AWS；</br>
+- 迁移后主机所在的 "域、可用区、VPC、子网、安全组" 皆需与HyperGate一致；</br>
+- 仅支持T3系列的实例类型，T3限制挂盘最多28个、网口至少占用1个、实例根卷用1个；极限条件下，T3系的实例最多能附加3个网口，HyperGate最多仅能同时挂载20个卷 (迁移用)；</br>
+- 目标云平台服务最大同时挂载卷 (磁盘) 个数为：20个。</br>
+
+---
+**4.3.3 Azure**
+
+- 实例磁盘限制最大容量为: 32TB；
+- 由于Azure临时存储盘的关系，HyperGate数据盘会由第三块盘开始挂载 (第一块盘: 系统盘，第二块盘: 临时存储盘)；</br>
+- 由于Azure临时存储盘的关系，Windows主机迁移后需登入系统将数据盘手动启动 (Activate)，并指定盘符 (若Windows系统没有自动给予盘符)；</br>
+- Azure目前仅支持Windows 2008 SP2及以上版本的实例类型；HyperMotion迁移支持Windows 2008 R2及以上版本和RHEL/CentOS 6 & 7版本操作系统，包含驱动修复功能 (磁盘及网络自动获取修复) (Windows 2008 SP2不支持手动或自动驱动修复)；</br>
+- HyperGate最大同时挂载卷 (磁盘) 个数为：16个 (HyperGate实例类型: F4)。</br>
+
+---
+
+**4.3.3 腾讯云**
+
+- 迁移上云后，默认使用按量付费形式创建实例，验证后可手动改为包月或其他形式；</br>
+- 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB；</br>
+- 驱动修复时需要进行系统盘全量数据拷贝，启动实例耗费时间较长；</br>
+- HyperDoor方式实例启动时会较长时间占用HyperGate Worker数，建议HyperGate使用CPU个数较高的配置 (目前worker数等于CPU个数)，建议8-Core或以上；</br>
+- 目前不支持在启动实例时选择Region和Zone，即所有迁移上云的实例都需和HyperGate处于相同区域；</br>
+- 启动实例不支持安全组选择，默认需和HyperGate相同；</br>
+- 腾讯云系统盘最小支持50GB最大支持1TB (SSD类型最大支持500GB)；</br>
+- 腾讯云数据盘根据类型不同支持最小容量10GB和最大容量16000GB，且磁盘容量为10GB的整数倍；</br>
+- 迁移时，源主机磁盘个数最多支持20个盘；</br>
+- Windows 2016主机在迁移后配置DHCP方式获取不到IP地址，需要人为介入；</br>
+- Windows 2003主机在迁移后驱动修复有无法成功的几率发生 (会进入HyperDoor画面而不是正常操作系统画面)，解决方式可尝试重新启动实例；</br>
+- Linux主机在迁移后会使用DHCP服务分配动态主机名，导致原静态主机名失效；</br>
+- HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
+
+**4.3.3 华为云**
+
+- 此版本针对Windows 2003操作系统迁移不支持网卡驱动修复；</br>
+- Windows 2012 / R2、Windows 2016操作系统迁移网卡驱动需要待实例启动成功后手动安装；</br>
+- 迁移后主机所在的 "域、可用区、VPC、子网、安全组" 皆需与目标云平台服务一致；</br>
+- 华为公有云实例支持：系统盘最小容量40GB、最大1TB， 数据盘最小容量10GB、最大32TB；如果源主机系统和数据磁盘不足40GB或10GB，默认会以支持最小值创建；</br>
+- 目标云平台服务最大同时挂载卷 (磁盘) 个数为：23个。</br>
+
+
+**4.3.3 金山云**
+- 迁移到金山公有云的系统如果启动失败那么需要重新同步数据；</br>
+- 迁移系统的系统盘大小只能小于等于20GB。</br>
+
+**4.3.3 OpenStack**
+
+- 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB；</br>
+- 驱动修复时需要进行系统盘全量数据拷贝，启动实例耗费时间较长；</br>
+- 如驱动修复程序于HyperDoor进行，不会占用同步时HyperGate可用同时挂载卷数量；</br>
+- 启动实例不支持安全组选择，默认需和HyperGate相同；</br>
+- HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
+
+
+**4.3.3 青云**
+
+- 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB。</br>
+- 驱动修复时需要进行系统盘全量数据拷贝，启动实例耗费时间较长；</br>
+- 由于驱动修复程序于HyperDoor进行，并不会占用同步时HyperGate可用同时挂载卷数量；</br>
+- 启动实例不支持安全组选择，默认需和HyperGate相同；</br>
+- HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
+
+**4.3.3 UCloud**
+
+- 安装建议选择通用型N主机；</br>
+- 最大挂载volume数目：建议不超过5个。</br>
+
+**4.3.3 UCloud**
+
+- 在迁移过程中，由于ZStack平台暂无法获取虚拟机内部磁盘信息，因此不能重启HyperGate，否则将导致迁移失败；
+- 目前只支持管理员账户进行鉴权，不支持其他方式，例：LDAP、项目登陆等；
+- 仅支持使用管理员权限的用户操作HyperMotion：在创建卷的过程中，需要创建卷规格，该操作权限目前只能支持管理员用户 (ZStack限制)；
+- 若迁移主机包含多块磁盘，迁移后所有磁盘必须存在同一个存储资源池内；
+- ZStack暂无提供根据卷ID对应盘符的方法 (virtio驱动)，通过对比磁盘差异的方式适配；所以磁盘挂载后不支持手动卸载，必须由前端触发清理资源 (如果手动卸载后，会导致HyperGate无法启动主机)；
+- ZStack镜像为独立副本，迁移后启动主机需要较长时间；
+- 在ZStack上不支持将HyperGate布署于Centos 7.1 & 7.2上，会出现找不到磁盘路径的问题； 
+- ZStack不支持Boot from Volume方式启动虚拟机，需将卷转为镜像后通过指定镜像服务器UUID实现启动主机流程；
+- 如果镜像服务器UUID填写错误并不会阻碍流程，但是会影响主机启动，需要修改HyperGate Cloud Info文件；
+- 迁移过程中，HyperGate不能进行重启；由于目前无法从虚拟机内部获取磁盘信息和云平台块设备进行关系对应，重启会导致磁盘顺序乱序；
+- 由于ZStack平台对每台虚拟机挂载的盘最大不允许超过24个，所以在迁移至ZStack平台时，HyperGate最大挂载盘限制在15个 (剩馀可挂磁盘数保留给HyperGate系统盘及驱动修复用)。
+
+
+
+---
+
 ## 1 创建HyperGate实例（目标平台操作）
 
 ### 1.1 阿里云
@@ -424,7 +551,7 @@ CPU | 建议值: 8GiB，最低4GiB
 
 **5. 设置基本信息** 
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/KingCloud/5.png ':size=80%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/KingCloud/5.png ':size=90%')
 
 选择完成后点击【购买】，
 
@@ -445,15 +572,278 @@ CPU | 建议值: 8GiB，最低4GiB
 
 ### 1.7 OpenStack
 
+**1. 登录OpenSatck‘管理控制台’，点击【实例】→【创建实例】**
 
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/image007.png ':size=90%')
+
+**2. 填写实例名称‘HyperGate’**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/image008.png ':size=90%')
+
+
+**3.选择名称为‘HM_IMG_<date>.qcow2’的镜像源**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/image009.png ':size=90%')
+
+
+
+**4. 选择实例配置** 
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/image010.png ':size=90%')
+
+?>  配置内容填写参考：
+
+字段  | 填写
+------------- | -------------
+vCPU  | 建议值: 4vCPU，最低2vCPU
+内存 | 建议值: 8GiB，最低4GiB
+磁盘  | 建议100G，最低40G
+
+
+
+**5. 选择网络** 
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/image011.png ':size=90%')
+
+**6. 选择安全组** 
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/image012.png ':size=90%')
+
+
+**7. 创建成功**
+
+根据实际需求，可跳过非※创建项，点击‘创建实例’按钮创建实例，
+完成后实例列表会显示创建实例，记录该实例的IP地址。
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/OpenStack/image013.png ':size=90%')
+
+---
 
 ### 1.8 青云
 
+**1. 登录青云‘管理控制台’，【主机】→【创建】**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/7.png ':size=90%')
+
+**2. 选择映像**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/8.jpg ':size=90%')
+
+?>  配置内容填写参考：
+
+字段  | 填写
+------------- | -------------
+映像版本 | CentOS 7.5 64位
+
+
+**3.配置选择**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/9.png ':size=90%')
+
+?>  配置内容填写参考：
+
+字段  | 填写
+------------- | -------------
+可用区  | 与安全组地域一致
+主机类型 | 基础型
+CPU  | 建议值: 4vCPU，最低2vCPU
+内存  | 建议值: 8GiB，最低4GiB
+系统盘  | 建议100G，最低40G
+
+
+**4. 网络设置** 
+
+选择网络VPC，点击【下一步】
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/10.png ':size=90%')
+
+
+
+
+**5. 设置基本信息** 
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/11.jpg ':size=90%')
+
+选择完成后点击【创建】，
+
+
+**6. 创建成功**
+
+在主机列表中查看创建信息，记录该主机的IP地址
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/12.jpg ':size=90%')
+
+**7. 添加防火墙规则**
+
+选择开放了12222/18090/3260/22端口的防火墙，【更多操作】→【应用防火墙规则】
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/13.jpg ':size=90%'
+
+绑定HyperGate主机，点击【提交】按钮。
+
+---
+
+
 ### 1.9 天翼云
+
+**1. 登录天翼云‘控制中心’，【弹性云主机】→【创建弹性云主机】**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ecloud/image007.png ':size=90%')
+
+**2. 选择配置**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ecloud/image008.png ':size=90%')
+
+?>  配置内容填写参考：
+
+字段  | 填写
+------------- | -------------
+计费方式  | 按需计费
+区域 | 默认选择（与安全组地域一致）
+可用分区 |默认选择（与安全组地域一致）
+CPU  | 建议值: 4vCPU，最低2vCPU
+内存 | 建议值: 8GiB，最低4GiB
+镜像 | 公共镜像，CentOs7.3~7.5
+系统盘 | 高IO 建议100G，最低40G
+
+
+
+**3.网络配置**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ecloud/image009.png ':size=90%')
+
+?>  配置内容填写参考：
+
+字段  | 填写
+------------- | -------------
+安全组  | 选择放行了端口12222/18090/3260/22的安全组
+弹性IP | 勾选‘自动分配’
+计费方式| 选择‘按流量计费’
+带宽  | 选择‘5M’
+
+填写完成后点击【下一步】，
+
+
+**4. 高级配置** 
+
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ecloud/image010.png ':size=90%')
+
+填写实例名称和密码后点击【下一步 确认配置】，
+
+
+**5. 确认配置信息** 
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ecloud/image011.png ':size=90%')
+
+确认完成后点击【立即购买】。
+
+
+**6. 创建成功**
+
+在实例列表中查看创建信息，记录该实例的IP地址
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ecloud/image012.png ':size=90%')
+
+---
 
 ### 1.10 UCloud
 
+**1. 登录UCloud‘管理控制台’，【全部产品】→【云主机】→【创建主机】**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/UCloud/image007.png ':size=90%')
+
+**2. 基础配置**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/UCloud/image008.png ':size=90%')
+
+?>  配置内容填写参考：
+
+字段  | 填写
+------------- | -------------
+地域  | 默认选择（与安全组地域一致）
+配置方式 | 自定义配置
+镜像 |默认选择（与安全组地域一致）
+CPU  | 建议值: 4vCPU，最低2vCPU
+内存 | 建议值: 8GiB，最低4GiB
+磁盘 | 1.**SaaS版**：选择公共镜像，CentOS 7.5  64位；</br>2.**单机版**：选择自定义镜像，选择镜像源（名称为HM_IMG_<date>.qcow2）
+网络 | 选择创建安全组的同一VPC网络及子网
+
+
+
+**3.网络配置**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/UCloud/image009.png ':size=90%')
+
+?>  配置内容填写参考：
+
+字段  | 填写
+------------- | -------------
+计费方式  | 选择‘流量计费’
+带宽 | 选择‘5M’
+防火墙| 选择放行端口12222/18090/3260/22
+主机名称  | HyperGate
+
+填写完成后点击【立即购买】
+
+**4. 确认配置信息** 
+
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/UCloud/image010.png  ':size=90%')
+
+确认完成后后点击【立即支付】，
+
+
+
+
+**5. 创建成功**
+
+在实例列表中查看创建信息，记录该实例的IP地址
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/UCloud/image011.png  ':size=90%')
+
+---
+
 ### 1.11 ZStack
+
+**1.登录ZStack‘管理控制台’，点击【云资源池】→【云主机】→【创建云主机】**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ZStack/image007.png ':size=90%')
+
+**2. 填写实例名称‘HyperGate’**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ZStack/image008.png ':size=90%')
+
+?>  配置内容填写参考：
+
+字段  | 填写
+------------- | -------------
+名称  | HyperGate
+计算机规格 | 建议值: 4U8G，最低2U4G
+镜像 |1.**SaaS版**：选择公共镜像，CentOS 7.5  64位；</br>2.**单机版**：选择自定义镜像，选择镜像源（名称为HM_IMG_<date>.qcow2）
+
+
+
+**3.选择网络**
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ZStack/image009.png ':size=90%')
+
+
+
+**4. 选择亲和组** 
+
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ZStack/image010.png  ':size=90%')
+
+
+
+
+
+**5. 创建成功**
+
+根据实际需求，可跳过非必选创建项， 创建成功后可在云主机列表中查看该主机并记录该云主机例的IP地址。
+
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ZStack/image011.png  ':size=90%')
 
 ---
 
@@ -542,6 +932,22 @@ CPU | 建议值: 8GiB，最低4GiB
 
 ### 2.2 Linux Agent安装说明
 
+**1. 执行下列命令自动完成安装**
+
+```
+#curl http://<HyperMotio的IP地址:10080>/softwares/getplusagent.sh | bash
+```
+
+**2. 执行以下命令查看Agent状态：**
+
+```  
+# egisplus-cli agent check
+```
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=60%')
+
+**3. Agent安装成功后，Agent service和iSCSI service已启动，并且Agent也已自动注册，等待执行保护操作。**
+
 ---
 
 ## 3  云平台认证信息获取（目标平台操作）
@@ -550,125 +956,3 @@ CPU | 建议值: 8GiB，最低4GiB
 
 ---
 
-## 4  限制信息-安装或操作前须知
-
-### 4.1	网络带宽建议
-迁移过程中主要通过网络进行数据拷贝，所以推荐的网络速度如下：
-1) **全量数据同步**，建议最小带宽10Mbps
-2) **增量数据同步**，建议最小带宽1Mbps
-
-
-### 4.2	源平台限制信息
-
-**1.	Linux物理机**</br>
-	文件系统仅支持ext2, ext3，ext4，xfs，ntfs，目前暂时不支持btrfs(SUSE 12默认的安装系统)；</br>
-	挂载文件系统的分区的需要预留10%的空间，例如：root分区的大小为100G，则剩余空间需要在10G以上；</br>
-	不支持没有挂载文件系统的分区同步；</br>
-	不支持没有划分分区的磁盘同步；</br>
-	不支持多路径磁盘同步（受不同厂商多路径软件的局限）；</br>
-	不支持复杂的LVM结构（仅支持单个VG的情况）；</br>
-	不支持裸设备同步；</br>
-	安装Linux Agent时需要yum clean all，旧的yum源信息可能会造成HyperGate无法安装。</br>
-
----
-### 4.3. 目标平台限制信息
-
-**4.3.3 阿里云**
-
-- 首次迁移上云后，默认将该实例镜像用按量付费的形式创建，验证后可删除该实例，手动将该镜像创建实例，改为包月形式;</br>
-- 阿里云目前最小支持20G的盘，如果源端有小于20G的盘，上云后默认扩大为20G的盘;</br>
-- 迁移时，源主机磁盘个数不能大于18个盘;</br>
-- 阿里云平台的目标云平台服务只能挂载16个盘，需要手动调整 (将目前20个卷设定改为16个卷受设定)；源主机磁盘个数不能大于16个盘;</br>
-- 由于目前阿里云系统盘最大为500 GB，所以待迁移的主机的系统盘不能大于500 GB，根据阿里云官方提供的方法，在大于500G的情况下，需手动的对源系统进行缩容。
-
----
-**4.3.3 AWS**
-
-- 目前只支持CentOS6/Centos7版本的迁移；</br>
-- 支持RHEL/CentOS 6.x & 7.x版本迁移；</br>
-- 迁移RHEL/CentOS 6.x & 7.x前需要将源系统内部防火墙关闭或开放22端口，否则迁移后无法远程连接；</br>
-- 迁移Windows版本前需要将源系统内部防火墙关闭或开放远程桌面3389端口，否则迁移后无法远程连接；</br>
-- 迁移到AWS时支持创建卷格式为gp2；</br>
-- 在AWS创建HyperGate时建议使用 "社区AMI CentOS" 以下版本镜像；</br>
-- Linux HyperDoor创建流程：HyperGate安装完成后 --> 关机，使用HyperGate实例生成Linux HyperDoor镜像；</br>
-- 建议使用以下版本镜像为基础制作Windows HyperDoor镜像；</br>
-- 不支持源端 "OpenStack+Ceph (Agentless)" 迁移至AWS；</br>
-- 迁移后主机所在的 "域、可用区、VPC、子网、安全组" 皆需与HyperGate一致；</br>
-- 仅支持T3系列的实例类型，T3限制挂盘最多28个、网口至少占用1个、实例根卷用1个；极限条件下，T3系的实例最多能附加3个网口，HyperGate最多仅能同时挂载20个卷 (迁移用)；</br>
-- 目标云平台服务最大同时挂载卷 (磁盘) 个数为：20个。</br>
-
----
-**4.3.3 Azure**
-
-- 实例磁盘限制最大容量为: 32TB；
-- 由于Azure临时存储盘的关系，HyperGate数据盘会由第三块盘开始挂载 (第一块盘: 系统盘，第二块盘: 临时存储盘)；</br>
-- 由于Azure临时存储盘的关系，Windows主机迁移后需登入系统将数据盘手动启动 (Activate)，并指定盘符 (若Windows系统没有自动给予盘符)；</br>
-- Azure目前仅支持Windows 2008 SP2及以上版本的实例类型；HyperMotion迁移支持Windows 2008 R2及以上版本和RHEL/CentOS 6 & 7版本操作系统，包含驱动修复功能 (磁盘及网络自动获取修复) (Windows 2008 SP2不支持手动或自动驱动修复)；</br>
-- HyperGate最大同时挂载卷 (磁盘) 个数为：16个 (HyperGate实例类型: F4)。</br>
-
----
-
-**4.3.3 腾讯云**
-
-- 迁移上云后，默认使用按量付费形式创建实例，验证后可手动改为包月或其他形式；</br>
-- 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB；</br>
-- 驱动修复时需要进行系统盘全量数据拷贝，启动实例耗费时间较长；</br>
-- HyperDoor方式实例启动时会较长时间占用HyperGate Worker数，建议HyperGate使用CPU个数较高的配置 (目前worker数等于CPU个数)，建议8-Core或以上；</br>
-- 目前不支持在启动实例时选择Region和Zone，即所有迁移上云的实例都需和HyperGate处于相同区域；</br>
-- 启动实例不支持安全组选择，默认需和HyperGate相同；</br>
-- 腾讯云系统盘最小支持50GB最大支持1TB (SSD类型最大支持500GB)；</br>
-- 腾讯云数据盘根据类型不同支持最小容量10GB和最大容量16000GB，且磁盘容量为10GB的整数倍；</br>
-- 迁移时，源主机磁盘个数最多支持20个盘；</br>
-- Windows 2016主机在迁移后配置DHCP方式获取不到IP地址，需要人为介入；</br>
-- Windows 2003主机在迁移后驱动修复有无法成功的几率发生 (会进入HyperDoor画面而不是正常操作系统画面)，解决方式可尝试重新启动实例；</br>
-- Linux主机在迁移后会使用DHCP服务分配动态主机名，导致原静态主机名失效；</br>
-- HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
-
-**4.3.3 华为云**
-
-- 此版本针对Windows 2003操作系统迁移不支持网卡驱动修复；</br>
-- Windows 2012 / R2、Windows 2016操作系统迁移网卡驱动需要待实例启动成功后手动安装；</br>
-- 迁移后主机所在的 "域、可用区、VPC、子网、安全组" 皆需与目标云平台服务一致；</br>
-- 华为公有云实例支持：系统盘最小容量40GB、最大1TB， 数据盘最小容量10GB、最大32TB；如果源主机系统和数据磁盘不足40GB或10GB，默认会以支持最小值创建；</br>
-- 目标云平台服务最大同时挂载卷 (磁盘) 个数为：23个。</br>
-
-
-**4.3.3 金山云**
-- 迁移到金山公有云的系统如果启动失败那么需要重新同步数据；</br>
-- 迁移系统的系统盘大小只能小于等于20GB。</br>
-
-**4.3.3 OpenStack**
-
-- 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB；</br>
-- 驱动修复时需要进行系统盘全量数据拷贝，启动实例耗费时间较长；</br>
-- 如驱动修复程序于HyperDoor进行，不会占用同步时HyperGate可用同时挂载卷数量；</br>
-- 启动实例不支持安全组选择，默认需和HyperGate相同；</br>
-- HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
-
-
-**4.3.3 青云**
-
-- 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB。</br>
-- 驱动修复时需要进行系统盘全量数据拷贝，启动实例耗费时间较长；</br>
-- 由于驱动修复程序于HyperDoor进行，并不会占用同步时HyperGate可用同时挂载卷数量；</br>
-- 启动实例不支持安全组选择，默认需和HyperGate相同；</br>
-- HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
-
-**4.3.3 UCloud**
-
-- 安装建议选择通用型N主机；</br>
-- 最大挂载volume数目：建议不超过5个。</br>
-
-**4.3.3 UCloud**
-
-- 在迁移过程中，由于ZStack平台暂无法获取虚拟机内部磁盘信息，因此不能重启HyperGate，否则将导致迁移失败；
-- 目前只支持管理员账户进行鉴权，不支持其他方式，例：LDAP、项目登陆等；
-- 仅支持使用管理员权限的用户操作HyperMotion：在创建卷的过程中，需要创建卷规格，该操作权限目前只能支持管理员用户 (ZStack限制)；
-- 若迁移主机包含多块磁盘，迁移后所有磁盘必须存在同一个存储资源池内；
-- ZStack暂无提供根据卷ID对应盘符的方法 (virtio驱动)，通过对比磁盘差异的方式适配；所以磁盘挂载后不支持手动卸载，必须由前端触发清理资源 (如果手动卸载后，会导致HyperGate无法启动主机)；
-- ZStack镜像为独立副本，迁移后启动主机需要较长时间；
-- 在ZStack上不支持将HyperGate布署于Centos 7.1 & 7.2上，会出现找不到磁盘路径的问题； 
-- ZStack不支持Boot from Volume方式启动虚拟机，需将卷转为镜像后通过指定镜像服务器UUID实现启动主机流程；
-- 如果镜像服务器UUID填写错误并不会阻碍流程，但是会影响主机启动，需要修改HyperGate Cloud Info文件；
-- 迁移过程中，HyperGate不能进行重启；由于目前无法从虚拟机内部获取磁盘信息和云平台块设备进行关系对应，重启会导致磁盘顺序乱序；
-- 由于ZStack平台对每台虚拟机挂载的盘最大不允许超过24个，所以在迁移至ZStack平台时，HyperGate最大挂载盘限制在15个 (剩馀可挂磁盘数保留给HyperGate系统盘及驱动修复用)。
