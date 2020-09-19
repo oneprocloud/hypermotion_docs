@@ -23,5 +23,6 @@
 
 * 常见问题
 
- * [安装部署](deploy-question.md)
- * [同步数据](sync-question.md)
+ * [全部问题](help.md)
+ * [安装部署](deploy-help.md)
+ * [同步数据](sync-help.md)
