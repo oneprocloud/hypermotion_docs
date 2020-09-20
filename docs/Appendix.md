@@ -1051,7 +1051,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### AWS
+### 4.2  AWS
 
 **1. Access Key 和Access Key Secret的获取**
 
@@ -1070,7 +1070,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
 
-### Azure
+### 4.3  Azure
 
 **1. 应用程序ID和租户ID**
 
@@ -1105,7 +1105,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
 
 ---
-### 腾讯云（公）
+### 4.4  腾讯云（公）
 
 
 **1. Access Key 和Access Key Secret的获取**
@@ -1127,7 +1127,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### 华为云（公）
+### 4.5  华为云（公）
 
 **1. 镜像ID获取**
 
@@ -1139,7 +1139,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
 
-### 金山云
+### 4.6  金山云
 
 **1. Access Key 和Access Key Secret的获取**
 
@@ -1159,7 +1159,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png ':size=90%')
 
 
-### 青云
+### 4.7  青云
 
 **1. Access Key 和Access Key Secret的获取**
 
@@ -1180,7 +1180,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### 天翼云
+### 4.8  天翼云
 
 **1. Access Key 和Access Key Secret的获取**
 
@@ -1202,7 +1202,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### UCloud
+### 4.9  UCloud
 
 **1. 公钥和私钥的获取**
 
