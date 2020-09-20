@@ -119,7 +119,7 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 
 4. 在待迁移物理机上安装Agent
 
-!> 注：物理机端安装操作步骤可参考 附录一Windows Agent安装说明
+!> 注：物理机端安装操作步骤可参考 附录[Windows Agent安装说明](https://docs.oneprocloud.com/#/Appendix?id=_21-windows-agent%e5%ae%89%e8%a3%85%e8%af%b4%e6%98%8e)
 
 ?> 所有对Agent的操作均在HyperMotion端触发，Windows Agent服务正常启动后，可在HyperMotion中看到注册的主机。
 
@@ -135,7 +135,7 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 
 3. 在待迁移Linux主机上安装Agent
 
-!> 注：Liunx主机端安装操作步骤可参考 附录二 Linux  Agent安装说明
+!> 注：Liunx主机端安装操作步骤可参考[linux Agent安装说明](https://docs.oneprocloud.com/#/Appendix?id=_22-linux-agent%e5%ae%89%e8%a3%85%e8%af%b4%e6%98%8e)
 
 ?> 所有对Agent的操作均在HyperMotion端触发，linux  Agent服务正常启动后，可在HyperMotion中看到注册的主机。
 

@@ -23,7 +23,7 @@
 ---
 ### 4.3. 目标平台限制信息
 
-**4.3.3 阿里云**
+**4.3.3 阿里云（公）**
 
 - 首次迁移上云后，默认将该实例镜像用按量付费的形式创建，验证后可删除该实例，手动将该镜像创建实例，改为包月形式;</br>
 - 阿里云目前最小支持20G的盘，如果源端有小于20G的盘，上云后默认扩大为20G的盘;</br>
@@ -58,7 +58,7 @@
 
 ---
 
-**4.3.3 腾讯云**
+**4.3.3 腾讯云（公）**
 
 - 迁移上云后，默认使用按量付费形式创建实例，验证后可手动改为包月或其他形式；</br>
 - 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB；</br>
@@ -74,7 +74,7 @@
 - Linux主机在迁移后会使用DHCP服务分配动态主机名，导致原静态主机名失效；</br>
 - HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
 
-**4.3.3 华为云**
+**4.3.3 华为云（公）**
 
 - 此版本针对Windows 2003操作系统迁移不支持网卡驱动修复；</br>
 - Windows 2012 / R2、Windows 2016操作系统迁移网卡驱动需要待实例启动成功后手动安装；</br>
@@ -129,7 +129,7 @@
 
 ## 1 创建HyperGate实例（目标平台操作）
 
-### 1.1 阿里云
+### 1.1 阿里云（公）
 
 **1. 登录阿里云‘管理控制台’，点击【云服务器ECS】**
 
@@ -356,7 +356,7 @@ vCPU| 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### 1.4 腾讯云
+### 1.4 腾讯云（公）
 
 
 **1. 登录腾讯云‘管理控制台’，【实例】→选择地域→【新建】**
@@ -430,7 +430,7 @@ vCPU    | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### 1.5 华为云
+### 1.5 华为云（公）
 
 **1. 登录华为云‘管理控制台’，选择地域→【弹性服务器】**
 
@@ -952,7 +952,48 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ## 3  云平台认证信息获取（目标平台操作）
 
+###阿里云（公）
 
+**1. Access Key 和Access Key Secret的获取**
+
+登录阿里云控制台首页，依次点击【个人头像】→【accesskey管理】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+点击【创建AccessKey】，创建成功后，点击【保存AK信息】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+
+**2. 镜像ID获取**
+
+管理控制台页面，选择【云服务器ECS】【镜像】，记录安装步骤所创建的镜像ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+###AWS
+
+**1. Access Key 和Access Key Secret的获取**
+
+登录AWS控制台首页，依次点击【个人头像】→【我的安全凭证】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+点击【创建访问密钥】，创建成功后保存密钥信息。
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+
+**2. 镜像ID获取**
+
+管理控制台页面，选择【映像【AMI】，记录安装步骤所创建的Linux镜像ID及Windows镜像ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+###Azure
+
+
+###腾讯云（公）
 
 ---
 
