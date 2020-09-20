@@ -1,29 +1,59 @@
 ---
 
-## 4  限制信息-安装或操作前须知
+## 1  限制信息-安装或操作前须知
 
-### 4.1	网络带宽建议
+
+### 1.1	网络带宽建议
 迁移过程中主要通过网络进行数据拷贝，所以推荐的网络速度如下：
 1) **全量数据同步**，建议最小带宽10Mbps
 2) **增量数据同步**，建议最小带宽1Mbps
 
 
-### 4.2	源平台限制信息
+### 1.2	源平台限制信息
 
 **1.	Linux物理机**</br>
-	文件系统仅支持ext2, ext3，ext4，xfs，ntfs，目前暂时不支持btrfs(SUSE 12默认的安装系统)；</br>
-	挂载文件系统的分区的需要预留10%的空间，例如：root分区的大小为100G，则剩余空间需要在10G以上；</br>
-	不支持没有挂载文件系统的分区同步；</br>
-	不支持没有划分分区的磁盘同步；</br>
-	不支持多路径磁盘同步（受不同厂商多路径软件的局限）；</br>
-	不支持复杂的LVM结构（仅支持单个VG的情况）；</br>
-	不支持裸设备同步；</br>
-	安装Linux Agent时需要yum clean all，旧的yum源信息可能会造成HyperGate无法安装。</br>
+- 文件系统仅支持ext2, ext3，ext4，xfs，ntfs，目前暂时不支持btrfs(SUSE 12默认的安装系统)；</br>
+- 挂载文件系统的分区的需要预留10%的空间，例如：root分区的大小为100G，则剩余空间需要在10G以上；</br>
+- 不支持没有挂载文件系统的分区同步；</br>
+- 不支持没有划分分区的磁盘同步；</br>
+- 不支持多路径磁盘同步（受不同厂商多路径软件的局限）；</br>
+- 不支持复杂的LVM结构（仅支持单个VG的情况）；</br>
+- 不支持裸设备同步；</br>
+- 安装Linux Agent时需要yum clean all，旧的yum源信息可能会造成HyperGate无法安装。</br>
+
+**2.    VMware版本约束条件**</br>
+
+虚拟化 | 版本   |   环境
+------------- | ----------------------| ----------------------
+VMware  |ESXi/vCenter/VMFS≥5.0 |虚拟机磁盘格式不可为RDM（RawDiskMapping）格式
+  |   | 仅支持VMFS磁盘，虚拟机磁盘； </br>支持格式：FlatVer1, FlatVer2, SparseVer1, SparseVer2；</br>虚拟机版本: ≥7；</br> VMFS<5.5时：单磁盘容量必须<2032GB。
+ |  |虚拟机支持Change Block Tracking
+ |   |虚拟机磁盘模式必须为persistent
+ |EXSi6.0|必须安装VMware ESXi 6.0 Build 2715440，
+ 
+**3.    热迁移约束条件**</br>
+
+- 虚拟机磁盘格式不可为RDM（RawDiskMapping）格式；</br>
+- 仅支持VMFS磁盘，虚拟机磁盘支持格式：FlatVer1, FlatVer2, SparseVer1, SparseVer2；</br>
+- 虚拟机版本: ≥7；</br>
+- VMFS<5.5时：单磁盘容量必须<2032GB；</br>
+- 不支持虚拟机中含有通过iSCSI方式共享磁盘的虚拟机。</br>
+
+**4.    其他限制条件**</br>
+
+- 在使用该工具前，为避免产生影响，建议停用一切VMware备份软件。例：Veeam、爱数等。</br>
+- HyperMotion理论上不会对业务造成影响，但实际操作中，以下情况可能会出现快照过程中业务短时中断：</br>
+(1). 虚拟机正在使用的磁盘有损坏；</br>
+(2). 迁移中，用户手动对快照进行操作--【建议：不要手动对快照进行操作】；</br>
+(3). 业务系统I/O过大，导致磁盘长时间处于100%利用率--【建议：在非
+忙时执行数据拷贝】；</br>
+(4). 用户待迁移的主机长时间没有重启或者有非常旧的快照（半年以上）--【建议：用户对系统进行关机，并手动触发一次快照后再执行迁移】。</br>
 
 ---
-### 4.3. 目标平台限制信息
+### 1.3. 目标平台限制信息
 
-**4.3.3 阿里云（公）**
+
+#### 1.3.1 阿里云（公）
 
 - 首次迁移上云后，默认将该实例镜像用按量付费的形式创建，验证后可删除该实例，手动将该镜像创建实例，改为包月形式;</br>
 - 阿里云目前最小支持20G的盘，如果源端有小于20G的盘，上云后默认扩大为20G的盘;</br>
@@ -32,7 +62,8 @@
 - 由于目前阿里云系统盘最大为500 GB，所以待迁移的主机的系统盘不能大于500 GB，根据阿里云官方提供的方法，在大于500G的情况下，需手动的对源系统进行缩容。
 
 ---
-**4.3.3 AWS**
+#### 1.3.2 AWS
+
 
 - 目前只支持CentOS6/Centos7版本的迁移；</br>
 - 支持RHEL/CentOS 6.x & 7.x版本迁移；</br>
@@ -48,7 +79,8 @@
 - 目标云平台服务最大同时挂载卷 (磁盘) 个数为：20个。</br>
 
 ---
-**4.3.3 Azure**
+
+#### 1.3.3 Azure
 
 - 实例磁盘限制最大容量为: 32TB；
 - 由于Azure临时存储盘的关系，HyperGate数据盘会由第三块盘开始挂载 (第一块盘: 系统盘，第二块盘: 临时存储盘)；</br>
@@ -57,8 +89,7 @@
 - HyperGate最大同时挂载卷 (磁盘) 个数为：16个 (HyperGate实例类型: F4)。</br>
 
 ---
-
-**4.3.3 腾讯云（公）**
+#### 1.3.4 腾讯云（公）
 
 - 迁移上云后，默认使用按量付费形式创建实例，验证后可手动改为包月或其他形式；</br>
 - 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB；</br>
@@ -74,7 +105,9 @@
 - Linux主机在迁移后会使用DHCP服务分配动态主机名，导致原静态主机名失效；</br>
 - HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
 
-**4.3.3 华为云（公）**
+---
+
+#### 1.3.5 华为云（公）
 
 - 此版本针对Windows 2003操作系统迁移不支持网卡驱动修复；</br>
 - Windows 2012 / R2、Windows 2016操作系统迁移网卡驱动需要待实例启动成功后手动安装；</br>
@@ -82,12 +115,16 @@
 - 华为公有云实例支持：系统盘最小容量40GB、最大1TB， 数据盘最小容量10GB、最大32TB；如果源主机系统和数据磁盘不足40GB或10GB，默认会以支持最小值创建；</br>
 - 目标云平台服务最大同时挂载卷 (磁盘) 个数为：23个。</br>
 
+---
 
-**4.3.3 金山云**
+#### 1.3.6 金山云
+
 - 迁移到金山公有云的系统如果启动失败那么需要重新同步数据；</br>
 - 迁移系统的系统盘大小只能小于等于20GB。</br>
 
-**4.3.3 OpenStack**
+---
+#### 1.3.7 OpenStack
+
 
 - 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB；</br>
 - 驱动修复时需要进行系统盘全量数据拷贝，启动实例耗费时间较长；</br>
@@ -95,8 +132,11 @@
 - 启动实例不支持安全组选择，默认需和HyperGate相同；</br>
 - HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
 
+---
 
-**4.3.3 青云**
+#### 1.3.8 青云
+
+
 
 - 迁移使用的HyperDoor为内存OS系统，启动实例时内存最小需求为2GB。</br>
 - 驱动修复时需要进行系统盘全量数据拷贝，启动实例耗费时间较长；</br>
@@ -104,12 +144,17 @@
 - 启动实例不支持安全组选择，默认需和HyperGate相同；</br>
 - HyperGate最大同时挂载卷 (磁盘) 个数为：20个。</br>
 
-**4.3.3 UCloud**
+---
+
+#### 1.3.9 UCloud
+
 
 - 安装建议选择通用型N主机；</br>
 - 最大挂载volume数目：建议不超过5个。</br>
+---
 
-**4.3.3 UCloud**
+#### 1.3.10 ZStack
+
 
 - 在迁移过程中，由于ZStack平台暂无法获取虚拟机内部磁盘信息，因此不能重启HyperGate，否则将导致迁移失败；
 - 目前只支持管理员账户进行鉴权，不支持其他方式，例：LDAP、项目登陆等；
@@ -123,13 +168,31 @@
 - 迁移过程中，HyperGate不能进行重启；由于目前无法从虚拟机内部获取磁盘信息和云平台块设备进行关系对应，重启会导致磁盘顺序乱序；
 - 由于ZStack平台对每台虚拟机挂载的盘最大不允许超过24个，所以在迁移至ZStack平台时，HyperGate最大挂载盘限制在15个 (剩馀可挂磁盘数保留给HyperGate系统盘及驱动修复用)。
 
+---
+#### 1.3.11 Ceph存储需求
 
+如果使用的后端存储为Ceph，建议使用链式快照作为默认方式，这样在验
+证过程时会加快启动速度，在迁移完成后可以将该种方式修改回非链式。</br>（使
+用链式快照在资源清理时会遇到快照依赖关系的问题，需要使用flattern命
+令进行断链操作。）
+
+```
+/etc/cinder/cinder.conf
+[ceph]   rbd_flatten_volume_from_snapshot = False
+```
 
 ---
 
-## 1 创建HyperGate实例（目标平台操作）
+#### 1.3.12 网络需求
 
-### 1.1 阿里云（公）
+- HyperMotion与HyperGate之间能通过IP地址互相访问；
+- HyperGate可以访问云平台 API网络，并且能够正常调用云平台 API接口。
+
+---
+
+## 2 创建HyperGate实例（目标平台操作）
+
+### 2.1 阿里云（公）
 
 **1. 登录阿里云‘管理控制台’，点击【云服务器ECS】**
 
@@ -209,7 +272,7 @@ vCPU | 建议值: 4vCPU，最低2vCPU
 ---
 
 
-### 1.2 AWS
+### 2.2 AWS
 **1. 登录AWS‘管理控制台’，【服务】→【EC2】**
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/1.png ':size=90%')
@@ -292,7 +355,7 @@ vCPU| 建议值: 4vCPU，最低2vCPU
 
 ----
 
-### 1.3 Azure
+### 2.3 Azure
 
 **1. 登录Azure‘管理控制台’，【虚拟机】→【添加】**
 
@@ -356,7 +419,7 @@ vCPU| 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### 1.4 腾讯云（公）
+### 2.4 腾讯云（公）
 
 
 **1. 登录腾讯云‘管理控制台’，【实例】→选择地域→【新建】**
@@ -430,7 +493,7 @@ vCPU    | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### 1.5 华为云（公）
+### 2.5 华为云（公）
 
 **1. 登录华为云‘管理控制台’，选择地域→【弹性服务器】**
 
@@ -503,7 +566,7 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 ---
 
 
-### 1.6 金山云
+### 2.6 金山云
 
 **1. 登录金山云‘管理控制台’，【云服务器】→【实例】→选择地域→【创建实例】**
 
@@ -570,7 +633,7 @@ CPU | 建议值: 8GiB，最低4GiB
 
 ---
 
-### 1.7 OpenStack
+### 2.7 OpenStack
 
 **1. 登录OpenSatck‘管理控制台’，点击【实例】→【创建实例】**
 
@@ -619,7 +682,7 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### 1.8 青云
+### 2.8 青云
 
 **1. 登录青云‘管理控制台’，【主机】→【创建】**
 
@@ -684,7 +747,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 ---
 
 
-### 1.9 天翼云
+### 2.9 天翼云
 
 **1. 登录天翼云‘控制中心’，【弹性云主机】→【创建弹性云主机】**
 
@@ -747,7 +810,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### 1.10 UCloud
+### 2.10 UCloud
 
 **1. 登录UCloud‘管理控制台’，【全部产品】→【云主机】→【创建主机】**
 
@@ -804,7 +867,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-### 1.11 ZStack
+### 2.11 ZStack
 
 **1.登录ZStack‘管理控制台’，点击【云资源池】→【云主机】→【创建云主机】**
 
@@ -847,10 +910,10 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ---
 
-## 2 Agent安装说明（源机操作）
+## 3 Agent安装说明（源机操作）
 
 
-### 2.1 Windows Agent安装说明
+### 3.1 Windows Agent安装说明
 
 
 **1. 登录Windows主机并安装可执行文件（源端本地）**
@@ -883,7 +946,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 【控制面板】→【系统和安全】→【管理工具】→运行iSCSI Initiator程序
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image047.png ':size=60%')
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image047.png ':size=50%')
 
 
 **3. 配置防火墙（源端本地）**
@@ -891,18 +954,21 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ?>请根据实际需要在以下两种环境中选择配置：</br>
 
-	Windows 2008/2012/2016
+
+**<font face="中易宋体" size=4 color=blue>&ensp; • Windows 2008/2012/2016</font>**
+
 打开【Windows防火墙】，将Windows-Agent.exe服务加入防火墙允许服务，根据版本不同，设置方式略有差异，详见下图所示：
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image048.png ':size=40%')&ensp;&ensp;&ensp;
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image049.png ':size=40%')
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image050.png ':size=40%')&ensp;&ensp;&ensp;
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image051.png ':size=40%')
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image050.png ':size=38%')&ensp;&ensp;&ensp;
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image051.png ':size=45%')
 
-注：默认路径：C:\Users\Administrator\AppData\Local\Microsoft\Windows
+!>注：默认路径：C:\Users\Administrator\AppData\Local\Microsoft\Windows
 
-	Windows 2003
+**<font face="中易宋体" size=4 color=blue>&ensp; • Windows 2003</font>**
+
 打开Windows防火墙，依次点击【例外】→【添加程序】→【浏览】
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image052.png ':size=40%')&ensp;&ensp;&ensp;
@@ -914,9 +980,9 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 选中Windows-Agent.exe程序，点击【打开】；
 在“添加程序”列表可看到“Windows-Agent.exe”默认被选中，点击【确定】完成添加，并重启系统。
 
-注：1. 非app.exe程序;
-2. 目录默认为“C:\Program Files (x86)\Windows-Agent\ Windows-Agent.exe”，
-2003 X86为“C:\Program Files\ Windows-Agent\ Windows-Agent.exe
+!>注：1. 非app.exe程序;</br>
+  &ensp;&ensp;&ensp;&ensp;2. 目录默认为“C:\Program Files (x86)\Windows-Agent\ Windows-Agent.exe”，</br>
+  &ensp;&ensp;&ensp;&ensp;2003 X86为“C:\Program Files\ Windows-Agent\ Windows-Agent.exe。</br>
 
 
 
@@ -927,10 +993,20 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image056.png ':size=10%')
 
 ?> 按以下格式要求填写：</br>
-&ensp;&ensp;&ensp;HyperMotion访问地址：http://:HyperMotionIP:18766。
+&ensp;&ensp;&ensp;HyperMotion访问地址：http://:HyperMotionIP:18766； </br>
 &ensp;&ensp;&ensp;NAT地址：填写本地NAT地址（纯IP地址），若为空，则会默认使用本机IP作为参数，点击【启动】；
 
-### 2.2 Linux Agent安装说明
+系统自动弹出 “Windows Agent正常启动”对话框，点击【是】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image057.png ':size=40%')&ensp;&ensp;&ensp;
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image058.png ':size=40%')
+
+!>注：1.Windows Agent服务开始运行并注册到所选HyperMotion平台。此时，Windows Agent服务在后台运行，关闭Agent界面不会对服务有影响，如机器重启Windows Agent服务会自动启动；
+ &ensp;&ensp;&ensp;2. Windows Agent服务启动后，可在HyperMotion主控台中看该注册的主机，请返回HyperMotion主控台查看并继续其他操作。
+ 
+ ---
+ 
+### 3.2 Linux Agent安装说明
 
 **1. 执行下列命令自动完成安装**
 
@@ -948,30 +1024,34 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 **3. Agent安装成功后，Agent service和iSCSI service已启动，并且Agent也已自动注册，等待执行保护操作。**
 
+!>注：Linux Agent服务启动后，可在HyperMotion主控台中看该注册的主机，请返回HyperMotion主控台查看并继续其他操作。
+
 ---
 
-## 3  云平台认证信息获取（目标平台操作）
+## 4  云平台认证信息获取（目标平台操作）
 
-###阿里云（公）
+### 4.1  阿里云（公）
 
 **1. Access Key 和Access Key Secret的获取**
 
 登录阿里云控制台首页，依次点击【个人头像】→【accesskey管理】
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
 
 点击【创建AccessKey】，创建成功后，点击【保存AK信息】
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/25.png ':size=90%')
 
 
 **2. 镜像ID获取**
 
 管理控制台页面，选择【云服务器ECS】【镜像】，记录安装步骤所创建的镜像ID
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png ':size=90%')
 
-###AWS
+---
+
+### AWS
 
 **1. Access Key 和Access Key Secret的获取**
 
@@ -986,14 +1066,161 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 **2. 镜像ID获取**
 
-管理控制台页面，选择【映像【AMI】，记录安装步骤所创建的Linux镜像ID及Windows镜像ID
+管理控制台页面，选择【映像】-【AMI】，记录安装步骤所创建的Linux镜像ID及Windows镜像ID
 
 ![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
 
-###Azure
+### Azure
 
+**1. 应用程序ID和租户ID**
 
-###腾讯云（公）
+登录Azure控制台首页，依次下图步骤，按要求注册
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+
+注册完成后点开注册信息
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+
+获取应用程序ID和租户ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+
+**2. 应用程序密钥**
+
+【Azure Active Directory】-【证书和密码】，
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+
+**3. 订阅ID**
+
+【仪表盘】-【所有资源】，点开所创建的虚拟机，获取绑定的订阅ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+
+**4. 资源组**
+
+【仪表盘】-【所有资源】，点开所创建的虚拟机，获取HyperGate所在的资源组
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
 
 ---
+### 腾讯云（公）
+
+
+**1. Access Key 和Access Key Secret的获取**
+
+登录腾讯云控制台首页，依次点击【账号头像】→【访问管理】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+点击【创API密钥管理】→【新建密钥】，创建成功后，点击【显示】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+
+**2. 镜像ID获取**
+
+管理控制台页面，选择【云服务器ECS】→【镜像】，记录安装步骤所创建的镜像ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+---
+
+### 华为云（公）
+
+**1. 镜像ID获取**
+
+管理控制台页面，选择【弹性云服务器】【镜像服务】，点击镜像名称进入
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+记录安装步骤所创建的镜像ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/agent/image059.png ':size=90%')
+
+### 金山云
+
+**1. Access Key 和Access Key Secret的获取**
+
+登录金山云主账号控制台首页，依次点击【账号名称】→【accesskeys】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+
+点击【新建密钥】，创建成功后，点击【下载凭证】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/25.png ':size=90%')
+
+
+**2. 镜像ID获取**
+
+管理控制台页面，选择【云服务器】【镜像】，记录名称的镜像ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png ':size=90%')
+
+
+### 青云
+
+**1. Access Key 和Access Key Secret的获取**
+
+登录青云主账号控制台首页，依次点击【账号名称】→【API密钥】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+
+点击【新建密钥】，创建成功后，点击【下载】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/25.png ':size=90%')
+
+
+**2. 镜像ID获取**
+
+管理控制台页面，选择【镜像】，记录名称的镜像ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png ':size=90%')
+
+---
+
+### 天翼云
+
+**1. Access Key 和Access Key Secret的获取**
+
+登录天翼云主账号控制中心，依次点击【账号名称】→【我的凭证】
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+
+点击【访问密钥管理】→【新增访问密钥】，创建成功后，下载保存凭证
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/25.png ':size=90%')
+
+
+**2. 镜像ID获取**
+
+管理控制台页面，选择【镜像服务】→点击进入该镜像详细，记录镜像ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png ':size=90%')
+
+
+---
+
+### UCloud
+
+**1. 公钥和私钥的获取**
+
+登录UCloud控制台首页，账户信息下选择【API密钥】，同时获取公钥和私钥
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+
+
+
+**2. 项目ID的获取**
+
+账户信息下选择【权限管理】，记录所使用项目的项目ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png ':size=90%')
+
+**3. 镜像ID获取**
+
+管理控制台页面，选择【全部产品】-【云主机】-【镜像管理】，记录镜像ID
+
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png ':size=90%')
 
