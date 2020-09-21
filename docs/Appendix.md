@@ -686,11 +686,11 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 **1. 登录青云‘管理控制台’，【主机】→【创建】**
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/7.png ':size=90%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/image007.png ':size=90%')
 
 **2. 选择映像**
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/8.jpg ':size=90%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/image008.png ':size=90%')
 
 ?>  配置内容填写参考：
 
@@ -701,7 +701,7 @@ vCPU  | 建议值: 4vCPU，最低2vCPU
 
 **3.配置选择**
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/9.png ':size=90%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/image009.png ':size=90%')
 
 ?>  配置内容填写参考：
 
@@ -718,14 +718,14 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 选择网络VPC，点击【下一步】
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/10.png ':size=90%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/image010.png ':size=90%')
 
 
 
 
 **5. 设置基本信息** 
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/11.jpg ':size=90%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/image011.png ':size=90%')
 
 选择完成后点击【创建】，
 
@@ -734,13 +734,13 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 在主机列表中查看创建信息，记录该主机的IP地址
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/12.jpg ':size=90%')
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/image012.png ':size=90%')
 
 **7. 添加防火墙规则**
 
 选择开放了12222/18090/3260/22端口的防火墙，【更多操作】→【应用防火墙规则】
 
-![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/13.jpg ':size=90%'
+![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/qingcloud/image013.png ':size=90%')
 
 绑定HyperGate主机，点击【提交】按钮。
 
@@ -756,6 +756,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 **2. 选择配置**
 
 ![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ecloud/image008.png ':size=90%')
+
 
 ?>  配置内容填写参考：
 
@@ -792,12 +793,14 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 ![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ecloud/image010.png ':size=90%')
 
+
 填写实例名称和密码后点击【下一步 确认配置】，
 
 
 **5. 确认配置信息** 
 
 ![9.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/ecloud/image011.png ':size=90%')
+
 
 确认完成后点击【立即购买】。
 
@@ -1205,7 +1208,7 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 登录UCloud控制台首页，账户信息下选择【API密钥】，同时获取公钥和私钥
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/24.png ':size=90%')
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/UCloud/image057.png ':size=90%')
 
 
 
@@ -1213,11 +1216,11 @@ CPU  | 建议值: 4vCPU，最低2vCPU
 
 账户信息下选择【权限管理】，记录所使用项目的项目ID
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png ':size=90%')
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/UCloud/image058.png ':size=90%')
 
 **3. 镜像ID获取**
 
 管理控制台页面，选择【全部产品】-【云主机】-【镜像管理】，记录镜像ID
 
-![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aliyun/23.png ':size=90%')
+![8.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/UCloud/image059.png ':size=90%')
 
