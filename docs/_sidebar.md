@@ -10,7 +10,7 @@
 
   * [HyperMotion SaaS版本](saas/1.saas.md)
   * [HyperMotion 单机版本](standalone/standalone.md)
-  * [参考附录](Appendix.md)
+  * [参考附录](Appendix/_sidebar.md)
   
   
 * 技术白皮书

@@ -3,8 +3,8 @@
 ---
 
 ?>  <font face="黑体" size=4  color=red>* 安装步骤导览：</font> </br></br>
-1.安装**迁移主控台「HyperMotion」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，此处建议安装在阿里云平台主机；</br>
-2.安装**云端数据代理「HyperGate」**：使用下载的**「[qcow2镜像](standalone/aliyun/premise.md?id=qcow2下载)」**进行安装部署，需安装在阿里云平台主机；</br>
+1.安装**迁移主控台「HyperMotion」**：使用下载的[qcow2镜像](https://oneprocloud.oss-cn-beijing.aliyuncs.com/download/HM_IMG-191227-2020-09-02.qcow2)进行安装部署，此处建议安装在阿里云平台主机；</br>
+2.安装**云端数据代理「HyperGate」**：使用下载的[qcow2镜像](https://oneprocloud.oss-cn-beijing.aliyuncs.com/download/HM_IMG-191227-2020-09-02.qcow2)进行安装部署，需安装在阿里云平台主机；</br>
 3.创建 **驱动适配镜像「HyperDoor」**：该镜像用于迁移主机迁移至阿里云后的驱动自适配，利用「HyperGate」实例复制一个镜像即可。  </br>
 
 
@@ -20,7 +20,7 @@
 CPU  | 建议4-Core，最低2-Core
 RAM | 建议8GB，最低4GB
 OS Disk  | 建议100GB，最低40GB
-
+安全组  | 已开放22、18088、18766、10080端口号的安全组
 
 
 ## 2. 自动安装部署界面

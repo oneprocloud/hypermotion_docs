@@ -4,7 +4,7 @@
 ## 1. 创建实例，命名为 HyperGate
 
 !> 注：1. 此步骤操作请在目标端AWS上进行操作；</br>
- &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[ 附录 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html) 的说明。
+ &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[ 附录 创建HyperGate实例](https://docs.oneprocloud.com/#/Appendix?id=_22-aws) 的说明。
  
 
 ---

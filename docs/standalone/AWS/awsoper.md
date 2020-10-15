@@ -127,7 +127,7 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 
 4. 在待迁移物理机上安装Agent
 
-!> 注：物理机端安装操作步骤可参考 附录一Windows Agent安装说明
+!> 注：物理机端安装操作步骤可参考 附录[Windows Agent安装说明](https://docs.oneprocloud.com/#/Appendix?id=_31-windows-agent%e5%ae%89%e8%a3%85%e8%af%b4%e6%98%8e)
 
 ?> 所有对Agent的操作均在HyperMotion端触发，Windows Agent服务正常启动后，可在HyperMotion中看到注册的主机。
 
@@ -143,7 +143,7 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 
 3. 在待迁移Linux主机上安装Agent
 
-!> 注：Liunx主机端安装操作步骤可参考 附录二 Linux  Agent安装说明
+!> 注：Liunx主机端安装操作步骤可参考 附录[Linux Agent安装说明](https://docs.oneprocloud.com/#/Appendix?id=_32-linux-agent%e5%ae%89%e8%a3%85%e8%af%b4%e6%98%8e)
 
 ?> 所有对Agent的操作均在HyperMotion端触发，linux  Agent服务正常启动后，可在HyperMotion中看到注册的主机。
 
@@ -165,8 +165,8 @@ Ceph密匙环 | ceph的键值，在ceph控制节点cat /etc/ceph/ceph.client.adm
 ------------- | ----------------------
 云平台服务注册地址  | 云平台已安装HyperGate的虚机IP地址，需与HyperMotion与AWS互通
 云平台服务端口  | 默认的服务端口为18090
-Access Key ID | 阿里云的个人账户密钥ID  (详情参见附录二 AWS平台认证信息获取)
-AccessKeySecret  | 阿里云的个人账户密钥(详情参见 附录二 AWS平台认证信息获取)
+Access Key ID | 阿里云的个人账户密钥ID  (详情参见附录[AWS平台认证信息获取](https://docs.oneprocloud.com/#/Appendix?id=_42-aws))
+AccessKeySecret  | 阿里云的个人账户密钥(详情参见 附录 AWS平台认证信息获取)
 API接入地址 | 默认 ecs.aliyuncs.com
 
 ![44.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/standalone/aws/19.png ':size=90%')
@@ -177,8 +177,9 @@ API接入地址 | 默认 ecs.aliyuncs.com
 ------------- | ----------------------
 地域ID  |选择安装HyperGate虚机所在地域（例：北京、宁夏）
 可用区ID  | 选择安装HyperGate虚机所在区域 （例：北京1 可用区A）
-Linux 镜像ID| 本地上传至AWS的Linux ID（详情参见附录三 AWS平台认证信息获取）
-Windows 镜像ID| 本地上传至AWS的Windows ID（详情参见附录三 AWS平台认证信息获取）
+Linux 镜像ID| 本地上传至AWS的Linux ID (详情参见附录[AWS平台认证信息获取](https://docs.oneprocloud.com/#/Appendix?id=_42-aws))）
+
+Windows 镜像ID| 本地上传至AWS的Windows ID (详情参见附录[AWS平台认证信息获取](https://docs.oneprocloud.com/#/Appendix?id=_42-aws))
 
 **3. 配置向导完成**
 

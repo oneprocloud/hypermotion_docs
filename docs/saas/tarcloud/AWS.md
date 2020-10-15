@@ -1,71 +1,50 @@
 
  ---
-1. 返回概览界面，点击目标云平台连接中的【AWS】图标，
+返回概览界面，点击目标云平台连接中的【AWS】图标，
 
-![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/1.png ':size=80%')
+![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/1.png ':size=90%')
 
-2. 进入目标端连接界面,根据安装步骤操作
+进入目标端连接界面,根据安装步骤操作:
 
-![13.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/2.png ':size=80%')
 
- ---
-### 1.安装部署**HyperGate**
-
-1. 创建一台实例，命名为**HyperGate**
-
-!> 注：1. 此步骤操作请在目标端AWS上进行操作</br>
- &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[ 附录一 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html) 的说明
-
-2. 登陆<HyperGate>实例主机，复制并执行以下命令:
-
-```
-curl https://download.oneprocloud.com/softwares/getdocker.sh |sudo bash
-```
-
-![14.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/3.png ':size=80%')
-
-3. 复制并执行以下命令，完成部署
-
-```
-curl https://download.oneprocloud.com/softwares/gethypergate.sh |sudo bash
-```
-
-![15.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/4.png ':size=80%')
-
-4. 安装阶段步骤完成后点击【下一步】按钮，
 
  ---
+ 
+### 1.添加云账号
 
-### 2.填写云平台认证信息
 
-1. 填写目标云平台相关认证信息，AK/SK等
+填写账户的鉴权信息，点击【确认】按钮，
 
-![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/5.png ':size=80%')
+![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/image014.png ':size=90%')
+
 
 ?> 需要填写的信息说明
 
 字段  | 含义
 ------------- | ----------------------
-云平台服务注册地址  | 云平台已安装HyperGate的虚机IP地址，需与HyperMotion与AWS互通
-云平台服务端口  | 默认的服务端口为18090
-Access Key ID | AWS的个人账户密钥ID  (详情参见附录二 AWS平台认证信息获取)
-AccessKeySecret  | AWS的个人账户密钥(详情参见 附录二 AWS平台认证信息获取)
-地域ID| 默认 ecs.aliyuncs.com
+Access Key ID | 阿里云的个人账户密钥ID  (详情参见附录 阿里云平台认证信息获取)
+AccessKeySecret  | 阿里云的个人账户密钥(详情参见 附录 阿里云平台认证信息获取)
 
-2. 填写目标云平台相关地域信息
+ ---
 
-![17.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/6.png ':size=80%')
+### 2.选择云代理主机启动信息
 
-?> 需要填写的信息说明
+选择迁移主机预定安装的地域、可用区等信息，点击【确认】按钮，
 
-字段  | 含义
-------------- | ----------------------
-地域ID  |选择安装HyperGate虚机所在地域（例：北京、宁夏）
-可用区ID  | 选择安装HyperGate虚机所在区域 （例：北京1 可用区A  ）
-Linux 镜像ID | 本地上传至AWS的Linux ID（详情参见附录三 AWS平台认证信息获取）
-Windows 镜像ID | 本地上传至AWS的Windows ID（详情参见附录三 AWS平台认证信息获取）
+![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/image015.png ':size=90%')
 
-3. 填写完成后点击【完成】按钮，系统提示"创建目标端存储成功"，同时可在【设置】→【目标平台设置】中查看连接情况。
+### 3.启动云代理主机
 
+系统在同一地域下自动创建 1 台代理主机
+
+![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/image016.png ':size=90%')
+!> 注：默认实例配置：2核2G /40GB。
+
+
+代理主机创建成功后，阿里云连接设置完成。
+
+![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/image017.png ':size=90%')
+
+你可以在【设置】→【目标平台设置】中查看连接情况。
 
  

@@ -4,9 +4,9 @@
 ## 1. 创建实例，命名为 HyperGate
 
 !> 注：1. 此步骤操作请在目标端阿里云上进行操作；</br>
- &ensp; &ensp; &ensp;2. 请使用上传的[ 自定义镜像](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html)
+ &ensp; &ensp; &ensp;2. 请使用上传的[ 自定义镜像](https://oneprocloud.oss-cn-beijing.aliyuncs.com/download/HM_IMG-191227-2020-09-02.qcow2)
  创建实例；</br>
- &ensp; &ensp; &ensp;3. 部署方式及参数要求请参照[ 附录 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html) 的说明。
+ &ensp; &ensp; &ensp;3. 部署方式及参数要求请参照[ 附录 创建HyperGate实例](https://docs.oneprocloud.com/#/Appendix?id=_21-%e9%98%bf%e9%87%8c%e4%ba%91%ef%bc%88%e5%85%ac%ef%bc%89) 的说明。
  
 
 ---
