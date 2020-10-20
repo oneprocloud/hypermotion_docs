@@ -18,8 +18,8 @@
     * [迁移流程动画](standalone/AWS/migrpro.md)
     * [前提准备](standalone/AWS/premise.md)
     * 迁移安装部署
-	  * [迁移主控平台-HyperMotion](standalone/aws/vmdeploy.md)
-	  * [云端数据代理-HyperGate](standalone/aws/awsdeploy.md)
+	  * [迁移主控平台-HyperMotion](standalone/AWS/vmdeploy.md)
+	  * [云端数据代理-HyperGate](standalone/AWS/awsdeploy.md)
     * 迁移操作使用
 	  * [登陆访问](standalone/login.md)
 	  * [配置向导](standalone/aws/awsoper.md)

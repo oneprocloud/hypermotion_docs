@@ -15,7 +15,6 @@
 	* [AWS](saas/tarcloud/AWS.md)
 	* [华为云（公）](saas/tarcloud/TechWave.md)
     * [腾讯云（公）](saas/tarcloud/Tencent.md)
-	* [Azure](saas/tarcloud/AWS.md)
 	* [金山云](saas/tarcloud/KingCloud.md)
     * [青云](saas/tarcloud/Tencent.md)
     * [天翼云](saas/tarcloud/Tencent.md)
