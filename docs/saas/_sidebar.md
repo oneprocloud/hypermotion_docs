@@ -16,9 +16,9 @@
 	* [华为云（公）](saas/tarcloud/TechWave.md)
     * [腾讯云（公）](saas/tarcloud/Tencent.md)
 	* [金山云](saas/tarcloud/KingCloud.md)
-    * [青云](saas/tarcloud/Tencent.md)
-    * [天翼云](saas/tarcloud/Tencent.md)
-    * [UCloud](saas/tarcloud/Tencent.md)
+    * [青云](saas/tarcloud/QingCloud.md)
+    * [天翼云](saas/tarcloud/eCloud.md)
+    * [UCloud](saas/tarcloud/UCloud.md)
 
   * [迁移向导](saas/7.migrawiz.md)
   
