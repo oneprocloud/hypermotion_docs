@@ -2,12 +2,11 @@
  ---
 1. 返回概览界面，点击目标云平台连接中的【天翼云】图标，
 
-![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/QingCloud/image012.png ':size=80%')
+![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/eCloud/image012.png ':size=90%')
 
 2. 进入目标端连接界面,根据安装步骤操作
 
-![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/QingCloud/image013.png ':size=80%')
-
+![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/eCloud/image013.png ':size=90%')
 ?> 需要填写的信息说明
 
 字段  | 含义
