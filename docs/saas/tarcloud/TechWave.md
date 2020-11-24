@@ -1,14 +1,15 @@
 
  ---
-1. 返回概览界面，点击目标云平台连接中的【华为云】图标，
+1. 左侧菜单栏【设置】→【目标平台设置】，选择‘华为云（公有云）’图标，
 
-![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/huawei/1.png ':size=90%')
+![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/huawei/8.png ':size=90%')
 
 
 2. 进入目标端连接界面,根据安装步骤操作
 
 ![13.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/huawei/2.png ':size=90%')
 
+---
 
 ### 1.安装部署**HyperGate**
 
@@ -16,7 +17,7 @@
 1. 创建一台实例，命名为**HyperGate**
 
 !> 注：1. 此步骤操作请在目标端华为云上进行操作;</br>
- &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[ 附录一 创建HyperGate实例](https://pubs.vmware.com/vsphere-50/index.jsp?topic=%2Fcom.vmware.vsphere.vm_admin.doc_50%2FGUID-6C847F77-8CB2-4187-BD7F-E7D3D5BD897B.html) 的说明。
+ &ensp; &ensp; &ensp;2. 部署方式及参数要求请参照[附录 创建HyperGate实例](Appendix/HyperGate?id=_25-华为云（公）)的说明。
  
 ?> 安装之前请在华为云平台账号下确认以下信息：</br>
 **（1）账户权限开通：**</br>
@@ -79,7 +80,7 @@ curl https://download.oneprocloud.com/softwares/gethypergate.sh |sudo bash
 字段  | 含义
 ------------- | ----------------------
 云平台项目 | 默认 cn-north-1
-镜像ID | 本地上传至华为云的镜像ID（详情参见附录 华为云平台认证信息获取）
+镜像ID | 本地上传至华为云的镜像ID（详情参见[附录 华为云平台认证信息获取](Appendix/access?id=_45-华为云（公）))
 
 
 3. 填写完成后点击【完成】按钮，系统提示"创建目标端存储成功"，同时可在【设置】→【目标平台设置】中查看连接情况。

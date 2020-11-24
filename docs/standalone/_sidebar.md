@@ -15,7 +15,6 @@
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * AWS
-    * [迁移流程动画](standalone/AWS/migrpro.md)
     * [前提准备](standalone/AWS/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/AWS/vmdeploy.md)
@@ -26,7 +25,6 @@
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * Azure
-    * [迁移流程动画](standalone/Azure/migrpro.md)
     * [前提准备](standalone/Azure/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/Azure/vmdeploy.md)
@@ -37,7 +35,6 @@
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * 腾讯云（公）
-    * [迁移流程动画](standalone/Tencent/migrpro.md)
     * [前提准备](standalone/Tencent/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/Tencent/vmdeploy.md)
@@ -48,7 +45,6 @@
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * 华为云（公）
-    * [迁移流程动画](standalone/TechWave/migrpro.md)
     * [前提准备](standalone/TechWave/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/TechWave/vmdeploy.md)
@@ -59,7 +55,6 @@
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * 金山云
-    * [迁移流程动画](standalone/KingCLoud/migrpro.md)
     * [前提准备](standalone/KingCLoud/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/KingCLoud/vmdeploy.md)
@@ -70,7 +65,6 @@
 	  * [迁移向导](standalone/migrawiz.md)
 	  
   * OpenStack
-    * [迁移流程动画](standalone/OpenStack/migrpro.md)
     * [前提准备](standalone/OpenStack/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/vmdeploy.md)
@@ -81,7 +75,6 @@
 	  * [迁移向导](standalone/migrawiz.md) 
 	  
   * OpenStackImageBootV2
-    * [迁移流程动画](standalone/OpenStackImage/migrpro.md)
     * [前提准备](standalone/OpenStackImage/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/OpenStackImage/vmdeploy.md)
@@ -92,7 +85,6 @@
 	  * [迁移向导](standalone/migrawiz.md) 
 	  
   * 青云
-    * [迁移流程动画](standalone/QingCloud/migrpro.md)
     * [前提准备](standalone/QingCloud/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/QingCloud/vmdeploy.md)
@@ -103,7 +95,6 @@
 	  * [迁移向导](standalone/migrawiz.md) 
 	  
   * 天翼云
-    * [迁移流程动画](standalone/eCloud/migrpro.md)
     * [前提准备](standalone/eCloud/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/eCloud/vmdeploy.md)
@@ -114,7 +105,6 @@
 	  * [迁移向导](standalone/migrawiz.md) 
 	  
   * UCloud
-    * [迁移流程动画](standalone/UCloud/migrpro.md)
     * [前提准备](standalone/UCloud/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/UCloud/vmdeploy.md)
@@ -125,7 +115,6 @@
 	  * [迁移向导](standalone/migrawiz.md) 
 	  
   * ZStack
-    * [迁移流程动画](standalone/ZStack/migrpro.md)
     * [前提准备](standalone/ZStack/premise.md)
     * 迁移安装部署
 	  * [迁移主控平台-HyperMotion](standalone/ZStack/vmdeploy.md)

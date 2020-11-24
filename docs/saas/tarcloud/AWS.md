@@ -1,8 +1,8 @@
 
  ---
-返回概览界面，点击目标云平台连接中的【AWS】图标，
+左侧菜单栏【设置】→【目标平台设置】，选择‘AWS（公有云）’图标，
 
-![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/1.png ':size=90%')
+![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/image018.png ':size=90%')
 
 进入目标端连接界面,根据安装步骤操作:
 
@@ -22,8 +22,8 @@
 
 字段  | 含义
 ------------- | ----------------------
-Access Key ID | 阿里云的个人账户密钥ID  (详情参见附录 阿里云平台认证信息获取)
-AccessKeySecret  | 阿里云的个人账户密钥(详情参见 附录 阿里云平台认证信息获取)
+Access Key ID | AWS的个人账户密钥ID  (详情参见附录 [AWS平台认证信息获取](Appendix/access?id=_42-aws))
+AccessKeySecret  | AWS的个人账户密钥(详情参见附录 [AWS平台认证信息获取](Appendix/access?id=_42-aws))
 
  ---
 
@@ -38,6 +38,7 @@ AccessKeySecret  | 阿里云的个人账户密钥(详情参见 附录 阿里云�
 系统在同一地域下自动创建 1 台代理主机
 
 ![16.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/aws/image016.png ':size=90%')
+
 !> 注：默认实例配置：2核2G /40GB。
 
 

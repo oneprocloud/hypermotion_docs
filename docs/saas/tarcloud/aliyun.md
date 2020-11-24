@@ -1,8 +1,9 @@
 
  ---
-返回概览界面，点击目标云平台连接中的【阿里云】图标，
 
-![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/12.png ':size=90%')
+左侧菜单栏【设置】→【目标平台设置】，选择‘阿里云（公有云）’图标，
+
+![12.png](https://oneprocloud.oss-cn-beijing.aliyuncs.com/_images/saas/image017.png ':size=90%')
 
 进入目标端连接界面,根据安装步骤操作：
 
@@ -23,8 +24,8 @@
 
 字段  | 含义
 ------------- | ----------------------
-Access Key ID | 阿里云的个人账户密钥ID  (详情参见附录 阿里云平台认证信息获取)
-AccessKeySecret  | 阿里云的个人账户密钥(详情参见 附录 阿里云平台认证信息获取)
+Access Key ID | 阿里云的个人账户密钥ID  (详情参见附录 [阿里云平台认证信息获取](Appendix/access?id=_41-阿里云（公）)
+AccessKeySecret  | 阿里云的个人账户密钥(详情参见附录 [阿里云平台认证信息获取](Appendix/access?id=_41-阿里云（公）)
 
  ---
 
