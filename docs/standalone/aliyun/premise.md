@@ -92,5 +92,5 @@
  | 2 |          | 专有网络（VPC） | AliyunVPCFullAccess | VPC网络管理权限 |
 
 !> 1.如该账号为主账号，默认已赋予以上权限，请跳过此步骤；</br>
-2.如以上权限未开放，请参考阿里文档中[用户权限管理](https://help.aliyun.com/document_detail/64817.html?spm=a2c4g.11186623.4.1.7d0b324dhpn0yW) 中有关为RAM用户、用户组分配授权策略的说明；
+2.如以上权限未开放，请参考阿里云文档中[用户权限管理](https://help.aliyun.com/document_detail/64817.html?spm=a2c4g.11186623.4.1.7d0b324dhpn0yW) 中有关为RAM用户、用户组分配授权策略的说明；
 

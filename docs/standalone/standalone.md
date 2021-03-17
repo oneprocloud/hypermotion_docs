@@ -20,10 +20,10 @@
 !> **请根据您所要迁移的目标云平台选择阅读以下安装及操作指南:**
 
 - [阿里云](standalone/aliyun/aliyun.md)
- - [迁移流程动画](standalone/aliyun/migrpro.md)
- - [前提准备](standalone/aliyun/premise.md)
- - [迁移安装部署](standalone/aliyun/alideploy.md)
- - [迁移操作使用](standalone/aliyun/alioper.md)
+     - [迁移流程动画](standalone/aliyun/migrpro.md)
+     - [前提准备](standalone/aliyun/premise.md)
+     - [迁移安装部署](standalone/aliyun/alideploy.md)
+     - [迁移操作使用](standalone/aliyun/alioper.md)
 - [腾讯](standalone/tencent/tencent.md)
 - [华为](standalone/huawei/huawei.md)
 - [AWS](standalone/aws/aws.md)
