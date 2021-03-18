@@ -1,0 +1,27 @@
+language: python
+
+python: 3.6
+
+branches: master
+
+env:
+    global:
+      - secure: "GOySc1uVuByGoVtnDaZe+krMqGu7EoL8ZmEf+DyllolV3fqG4RGntQ3jZ399a7huEWrbtQiDiIDULNprCfe7PdCpsdzAVDaSEEDUuZc2YFxhL4K87gQYCiwdckPaVGKTkBC47Jhu7PETq9E1GOH41C6OQsWAV+HMZcbDsWDCSe4Gt5vjPxlabODZP9yzK8Pseid7JAzfi09zkJCa9iES2XpoANoS+6dnYKisQEimPTO9wcBWd8J0n+il8yMTluMjk9abR6ry26mfU1Qbteny0iYyAqz6hA2vOEngFubxfdMuCkgvR9HTmVIQqswmOXR0KhSRmMSk0Ugvzes+VbdbG58ofWMtzu8D7QAZIp3v+JCzhmnuiWyRzEGjh04HvyFBnyV1uGPxrhb/yOE2hOKHU+w3eEO8OKe+5NYYUVSLWseG8WSHGe7fG0qLUXDgKEahGkrwnhrjSWVQpzJ30qZ3Sw+vwPaO8WQNvb4ldCvuJMtjTe/cb3vRw15xdN0P44LYjndoAtmob1TllWRDQQIdjkxpVAX1Kty/yj5vFYw6A269FHiOBxn2E2Qy1rR7Vd2Pq1DZuAIhzR1G04VMp3Ha+LIOjoT+uIe0nQ0Sdmoaocl6XGswjIVc4Zjis3ehSupQN9MyCxf/nS8KRNKXrn1Svblb1/T6tOod2m6GPqPGDFw="
+      - secure: "kqqy0t9txpc5CirOrXEycs7Oy1NPmXM9Lh9tIJoEzoVMFOLUKa+JsByfQvvtTkWBvdlQNhg+D3kwONOsue8PLCjuSiKzPT2oemapeUVSALBdZNOhA19GzC8C4x2oLHUg3ODemYK5zjxNlMkp+Ew3xZjgSrEfiPSrLcaxE7Z3hd3iw5oAAiFm1ApeWOXaUt57Yu/iXQMv4FNeRGD2gyhdwWieCaWvWoImXJHCwdyQFtIhC199Ybmc4FNIUxhkVyHLWBnscnawLjLUQjEgsyu/y9L0mStOd2LUgXYNbrvuGFD5l0QRneB2rh6Q0VZs0DJMcf2xa07S+s1RKQ/oX6d+eOcekxIh01wTSpzAZQGe6muUOibg+Fkn/vsZmwxHxkilBAYlXqrElUMm24tVRTuTsB6DuN0Yd+c6uJ53UCXHJjpolfB1NU1oiicS36cMn4qQ0oZ+Lyh3Xp2d2OHf0Fas+rjZ/IKqa9/TtlX/VdPVfQs72LFpm6rl05GSAHijQG0Vi/gk7o9CGRGjUjcsGnu6OaPAXxPphgpai1/NU5jnjG7pjpiAXtssiJOhkT1Af8aeDUHmXBJTVqbA4srI7AX0yYZUFEtH9vpwMI4Hcg76/xLBI/po+vKFpHV2Qg1v7SLkGY7eWp/em7yafdgf5ijQY/R6H0ntCS7Nw8V9fQW6T4E="
+
+install:
+    - "wget http://gosspublic.alicdn.com/ossutil/1.6.16/ossutil64"
+    - "chmod 755 ossutil64"
+    - "./ossutil64 config -i $ACCESS_KEY_ID -k $ACCESS_SECRET_KEY -e http://oss-cn-beijing.aliyuncs.com"
+
+script: true
+
+deploy:
+    provider: pages
+    skip_cleanup: true
+    github_token: "$GITHUB_TOKEN"
+    on:
+      branch: master
+
+after_deploy:
+    - "./ossutil64 cp docs/ oss://oneprocloud/ --recursive --update"
